@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    font-family: $font-text;
+}
+
+body {
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: $font-title;
+}

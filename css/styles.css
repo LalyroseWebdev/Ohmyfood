@@ -1,3 +1,43 @@
+/* Ohmyfood */
+/* Author Lalyrose Domergue */
+/* Date 2022.09 */
+@font-face {
+  font-family: "Shrikhand";
+  src: url("./font/Shrikhand-Regular.woff") format("woff"), url("./font/Shrikhand-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./font/Roboto-Regular.woff") format("woff"), url("./font/Roboto-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./font/Roboto-Bold.woff") format("woff"), url("./font/Roboto-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 
+body {
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+}
 
 /*# sourceMappingURL=styles.css.map */

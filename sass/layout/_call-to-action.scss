@@ -1,0 +1,22 @@
+// Call-to-action section
+
+.call-to-action {
+    @include flexbox(column, center, center, 0);
+    background-color: $color-background;
+    
+    & h2 {
+        width: 70%;
+        text-align: center;
+
+        @include typography(index-h2);
+    }
+
+    & p {
+        width: 90%;
+        text-align: center;
+
+        @include typography(text);
+
+        font-size: 16pt;
+    }
+}

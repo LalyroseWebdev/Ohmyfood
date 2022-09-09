@@ -3,13 +3,20 @@ $typography-map: (
 
     title: (
         font: $font-title,
-        size: $font-title-size,
+        size: $title-size,
         weight: normal,
     ),
 
     text: (
         font: $font-text,
-        size: $font-text-size,
-        weight: initial,
+        size: $text-size,
+        weight: normal,
+    ),
+
+    index-h2: (
+        font: $font-text,
+        size: $index-h2-size,
+        weight: bold,
     )
+
 );

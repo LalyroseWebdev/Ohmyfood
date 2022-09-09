@@ -1,13 +1,14 @@
+// Location line
+
 .location {
-    @include flexbox (center, center, 15px);
+    @include flexbox (row, center, center, 15px);
     height: 50px;
     color: lighten($color-text, 20);
     background-color: darken($color-background, 3);
 }
 
 .location__content {
-    @include flexbox (center, center, 0);
-
+    @include flexbox (row, center, center, 0);
     position: relative;
 
     & div {

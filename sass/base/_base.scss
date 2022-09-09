@@ -28,6 +28,6 @@ ul {
     list-style-type: none;
 }
 
-span {
-    font-size: $font-text-size;
+span, p {
+    @include typography(text);
 }

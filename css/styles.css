@@ -51,8 +51,10 @@ ul {
   list-style-type: none;
 }
 
-span {
+span, p {
+  font-family: "Roboto", sans-serif;
   font-size: 14pt;
+  font-weight: normal;
 }
 
 header {
@@ -77,6 +79,7 @@ header a {
 
 .location {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 15px;
@@ -87,6 +90,7 @@ header a {
 
 .location__content {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0;
@@ -96,6 +100,30 @@ header a {
   display: flex;
   position: absolute;
   left: -30px;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: #F6F6F6;
+}
+.call-to-action h2 {
+  width: 70%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 22pt;
+  font-weight: bold;
+}
+.call-to-action p {
+  width: 90%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14pt;
+  font-weight: normal;
+  font-size: 16pt;
 }
 
 /*# sourceMappingURL=styles.css.map */

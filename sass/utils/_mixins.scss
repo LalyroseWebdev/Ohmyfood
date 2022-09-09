@@ -1,0 +1,6 @@
+// Titles typography
+@mixin title-typography {
+    font-family: $font-title;
+    font-size: $font-title-size;
+    font-weight: normal;
+}

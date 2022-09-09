@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 60px;
+
+    // Title
+    & > * {
+        @include title-typography;
+    }
+
+    // Back to home page link
+    & a {
+        display: flex;
+        position: absolute;
+        left: 25px;
+        font-size: 16pt;
+        color: lighten($color-text, 20%);
+    }
+}

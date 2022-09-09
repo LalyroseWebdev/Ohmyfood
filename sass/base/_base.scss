@@ -12,7 +12,7 @@ body {
 h1 {
     margin: 0;
     padding: 0;
-    @include title-typography;
+    @include typography(title);
 }
 
 a {
@@ -26,4 +26,8 @@ img {
 
 ul {
     list-style-type: none;
+}
+
+span {
+    font-size: $font-text-size;
 }

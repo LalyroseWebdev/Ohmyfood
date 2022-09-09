@@ -51,6 +51,10 @@ ul {
   list-style-type: none;
 }
 
+span {
+  font-size: 14pt;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -58,7 +62,7 @@ header {
   position: relative;
   height: 60px;
 }
-header > * {
+header span {
   font-family: "Shrikhand", sans-serif;
   font-size: 24pt;
   font-weight: normal;
@@ -69,6 +73,29 @@ header a {
   left: 25px;
   font-size: 16pt;
   color: #333333;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 50px;
+  color: #333333;
+  background-color: #eeeeee;
+}
+
+.location__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  position: relative;
+}
+.location__content div {
+  display: flex;
+  position: absolute;
+  left: -30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

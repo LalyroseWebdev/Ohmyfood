@@ -1,6 +1,17 @@
-// Titles typography
-@mixin title-typography {
-    font-family: $font-title;
-    font-size: $font-title-size;
-    font-weight: normal;
+// Typography
+@mixin typography($type) {
+    
+    $palette: map-get($typography-map, $type);
+
+    font-family: map-get($palette, font);
+    font-size: map-get($palette, size);
+    font-weight: map-get($palette, weight);
+}
+
+// Flexbox
+@mixin flexbox ($justify, $align, $gap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
 }

@@ -1,0 +1,15 @@
+// Typography
+$typography-map: (
+
+    title: (
+        font: $font-title,
+        size: $font-title-size,
+        weight: normal,
+    ),
+
+    text: (
+        font: $font-text,
+        size: $font-text-size,
+        weight: initial,
+    )
+);

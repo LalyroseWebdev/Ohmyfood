@@ -6,8 +6,8 @@ header {
     height: 60px;
 
     // Title
-    & > * {
-        @include title-typography;
+    & span {
+        @include typography(title);
     }
 
     // Back to home page link

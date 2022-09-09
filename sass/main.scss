@@ -2,11 +2,16 @@
 /* Author Lalyrose Domergue */
 /* Date 2022.09 */
 
+// Utils
 @import "utils/variables";
+@import "utils/maps";
 @import "utils/functions";
 @import "utils/mixins";
 
+// Base
 @import "base/font";
 @import "base/base";
 
+// Layout
 @import "layout/header";
+@import "layout/_location";

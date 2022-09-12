@@ -7,6 +7,15 @@
     font-style: normal; 
 }
 
+// Roboto light
+@font-face {
+    font-family: "Roboto";
+    src: url("./font/Roboto-Light.woff") format("woff"),
+         url("./font/Roboto-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
 // Roboto regular
 @font-face {
     font-family: "Roboto";

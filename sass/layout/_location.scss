@@ -2,9 +2,10 @@
 
 .location {
     @include flexbox (row, center, center, 15px);
-    height: 50px;
+    height: 60px;
     color: lighten($color-text, 20);
-    background-color: darken($color-background, 3);
+    background-color: darken($color-background, 5);
+    box-shadow: 0px 3px 3px darken($color-background, 20) inset; 
 }
 
 .location__content {

@@ -1,9 +1,8 @@
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(row, center, flex-end, 0);
     position: relative;
-    height: 60px;
+    padding-bottom: 10px;
+    height: 70px;
 
     // Title
     & span {

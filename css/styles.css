@@ -9,6 +9,12 @@
 }
 @font-face {
   font-family: "Roboto";
+  src: url("./font/Roboto-Light.woff") format("woff"), url("./font/Roboto-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
   src: url("./font/Roboto-Regular.woff") format("woff"), url("./font/Roboto-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -59,10 +65,13 @@ span, p {
 
 header {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  gap: 0;
   position: relative;
-  height: 60px;
+  padding-bottom: 10px;
+  height: 70px;
 }
 header span {
   font-family: "Shrikhand", sans-serif;
@@ -83,9 +92,10 @@ header a {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  height: 50px;
+  height: 60px;
   color: #333333;
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
+  box-shadow: 0px 3px 3px #c3c3c3 inset;
 }
 
 .location__content {
@@ -124,6 +134,7 @@ header a {
   font-size: 14pt;
   font-weight: normal;
   font-size: 16pt;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=styles.css.map */

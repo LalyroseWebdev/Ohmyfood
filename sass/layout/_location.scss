@@ -1,5 +1,4 @@
 // Location line
-
 .location {
     @include flexbox (row, center, center, 15px);
     height: 60px;
@@ -8,10 +7,12 @@
     box-shadow: 0px 3px 3px darken($color-background, 20) inset; 
 }
 
+// Content
 .location__content {
     @include flexbox (row, center, center, 0);
     position: relative;
 
+    // Icon
     & div {
         display: flex;
         position: absolute;

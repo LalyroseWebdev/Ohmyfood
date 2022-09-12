@@ -1,7 +1,7 @@
 header {
     @include flexbox(row, center, flex-end, 0);
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 0.7rem;
     height: 70px;
 
     // Title

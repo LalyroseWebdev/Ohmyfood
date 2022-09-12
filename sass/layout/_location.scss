@@ -1,15 +1,15 @@
 // Location line
 .location {
-    @include flexbox (row, center, center, 15px);
+    @include flex(row, center, center, 15px);
+    @include shadow(location);
     height: 60px;
     color: lighten($color-text, 20);
     background-color: darken($color-background, 5);
-    box-shadow: 0px 3px 3px darken($color-background, 20) inset; 
 }
 
 // Content
 .location__content {
-    @include flexbox (row, center, center, 0);
+    @include flex(row, center, center, 0);
     position: relative;
 
     // Icon

@@ -4,8 +4,6 @@ header {
     padding-top: 0.7rem;
     height: 70px;
 
-    outline: 1px solid black;
-
     // Title
     & span {
         @include typography(title);

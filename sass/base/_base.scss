@@ -9,6 +9,10 @@ body {
     max-width: 1000px;
 }
 
+span, p {
+    @include typography(text);
+}
+
 h1 {
     @include typography(title);
 }
@@ -28,8 +32,4 @@ img {
 
 ul {
     list-style-type: none;
-}
-
-span, p {
-    @include typography(text);
 }

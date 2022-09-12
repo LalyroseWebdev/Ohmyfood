@@ -1,6 +1,6 @@
 // Call-to-action section
 .call-to-action {
-    @include flexbox(column, center, center, 0);
+    @include flex(column, center, center, 0);
     background-color: $color-background;
     padding: 3rem;
     

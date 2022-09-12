@@ -1,0 +1,17 @@
+// Button
+button {
+    @include shadow(button);
+
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+
+    font-size: $text-size;
+    color: white;
+    background-image: linear-gradient(170deg, $color-secondary, $color-primary);
+
+    &:hover {
+        background-image: linear-gradient(170deg, lighten($color-secondary, 2), lighten($color-primary, 2));
+        // transition: 0.1s;
+    }
+}

@@ -1,8 +1,10 @@
 header {
-    @include flexbox(row, center, flex-end, 0);
+    @include flex(row, center, center, 0);
     position: relative;
-    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
     height: 70px;
+
+    outline: 1px solid black;
 
     // Title
     & span {

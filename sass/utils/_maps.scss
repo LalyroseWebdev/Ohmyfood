@@ -1,37 +1,30 @@
 // Typography
 $typography-map: (
-
     title: (
         font: $font-title,
         size: $title-size,
         weight: normal,
     ),
-
     text: (
         font: $font-text,
         size: $text-size,
         weight: normal,
     ),
-
     index-h2: (
         font: $font-text,
         size: $index-h2-size,
         weight: bold,
     )
-
 );
 
 // Shadow
 $shadow-map: (
-
     location: (
         shadow: 0px 3px 3px darken($color-background, 20) inset, 
         hover: 0px 3px 3px darken($color-background, 20) inset, 
-    ), 
-
+    ),
     button: (
         shadow: 0 5px 10px darken($color-background, 20),
         hover: 0 5px 10px darken($color-background, 30),
     )
-
 )

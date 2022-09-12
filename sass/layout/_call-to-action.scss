@@ -1,7 +1,12 @@
 // Call-to-action section
 .call-to-action {
-    @include flex(column, center, center, 0);
+    padding: 0;
     background-color: $color-background;
+}
+
+// Call-to-action content
+.call-to-action__content {
+    @include flex(column, center, center, 0);
     padding: 3rem;
     
     // Headline

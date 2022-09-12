@@ -65,6 +65,10 @@ ul {
   list-style-type: none;
 }
 
+section {
+  padding: 3rem 1.5rem;
+}
+
 button {
   box-shadow: 0 5px 10px #c3c3c3;
   border: none;
@@ -134,22 +138,26 @@ header a {
 }
 
 .call-to-action {
+  padding: 0;
+  background-color: #F6F6F6;
+}
+
+.call-to-action__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0;
-  background-color: #F6F6F6;
   padding: 3rem;
 }
-.call-to-action h2 {
+.call-to-action__content h2 {
   width: 70%;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 22pt;
   font-weight: bold;
 }
-.call-to-action p {
+.call-to-action__content p {
   font-family: "Roboto", sans-serif;
   font-size: 14pt;
   font-weight: normal;

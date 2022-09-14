@@ -2,19 +2,19 @@
 $typography-map: (
     title: (
         font: $font-title,
-        size: $title-size,
+        size: $size-title,
         weight: normal,
     ),
     text: (
         font: $font-text,
-        size: $text-size,
+        size: $size-text,
         weight: normal,
     ),
     index-h2: (
         font: $font-text,
-        size: $index-h2-size,
+        size: $size-index-h2,
         weight: bold,
-    )
+    ),
 );
 
 // Shadow
@@ -26,5 +26,9 @@ $shadow-map: (
     button: (
         shadow: 0 5px 10px darken($color-background, 20),
         hover: 0 5px 10px darken($color-background, 30),
-    )
+    ),
+    card: (
+        shadow: 0 5px 10px darken($color-background, 10),
+        hover: 0 5px 10px darken($color-background, 20),
+    ),
 )

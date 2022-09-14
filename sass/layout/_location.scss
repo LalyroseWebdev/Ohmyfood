@@ -1,9 +1,8 @@
 // Location line
 .location {
-    @include flex(row, center, center, 15px);
+    @include flex(row, center, center, 0);
     @include shadow(location);
     height: 60px;
-    color: lighten($color-text, 20);
     background-color: darken($color-background, 5);
 }
 
@@ -11,9 +10,10 @@
 .location__content {
     @include flex(row, center, center, 0);
     position: relative;
+    color: $color-text--lighter;
 
     // Icon
-    & div {
+    & .location__icon {
         display: flex;
         position: absolute;
         left: -30px;

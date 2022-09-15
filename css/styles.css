@@ -176,8 +176,7 @@ header a {
   padding: 0;
   padding-left: 0.8rem;
 }
-
-.tutorial-step {
+.tutorial-list .tutorial-step {
   display: flex;
   flex-direction: row;
   justify-content: stretch;
@@ -185,7 +184,8 @@ header a {
   gap: 0;
   position: relative;
 }
-.tutorial-step .tutorial-step__content {
+
+.tutorial-step__content {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -195,17 +195,24 @@ header a {
   border-radius: 20px;
   padding-left: 2rem;
   width: 100%;
-  height: 70px;
+  height: 80px;
   background-color: #F6F6F6;
 }
-.tutorial-step .tutorial-step__content:hover {
+.tutorial-step__content:hover {
   box-shadow: 0 5px 10px #c3c3c3;
 }
-.tutorial-step .tutorial-step__content > div {
+.tutorial-step__content > div {
   font-size: 16pt;
   color: #666666;
 }
-.tutorial-step .tutorial-step__number {
+.tutorial-step__content:hover {
+  background-color: #f2eafb;
+}
+.tutorial-step__content:hover > div {
+  color: #9356DC;
+}
+
+.tutorial-step__number {
   border-radius: 0.8rem;
   width: 1.6rem;
   height: 1.6rem;

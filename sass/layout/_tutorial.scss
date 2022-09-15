@@ -6,6 +6,7 @@
 // Tutorial list
 .tutorial-list {
     @include flex(column, center, stretch, 1.5rem);
+    margin: 0;
     padding: 0;
     padding-left: 0.8rem;
 

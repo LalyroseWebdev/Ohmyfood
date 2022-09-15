@@ -9,16 +9,20 @@ body {
     max-width: 1000px;
 }
 
-span, p {
-    @include typography(text);
+h1, h2, h3 {
+    margin: 0;
 }
 
 h1 {
     @include typography(title);
 }
 
-h1, h2, h3 {
-    margin: 0;
+h2 {
+    margin-bottom: $margin-b-h2;
+}
+
+span, p {
+    @include typography(text);
 }
 
 a {

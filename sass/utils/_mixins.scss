@@ -27,7 +27,6 @@
 // Typography
 @mixin typography($type) {
     $palette: map-get($typography-map, $type);
-
     font-family: map-get($palette, font);
     font-size: map-get($palette, size);
     font-weight: map-get($palette, weight);
@@ -36,7 +35,6 @@
 // Shadow
 @mixin shadow($type) {
     $palette: map-get($shadow-map, $type);
-
     box-shadow: map-get($palette, shadow);
 
     &:hover {

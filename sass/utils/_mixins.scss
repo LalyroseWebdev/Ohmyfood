@@ -17,7 +17,7 @@
 
 // Round element with centered content
 @mixin circle-center($length) {
-    border-radius: ($length / 2);
+    border-radius: calc($length / 2);
     width: $length;
     height: $length;
     line-height: $length;

@@ -1,11 +1,10 @@
 // Text button
 .btn-text {
     @include shadow(button);
-
     border: none;
     border-radius: 30px;
     padding: 20px;
-
+    width: fit-content;
     font-size: $size-text;
     color: white;
     background-image: linear-gradient(170deg, $color-secondary, $color-primary);

@@ -1,0 +1,10 @@
+// Label new
+.label-new {
+    border-radius: $radius-label-new;
+    padding: 0.5rem;
+    width: fit-content;
+    font-size: $size-index-label;
+    font-weight: bold;
+    color: darken($color-tertiary, 45);
+    background-color: $color-tertiary;
+}

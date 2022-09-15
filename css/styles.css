@@ -238,21 +238,32 @@ header a {
 .restaurants-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: stretch;
   gap: 1.5rem;
 }
 
 .restaurant-card {
+  border-radius: 15px;
   height: 300px;
   outline: 1px solid black;
 }
 .restaurant-card__image {
   position: relative;
   margin: 0;
+  border-radius: 15px 15px 0 0;
   height: 70%;
   overflow: hidden;
-  outline: 1px solid black;
+}
+.restaurant-card__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  border-radius: 0 0 15px 15px;
+  height: 30%;
+  background-color: white;
 }
 
 .label-new {

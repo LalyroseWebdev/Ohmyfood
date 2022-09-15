@@ -1,11 +1,11 @@
 // Restaurants list
 .restaurants-list {
-    @include flex(column, center, stretch, 1.5rem);
-    // outline: 1px solid black;
+    @include flex(column, flex-start, stretch, 1.5rem);
 }
 
 // Restaurant card
 .restaurant-card {
+    border-radius: $radius-restaurant-card;
     height: 300px;
 
     outline: 1px solid black;
@@ -13,10 +13,16 @@
     &__image {
         position: relative;
         margin: 0;
+        border-radius: $radius-restaurant-card $radius-restaurant-card 0 0;
         height: 70%;
         overflow: hidden;
+    }
 
-        outline: 1px solid black;
+    &__content {
+        @include flex(row, space-between, center, 0);
+        border-radius: 0 0 $radius-restaurant-card $radius-restaurant-card;
+        height: 30%;
+        background-color: white;
     }
 }
 

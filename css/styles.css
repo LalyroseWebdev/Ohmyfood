@@ -67,6 +67,7 @@ ul {
 
 section {
   padding: 3rem 1.5rem;
+  background-color: #F6F6F6;
 }
 
 button {
@@ -165,6 +166,10 @@ header a {
   text-align: center;
   font-size: 16pt;
   font-weight: 300;
+}
+
+.tutorial-section {
+  background-color: white;
 }
 
 .tutorial-list {

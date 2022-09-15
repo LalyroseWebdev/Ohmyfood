@@ -1,3 +1,8 @@
+//Tutorial section
+.tutorial-section {
+    background-color: white;
+}
+
 // Tutorial list
 .tutorial-list {
     @include flex(column, center, stretch, 1.5rem);

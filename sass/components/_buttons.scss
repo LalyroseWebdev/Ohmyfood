@@ -1,4 +1,4 @@
-// Button
+// Text button
 .btn-text {
     @include shadow(button);
 
@@ -12,6 +12,10 @@
 
     &:hover {
         background-image: linear-gradient(170deg, lighten($color-secondary, 2), lighten($color-primary, 2));
-        // transition: 0.1s;
     }
 }
+
+// Like button
+// .btn-like {
+
+// }

@@ -235,4 +235,34 @@ header a {
   background-color: #9356DC;
 }
 
+.restaurants-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.restaurant-card {
+  height: 300px;
+  outline: 1px solid black;
+}
+.restaurant-card__image {
+  position: relative;
+  margin: 0;
+  height: 70%;
+  overflow: hidden;
+  outline: 1px solid black;
+}
+
+.label-new {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: #217460;
+  background-color: #99E2D0;
+}
+
 /*# sourceMappingURL=styles.css.map */

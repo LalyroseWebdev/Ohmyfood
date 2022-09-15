@@ -1,0 +1,32 @@
+// Restaurants list
+.restaurants-list {
+    @include flex(column, center, stretch, 1.5rem);
+    // outline: 1px solid black;
+}
+
+// Restaurant card
+.restaurant-card {
+    height: 300px;
+
+    outline: 1px solid black;
+
+    &__image {
+        position: relative;
+        margin: 0;
+        height: 70%;
+        overflow: hidden;
+
+        outline: 1px solid black;
+    }
+}
+
+// New label
+.label-new {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border-radius: $radius-label-new;
+    padding: 0.5rem;
+    color: darken($color-tertiary, 45);
+    background-color: $color-tertiary;
+}

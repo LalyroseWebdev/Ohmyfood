@@ -5,10 +5,9 @@
 
 // Restaurant card
 .restaurant-card {
+    @include shadow(card);
     border-radius: $radius-restaurant-card;
     height: 300px;
-
-    outline: 1px solid black;
 
     &__image {
         position: relative;
@@ -16,6 +15,12 @@
         border-radius: $radius-restaurant-card $radius-restaurant-card 0 0;
         height: 70%;
         overflow: hidden;
+
+        & .label-new {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+        }
     }
 
     &__content {
@@ -24,15 +29,4 @@
         height: 30%;
         background-color: white;
     }
-}
-
-// New label
-.label-new {
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    border-radius: $radius-label-new;
-    padding: 0.5rem;
-    color: darken($color-tertiary, 45);
-    background-color: $color-tertiary;
 }

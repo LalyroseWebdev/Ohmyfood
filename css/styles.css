@@ -57,6 +57,9 @@ span, p {
 }
 
 a {
+  font-family: "Roboto", sans-serif;
+  font-size: 14pt;
+  font-weight: normal;
   text-decoration: none;
   color: #000;
 }

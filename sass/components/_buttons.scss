@@ -16,6 +16,11 @@
 }
 
 // Like button
-// .btn-like {
+.btn-like {
+    border: none;
+    height: 30px;
+    font-size: $size-btn-like;
+    background-color: white;
 
-// }
+    // outline: 1px solid black;
+}

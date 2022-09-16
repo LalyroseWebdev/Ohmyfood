@@ -26,6 +26,7 @@ span, p {
 }
 
 a {
+    @include typography(text);
     text-decoration: none;
     color: $color-text;
 }

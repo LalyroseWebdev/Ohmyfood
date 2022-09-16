@@ -3,6 +3,7 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-background: #F6F6F6;
+$color-background-footer: darken($color-background, 75);
 $color-text: #000;
 $color-text--lighter: lighten($color-text, 20);
 
@@ -13,6 +14,7 @@ $font-text: "Roboto", sans-serif;
 // Font sizes
 $size-title: 24pt;
 $size-text: 14pt;
+$size-btn-like: 22pt;
 
 // Index page font sizes
 $size-index-h2: 22pt;

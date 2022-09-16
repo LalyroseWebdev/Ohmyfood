@@ -1,6 +1,7 @@
 // Restaurants list
 .restaurants-list {
     @include flex(column, flex-start, stretch, 1.5rem);
+    padding-bottom: 1.5rem;
 }
 
 // Restaurant card
@@ -12,7 +13,7 @@
     &__image {
         position: relative;
         margin: 0;
-        height: 220px;
+        height: 200px;
         overflow: hidden;
 
         // "New" label
@@ -33,6 +34,11 @@
         & p {
             margin-top: 0.4rem;
             font-weight: 300;
+        }
+
+        & .btn-like {
+            align-self: flex-start;
+            margin-right: 1rem;
         }
     }
 }

@@ -6,11 +6,12 @@
 
 // Call-to-action content
 .call-to-action__content {
-    @include flex(column, center, center, 0);
+    @include flex(column, center, center, 1.5rem);
     padding: 3rem;
     
     // Headline
     & h2 {
+        margin: 0;
         width: 70%;
         text-align: center;
         @include typography(index-h2);
@@ -19,6 +20,7 @@
     // Byline
     & p {
         @include typography(text);
+        margin-bottom: 0.5rem;
         width: 90%;
         text-align: center;
         font-size: 16pt;

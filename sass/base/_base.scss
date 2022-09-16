@@ -23,7 +23,6 @@ h2 {
 
 span, p {
     @include typography(text);
-    margin: 0;
 }
 
 a {

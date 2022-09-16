@@ -54,6 +54,7 @@ span, p {
   font-family: "Roboto", sans-serif;
   font-size: 14pt;
   font-weight: normal;
+  margin: 0;
 }
 
 a {
@@ -163,10 +164,11 @@ header a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0;
+  gap: 1.5rem;
   padding: 3rem;
 }
 .call-to-action__content h2 {
+  margin: 0;
   width: 70%;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -177,6 +179,7 @@ header a {
   font-family: "Roboto", sans-serif;
   font-size: 14pt;
   font-weight: normal;
+  margin-bottom: 0.5rem;
   width: 90%;
   text-align: center;
   font-size: 16pt;
@@ -257,7 +260,6 @@ header a {
 .restaurant-card {
   box-shadow: 0 5px 10px #dddddd;
   border-radius: 15px;
-  height: 300px;
 }
 .restaurant-card:hover {
   box-shadow: 0 5px 10px #c3c3c3;
@@ -266,7 +268,7 @@ header a {
   position: relative;
   margin: 0;
   border-radius: 15px 15px 0 0;
-  height: 70%;
+  height: 220px;
   overflow: hidden;
 }
 .restaurant-card__image .label-new {
@@ -274,15 +276,19 @@ header a {
   top: 20px;
   right: 10px;
 }
-.restaurant-card__content {
+.restaurant-card__body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 0;
   border-radius: 0 0 15px 15px;
-  height: 30%;
+  padding: 1.2rem 1rem;
   background-color: white;
+}
+.restaurant-card__body p {
+  margin-top: 0.4rem;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=styles.css.map */

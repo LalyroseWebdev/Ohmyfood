@@ -17,7 +17,7 @@
 <body>
     
     <!-- Header -->
-    <header>
+    <header id="header">
         <span>ohmyfood</span>
         <!-- Back to home page -->
         <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
@@ -170,25 +170,23 @@
     </main> <!-- END Main content -->
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
 
         <!-- Logo -->
-        <a href="#">
-            <img src="#" alt="Ohmyfood">
-        </a>
+        <a class="footer__logo" href="#header">ohmyfood</a>
 
         <!-- Links -->
         <div>
-            <a href="#">
-                <div><i></i></div>
+            <a class="footer__link" href="#">
+                <div class="footer__icon"><i class="fa-solid fa-utensils"></i></div>
                 <p>Proposer un restaurant</p>
             </a>
-            <a href="#">
-                <div><i></i></div>
+            <a class="footer__link" href="#">
+                <div class="footer__icon"><i class="fa-solid fa-handshake-angle"></i></div>
                 <p>Devenir partenaire</p>
             </a>
-            <a href="#">Mentions légales</a>
-            <a href="#">Contact</a>
+            <a class="footer__link" href="#">Mentions légales</a>
+            <a class="footer__link" href="#">Contact</a>
         </div>
 
     </footer>

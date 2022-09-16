@@ -1,6 +1,6 @@
 // Label new
 .label-new {
-    border-radius: $radius-label-new;
+    @include radius(label-new);
     padding: 0.5rem;
     width: fit-content;
     font-size: $size-index-label;

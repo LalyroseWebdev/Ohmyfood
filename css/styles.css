@@ -78,7 +78,7 @@ section {
 .btn-text {
   box-shadow: 0 5px 10px #c3c3c3;
   border: none;
-  border-radius: 30px;
+  border-radius: 50px;
   padding: 20px;
   width: fit-content;
   font-size: 14pt;
@@ -100,6 +100,12 @@ section {
   font-weight: bold;
   color: #217460;
   background-color: #99E2D0;
+}
+.label-new__image {
+  border-radius: 5px 5px 0 0;
+}
+.label-new__body {
+  border-radius: 0 0 5px 5px;
 }
 
 header {
@@ -215,12 +221,18 @@ header a {
   justify-content: flex-start;
   align-items: center;
   gap: 1.5rem;
-  box-shadow: 0 5px 10px #dddddd;
   border-radius: 20px;
+  box-shadow: 0 5px 10px #dddddd;
   padding-left: 2rem;
   width: 100%;
   height: 80px;
   background-color: #F6F6F6;
+}
+.tutorial-step__content__image {
+  border-radius: 20px 20px 0 0;
+}
+.tutorial-step__content__body {
+  border-radius: 0 0 20px 20px;
 }
 .tutorial-step__content:hover {
   box-shadow: 0 5px 10px #c3c3c3;
@@ -258,8 +270,14 @@ header a {
 }
 
 .restaurant-card {
-  box-shadow: 0 5px 10px #dddddd;
   border-radius: 15px;
+  box-shadow: 0 5px 10px #dddddd;
+}
+.restaurant-card__image {
+  border-radius: 15px 15px 0 0;
+}
+.restaurant-card__body {
+  border-radius: 0 0 15px 15px;
 }
 .restaurant-card:hover {
   box-shadow: 0 5px 10px #c3c3c3;
@@ -267,7 +285,6 @@ header a {
 .restaurant-card__image {
   position: relative;
   margin: 0;
-  border-radius: 15px 15px 0 0;
   height: 220px;
   overflow: hidden;
 }
@@ -282,7 +299,6 @@ header a {
   justify-content: space-between;
   align-items: center;
   gap: 0;
-  border-radius: 0 0 15px 15px;
   padding: 1.2rem 1rem;
   background-color: white;
 }

@@ -31,4 +31,17 @@ $shadow-map: (
         shadow: 0 5px 10px darken($color-background, 10),
         hover: 0 5px 10px darken($color-background, 20),
     ),
-)
+);
+
+// Radius
+$radius-map: (
+    card: (
+        radius: $radius-restaurant-card,
+    ),
+    tutorial: (
+        radius: $radius-tutorial-step,
+    ),
+    label-new: (
+        radius: $radius-label-new,
+    ),
+);

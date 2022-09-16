@@ -5,14 +5,13 @@
 
 // Restaurant card
 .restaurant-card {
+    @include radius(card);
     @include shadow(card);
-    border-radius: $radius-restaurant-card;
 
     // Card image
     &__image {
         position: relative;
         margin: 0;
-        border-radius: $radius-restaurant-card $radius-restaurant-card 0 0;
         height: 220px;
         overflow: hidden;
 
@@ -27,7 +26,6 @@
     // Card body
     &__body {
         @include flex(row, space-between, center, 0);
-        border-radius: 0 0 $radius-restaurant-card $radius-restaurant-card;
         padding: 1.2rem 1rem;
         background-color: white;
 

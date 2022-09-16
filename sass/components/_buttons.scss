@@ -2,7 +2,7 @@
 .btn-text {
     @include shadow(button);
     border: none;
-    border-radius: 30px;
+    border-radius: 50px;
     padding: 20px;
     width: fit-content;
     font-size: $size-text;

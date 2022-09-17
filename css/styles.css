@@ -89,19 +89,38 @@ section {
 
 .btn-text {
   box-shadow: 0 5px 10px #c3c3c3;
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
   border: none;
   border-radius: 50px;
   padding: 20px;
   width: fit-content;
   font-size: 14pt;
   color: white;
-  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
 }
 .btn-text:hover {
   box-shadow: 0 5px 10px #aaaaaa;
 }
 .btn-text:hover {
   background-image: linear-gradient(170deg, #ff83dd, #985ede);
+}
+
+.btn-like {
+  border: none;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+}
+.btn-like__gradient .color-1 {
+  stop-color: #9356dc;
+}
+.btn-like__gradient .color-2 {
+  stop-color: #ff79da;
+}
+.btn-like__outline {
+  fill: url(#gradient-like);
+}
+.btn-like__background {
+  fill: url(#gradient-like);
 }
 
 .label-new {
@@ -257,7 +276,7 @@ header a {
   background-color: #f2eafb;
 }
 .tutorial-step__content:hover > div {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .tutorial-step__number {
@@ -270,7 +289,7 @@ header a {
   left: -0.8rem;
   font-size: 12pt;
   color: white;
-  background-color: #9356DC;
+  background-color: #9356dc;
 }
 
 .restaurants-list {
@@ -279,6 +298,7 @@ header a {
   justify-content: flex-start;
   align-items: stretch;
   gap: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .restaurant-card {
@@ -297,7 +317,7 @@ header a {
 .restaurant-card__image {
   position: relative;
   margin: 0;
-  height: 220px;
+  height: 200px;
   overflow: hidden;
 }
 .restaurant-card__image .label-new {
@@ -311,12 +331,38 @@ header a {
   justify-content: space-between;
   align-items: center;
   gap: 0;
-  padding: 1.2rem 1rem;
+  padding: 1.2rem 1.8rem 1.2rem 1rem;
   background-color: white;
 }
 .restaurant-card__body p {
   margin-top: 0.4rem;
   font-weight: 300;
+}
+
+.footer {
+  margin: 0;
+  padding: 2rem;
+  background-color: #373737;
+}
+.footer__logo {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 16pt;
+  color: #F6F6F6;
+}
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+  margin: 0.5rem 0;
+  color: #F6F6F6;
+}
+.footer__icon {
+  width: 1.8rem;
+  font-size: 12pt;
 }
 
 /*# sourceMappingURL=styles.css.map */

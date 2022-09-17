@@ -23,7 +23,7 @@ $shadow-map: (
         shadow: 0px 3px 3px darken($color-background, 20) inset, 
         hover: 0px 3px 3px darken($color-background, 20) inset, 
     ),
-    button: (
+    btn: (
         shadow: 0 5px 10px darken($color-background, 20),
         hover: 0 5px 10px darken($color-background, 30),
     ),
@@ -43,5 +43,17 @@ $radius-map: (
     ),
     label-new: (
         radius: $radius-label-new,
+    ),
+);
+
+// Gradient
+$gradient-map: (
+    btn-text: (
+        linear: linear-gradient(170deg, $color-secondary, $color-primary),
+        hover: linear-gradient(170deg, lighten($color-secondary, 2), lighten($color-primary, 2)),
+    ),
+    btn-like: (
+        color-1: $color-primary,
+        color-2: $color-secondary,
     ),
 );

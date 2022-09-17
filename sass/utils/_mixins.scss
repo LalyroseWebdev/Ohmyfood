@@ -19,10 +19,7 @@
 @mixin shadow($type) {
     $palette: map-get($shadow-map, $type);
     box-shadow: map-get($palette, shadow);
-
-    &:hover {
-        box-shadow: map-get($palette, hover);
-    }
+    &:hover { box-shadow: map-get($palette, hover); }
 }
 
 // Radius
@@ -54,4 +51,15 @@
     height: $length;
     line-height: $length;
     text-align: center;
+}
+
+// Gradient
+@mixin gradient($element) {
+    $palette: map-get($gradient-map, $element);
+    // Btn-like
+    .color-1 { stop-color: map-get($palette, color-1) };
+    .color-2 { stop-color: map-get($palette, color-2) };
+    // Btn-text
+    background-image: map-get($palette, linear);
+    &:hover { background-image: map-get($palette, hover) };
 }

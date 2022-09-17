@@ -1,6 +1,6 @@
 // Colors
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
 $color-tertiary: #99E2D0;
 $color-background: #F6F6F6;
 $color-background-footer: darken($color-background, 75);
@@ -26,7 +26,5 @@ $radius-restaurant-card: 15px;
 $radius-label-new: 5px;
 
 // Buttons
-$btn-text-gradiant: linear-gradient(170deg, $color-secondary, $color-primary);
-$btn-text-gradiant--hover: linear-gradient(170deg, lighten($color-secondary, 2), lighten($color-primary, 2));
 
-$btn-like-size: 35px;
+$btn-like-size: 40px;

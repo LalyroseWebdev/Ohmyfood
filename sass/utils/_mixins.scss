@@ -7,23 +7,6 @@
     gap: $gap;
 }
 
-// Square element with centered content
-@mixin square-center($length) {
-    width: $length;
-    height: $length;
-    line-height: $length;
-    text-align: center;
-}
-
-// Round element with centered content
-@mixin circle-center($length) {
-    border-radius: calc($length / 2);
-    width: $length;
-    height: $length;
-    line-height: $length;
-    text-align: center;
-}
-
 // Typography
 @mixin typography($type) {
     $palette: map-get($typography-map, $type);
@@ -54,4 +37,21 @@
     &__body {
         border-radius: 0 0 map-get($palette, radius) map-get($palette, radius);
     }
+}
+
+// Square element with centered content
+@mixin square-center($length) {
+    width: $length;
+    height: $length;
+    line-height: $length;
+    text-align: center;
+}
+
+// Round element with centered content
+@mixin circle-center($length) {
+    border-radius: calc($length / 2);
+    width: $length;
+    height: $length;
+    line-height: $length;
+    text-align: center;
 }

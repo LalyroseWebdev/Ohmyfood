@@ -16,8 +16,17 @@
     height: $btn-like-size;
     width: $btn-like-size;
     background-color: white;
+
     // Colors
+    &__outline { fill: black; }
+    &__background { fill: white; }
+
+    // Gradient
     &__gradient { @include gradient(btn-like) }
-    &__outline { fill: url(#gradient-like) }
-    &__background { fill: url(#gradient-like) }
+
+    // Hover effect
+    &:hover &__background, 
+    &:hover &__outline {
+        fill: url(#gradient-like)
+    }
 }

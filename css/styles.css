@@ -110,16 +110,19 @@ section {
   width: 40px;
   background-color: white;
 }
+.btn-like__outline {
+  fill: black;
+}
+.btn-like__background {
+  fill: white;
+}
 .btn-like__gradient .color-1 {
   stop-color: #9356dc;
 }
 .btn-like__gradient .color-2 {
   stop-color: #ff79da;
 }
-.btn-like__outline {
-  fill: url(#gradient-like);
-}
-.btn-like__background {
+.btn-like:hover .btn-like__background, .btn-like:hover .btn-like__outline {
   fill: url(#gradient-like);
 }
 

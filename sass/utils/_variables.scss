@@ -14,9 +14,6 @@ $font-text: "Roboto", sans-serif;
 // Font sizes
 $size-title: 24pt;
 $size-text: 14pt;
-$size-btn-like: 22pt;
-
-// Index page font sizes
 $size-index-h2: 22pt;
 $size-index-label: 12pt;
 
@@ -27,3 +24,9 @@ $margin-b-h2: 1.5rem;
 $radius-tutorial-step: 20px;
 $radius-restaurant-card: 15px;
 $radius-label-new: 5px;
+
+// Buttons
+$btn-text-gradiant: linear-gradient(170deg, $color-secondary, $color-primary);
+$btn-text-gradiant--hover: linear-gradient(170deg, lighten($color-secondary, 2), lighten($color-primary, 2));
+
+$btn-like-size: 35px;

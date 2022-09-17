@@ -27,18 +27,13 @@
     // Card body
     &__body {
         @include flex(row, space-between, center, 0);
-        padding: 1.2rem 1rem;
+        padding: 1.2rem 1.8rem 1.2rem 1rem;
         background-color: white;
 
         // Restaurant's location
         & p {
             margin-top: 0.4rem;
             font-weight: 300;
-        }
-
-        & .btn-like {
-            align-self: flex-start;
-            margin-right: 1rem;
         }
     }
 }

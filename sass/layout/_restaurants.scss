@@ -6,8 +6,7 @@
     // 2-cards group
     &__group {
         @include flex(column, flex-start, stretch, 1.5rem);
-
-        // Cards group desktop display
+        // Desktop responsive
         @media only screen and (min-width: $breakpoint-desktop) {
             @include flex(row, center, stretch, 1.5rem);
         }
@@ -47,7 +46,7 @@
         }
     }
 
-    // Card desktop display
+    // Card desktop responsive
     @media only screen and (min-width: $breakpoint-desktop) {
         width: 50%;
     }

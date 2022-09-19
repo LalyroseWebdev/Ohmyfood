@@ -1,7 +1,17 @@
 // Restaurants list
-.restaurants-list {
+.restaurants-cards {
     @include flex(column, flex-start, stretch, 1.5rem);
     padding-bottom: 1.5rem;
+
+    // 2-cards group
+    &__group {
+        @include flex(column, flex-start, stretch, 1.5rem);
+
+        // Cards group desktop display
+        @media only screen and (min-width: $breakpoint-desktop) {
+            @include flex(row, center, stretch, 1.5rem);
+        }
+    }
 }
 
 // Restaurant card
@@ -35,5 +45,10 @@
             margin-top: 0.4rem;
             font-weight: 300;
         }
+    }
+
+    // Card desktop display
+    @media only screen and (min-width: $breakpoint-desktop) {
+        width: 50%;
     }
 }

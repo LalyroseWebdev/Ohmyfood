@@ -42,7 +42,7 @@ html {
 body {
   margin: 0 auto;
   padding: 0;
-  max-width: 1000px;
+  max-width: 1300px;
 }
 
 h1, h2, h3 {
@@ -240,16 +240,31 @@ header a {
   padding: 0;
   padding-left: 0.8rem;
 }
-.tutorial-list .tutorial-step {
+@media only screen and (min-width: 980px) {
+  .tutorial-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5rem;
+    max-width: none;
+  }
+}
+
+.tutorial-card {
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
+  justify-content: flex-start;
   align-items: center;
   gap: 0;
   position: relative;
 }
-
-.tutorial-step__content {
+@media only screen and (min-width: 980px) {
+  .tutorial-card {
+    width: 33%;
+  }
+}
+.tutorial-card__content {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -257,32 +272,31 @@ header a {
   gap: 1.5rem;
   border-radius: 20px;
   box-shadow: 0 5px 10px #dddddd;
-  padding-left: 2rem;
+  padding: 2rem;
   width: 100%;
   height: 80px;
   background-color: #F6F6F6;
 }
-.tutorial-step__content__image {
+.tutorial-card__content__image {
   border-radius: 20px 20px 0 0;
 }
-.tutorial-step__content__body {
+.tutorial-card__content__body {
   border-radius: 0 0 20px 20px;
 }
-.tutorial-step__content:hover {
+.tutorial-card__content:hover {
   box-shadow: 0 5px 10px #c3c3c3;
 }
-.tutorial-step__content > div {
+.tutorial-card__content > .icon {
   font-size: 16pt;
   color: #666666;
 }
-.tutorial-step__content:hover {
+.tutorial-card__content:hover {
   background-color: #f2eafb;
 }
-.tutorial-step__content:hover > div {
+.tutorial-card__content:hover > .icon {
   color: #9356dc;
 }
-
-.tutorial-step__number {
+.tutorial-card__number {
   border-radius: 0.8rem;
   width: 1.6rem;
   height: 1.6rem;

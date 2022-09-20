@@ -417,5 +417,30 @@ header a {
     width: 50%;
   }
 }
+.menu-heading {
+  position: relative;
+  padding: 0;
+}
+.menu-heading__figure {
+  height: 350px;
+  overflow: hidden;
+  margin: 0;
+}
+.menu-heading__figure > img {
+  object-fit: cover;
+}
+.menu-heading__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
+  position: absolute;
+  bottom: 0;
+  padding: 2rem 2rem 0.5rem 2rem;
+  width: 100%;
+  border-radius: 35px 35px 0 0;
+  background-color: #F6F6F6;
+}
 
 /*# sourceMappingURL=styles.css.map */

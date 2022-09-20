@@ -1,0 +1,25 @@
+// Menu pages heading section
+.menu-heading {
+    position: relative;
+    padding: 0;
+
+    // Image
+    &__figure {
+        height: 350px;
+        overflow: hidden;
+        margin: 0;
+
+        & > img { object-fit: cover; }
+    }
+
+    // Title
+    &__title {
+        @include flex(row, space-between, flex-start, 0);
+        position: absolute;
+        bottom: 0;
+        padding: 2rem 2rem 0.5rem 2rem; 
+        width: 100%;
+        border-radius: 35px 35px 0 0;
+        background-color: $color-background;
+    }
+}

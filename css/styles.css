@@ -442,5 +442,8 @@ header a {
   border-radius: 35px 35px 0 0;
   background-color: #F6F6F6;
 }
+.menu-heading__title button {
+  background-color: #F6F6F6;
+}
 
 /*# sourceMappingURL=styles.css.map */

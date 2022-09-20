@@ -7,7 +7,7 @@
     &__group {
         @include flex(column, flex-start, stretch, 1.5rem);
         // Desktop responsive
-        @media only screen and (min-width: $breakpoint-1) {
+        @media only screen and (min-width: $screen-sm) {
             @include flex(row, center, stretch, 1.5rem);
         }
     }
@@ -47,7 +47,7 @@
     }
 
     // Card desktop responsive
-    @media only screen and (min-width: $breakpoint-1) {
+    @media only screen and (min-width: $screen-sm) {
         width: 50%;
     }
 }

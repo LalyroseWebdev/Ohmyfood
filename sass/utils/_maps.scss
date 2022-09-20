@@ -50,7 +50,7 @@ $radius-map: (
 $gradient-map: (
     btn-text: (
         linear: linear-gradient(170deg, $color-secondary, $color-primary),
-        hover: linear-gradient(170deg, lighten($color-secondary, 2), lighten($color-primary, 2)),
+        hover: linear-gradient(170deg, lighten($color-secondary, 4), lighten($color-primary, 4)),
     ),
     btn-like: (
         color-1: $color-primary,

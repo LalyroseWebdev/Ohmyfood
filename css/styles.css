@@ -123,7 +123,7 @@ section {
   stop-color: #ff79da;
 }
 .btn-like:hover .btn-like__background, .btn-like:hover .btn-like__outline {
-  fill: url(#gradient-like);
+  fill: url(#btn-like-gradient);
 }
 
 .label-new {

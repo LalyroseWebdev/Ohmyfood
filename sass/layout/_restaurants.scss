@@ -6,8 +6,8 @@
     // 2-cards group
     &__group {
         @include flex(column, flex-start, stretch, 1.5rem);
-        // Desktop responsive
-        @media only screen and (min-width: $screen-sm) {
+        // Small screens
+        @media only screen and (min-width: $screen-md) {
             @include flex(row, center, stretch, 1.5rem);
         }
     }
@@ -46,8 +46,8 @@
         }
     }
 
-    // Card desktop responsive
-    @media only screen and (min-width: $screen-sm) {
+    // Card - Small screens
+    @media only screen and (min-width: $screen-md) {
         width: 50%;
     }
 }

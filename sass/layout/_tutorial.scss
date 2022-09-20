@@ -6,8 +6,11 @@
     &__list {
         @include flex(column, center, stretch, 1.5rem);
         margin: 0;
-        padding: 0;
-        padding-left: 0.8rem;
+        padding: 0 0 0 0.8rem;
+        // Large screens
+        @media only screen and (min-width: $screen-lg) {
+            @include flex(row, flex-start, center, 3rem);
+        }
     }
 }
 
@@ -15,13 +18,17 @@
 .step {
     @include flex(row, stretch, center, 0);
     position: relative;
+    // Medium screens
+    @media only screen and (min-width: $screen-lg) {
+        width: 33%;
+    }
 
     // Step content
     &__content {
         @include flex(row, flex-start, center, 1.5rem);
         @include radius(tutorial);
         @include shadow(card);
-        padding-left: 2rem;
+        padding: 0 2rem;
         width: 100%;
         height: 80px;
         background-color: $color-background;

@@ -1,6 +1,7 @@
 // Menu section
-
 .menu-section {
+    padding-top: 0;
+    padding-bottom: 2rem;
     
     // Section heading
     &__heading {
@@ -8,5 +9,51 @@
         font-size: $size-menu-h2;
         font-weight: 300;
         text-transform: uppercase;
+    }
+}
+
+// Card
+.menu-card {
+    @include radius(menu-card);
+    @include shadow(card);
+    margin: 1rem 0;
+    padding: 1rem 0.8rem;
+    background-color: white;
+
+    // Content
+    &__content {
+        @include flex(row, space-between, flex-end, 0);
+    }
+
+    // Heading
+    &__heading {
+        @include flex(column, flex-start, flex-start, 0.3rem);
+        
+        // Course subname
+        font-weight: 300;
+        font-size: $size-course-subname;
+
+        // Course name
+        & strong {
+            font-weight: bold;
+            font-size: $size-course-name;
+        }
+    }
+
+    // Price
+    &__price {
+        margin-right: 0.8rem;
+        font-weight: bold;
+        font-size: $size-course-price;
+    }
+}
+
+// Button
+.btn-order {
+    padding-bottom: 5rem;
+    text-align: center;
+
+    &>button {
+        padding: 20px 60px;
     }
 }

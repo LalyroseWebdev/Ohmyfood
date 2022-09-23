@@ -15,7 +15,7 @@
 
 // Restaurant card
 .restaurant-card {
-    @include radius(card);
+    @include radius(restaurant-card);
     @include shadow(card);
 
     // Card image

@@ -76,6 +76,7 @@ a {
 
 img {
   max-width: 100%;
+  object-fit: cover;
 }
 
 ul {
@@ -425,9 +426,6 @@ header a {
   height: 350px;
   overflow: hidden;
   margin: 0;
-}
-.menu-heading__figure > img {
-  object-fit: cover;
 }
 .menu-heading__title {
   display: flex;

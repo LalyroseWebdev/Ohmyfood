@@ -142,6 +142,12 @@ section {
   border-radius: 0 0 5px 5px;
 }
 
+.underline {
+  width: 3.5rem;
+  height: 0.2rem;
+  background-color: #99E2D0;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -444,6 +450,13 @@ header a {
 }
 .menu-heading__title button {
   background-color: #F6F6F6;
+}
+
+.menu-section__heading {
+  margin-bottom: 0.3rem;
+  font-size: 16pt;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=styles.css.map */

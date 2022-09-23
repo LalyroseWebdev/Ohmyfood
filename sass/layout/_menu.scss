@@ -1,0 +1,12 @@
+// Menu section
+
+.menu-section {
+    
+    // Section heading
+    &__heading {
+        margin-bottom: 0.3rem;
+        font-size: $size-menu-h2;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}

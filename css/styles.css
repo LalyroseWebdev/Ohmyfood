@@ -45,6 +45,10 @@ body {
   max-width: 1200px;
 }
 
+main {
+  background-color: #F6F6F6;
+}
+
 h1, h2, h3 {
   margin: 0;
 }
@@ -84,7 +88,6 @@ ul {
 
 section {
   padding: 3rem 1.5rem;
-  background-color: #F6F6F6;
 }
 
 .btn-text {
@@ -143,7 +146,7 @@ section {
 }
 
 .underline {
-  width: 3.5rem;
+  width: 3rem;
   height: 0.2rem;
   background-color: #99E2D0;
 }
@@ -202,7 +205,6 @@ header a {
 
 .call-to-action {
   padding: 0;
-  background-color: #F6F6F6;
 }
 
 .call-to-action__content {
@@ -426,6 +428,7 @@ header a {
 .menu-heading {
   position: relative;
   padding: 0;
+  margin-bottom: 2rem;
 }
 .menu-heading__figure {
   height: 350px;
@@ -452,11 +455,65 @@ header a {
   background-color: #F6F6F6;
 }
 
+.menu-section {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
 .menu-section__heading {
   margin-bottom: 0.3rem;
-  font-size: 16pt;
+  font-size: 15pt;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.menu-card {
+  border-radius: 20px;
+  box-shadow: 0 5px 10px #dddddd;
+  margin: 1rem 0;
+  padding: 1rem 0.8rem;
+  background-color: white;
+}
+.menu-card__image {
+  border-radius: 20px 20px 0 0;
+}
+.menu-card__body {
+  border-radius: 0 0 20px 20px;
+}
+.menu-card:hover {
+  box-shadow: 0 5px 10px #c3c3c3;
+}
+.menu-card__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0;
+}
+.menu-card__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.3rem;
+  font-weight: 300;
+  font-size: 13pt;
+}
+.menu-card__heading strong {
+  font-weight: bold;
+  font-size: 15pt;
+}
+.menu-card__price {
+  margin-right: 0.8rem;
+  font-weight: bold;
+  font-size: 13pt;
+}
+
+.btn-order {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.btn-order > button {
+  padding: 20px 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -18,6 +18,10 @@ body {
     max-width: 1200px;
 }
 
+main {
+    background-color: $color-background;
+}
+
 h1, h2, h3 {
     margin: 0;
 }
@@ -51,5 +55,4 @@ ul {
 
 section {
     padding: 3rem 1.5rem;
-    background-color: $color-background;
 }

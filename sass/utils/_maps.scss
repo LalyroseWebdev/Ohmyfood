@@ -35,8 +35,11 @@ $shadow-map: (
 
 // Radius
 $radius-map: (
-    card: (
+    restaurant-card: (
         radius: $radius-restaurant-card,
+    ),
+    menu-card: (
+        radius: $radius-menu-card,
     ),
     tutorial: (
         radius: $radius-tutorial-step,

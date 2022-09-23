@@ -17,12 +17,18 @@
     @include radius(menu-card);
     @include shadow(card);
     margin: 1rem 0;
-    padding: 1rem 0.8rem;
     background-color: white;
+
+    // Card display
+    & > a {
+        @include flex(row, space-between, stretch, 0);
+    }
 
     // Content
     &__content {
         @include flex(row, space-between, flex-end, 0);
+        flex-grow: 1;
+        padding: 1rem 0.8rem;
     }
 
     // Heading
@@ -45,6 +51,21 @@
         margin-right: 0.8rem;
         font-weight: bold;
         font-size: $size-course-price;
+    }
+
+    // Check icon
+    &__check {
+        display: none;
+        border-radius: 0 $radius-menu-card $radius-menu-card 0;
+        width: 4.5rem;
+        font-size: $size-icon-check;
+        color: white;
+        background-color: $color-tertiary;
+    }
+
+    // Check hover effect
+    &:hover &__check {
+        @include flex(row, center, center, 0);
     }
 }
 

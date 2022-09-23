@@ -470,7 +470,6 @@ header a {
   border-radius: 20px;
   box-shadow: 0 5px 10px #dddddd;
   margin: 1rem 0;
-  padding: 1rem 0.8rem;
   background-color: white;
 }
 .menu-card__image {
@@ -482,12 +481,21 @@ header a {
 .menu-card:hover {
   box-shadow: 0 5px 10px #c3c3c3;
 }
+.menu-card > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+}
 .menu-card__content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
   gap: 0;
+  flex-grow: 1;
+  padding: 1rem 0.8rem;
 }
 .menu-card__heading {
   display: flex;
@@ -506,6 +514,21 @@ header a {
   margin-right: 0.8rem;
   font-weight: bold;
   font-size: 13pt;
+}
+.menu-card__check {
+  display: none;
+  border-radius: 0 20px 20px 0;
+  width: 4.5rem;
+  font-size: 18pt;
+  color: white;
+  background-color: #99E2D0;
+}
+.menu-card:hover .menu-card__check {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 }
 
 .btn-order {

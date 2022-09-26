@@ -10,71 +10,83 @@
         font-weight: 300;
         text-transform: uppercase;
     }
+
+    // Menu card
+    & .menu-card {
+        @include flex(row, space-between, stretch, 0);
+        @include radius(menu-card);
+        @include shadow(card);
+        margin: 1rem 0;
+        background-color: white;
+    }
 }
 
-// Card
-.menu-card {
-    @include radius(menu-card);
-    @include shadow(card);
-    margin: 1rem 0;
-    background-color: white;
+// Menu card body
+.menu-card__body {
+    @include flex(column, flex-start, flex-start, 0);
+    padding: 1rem 0.8rem;
+    width: 100%;
 
-    // Card display
-    & > a {
+    // Dish name
+    &__name {
+        font-size: $size-course-name;
+        margin-bottom: 0.3rem;
+        width: 100%;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    // Byline
+    &__byline {
         @include flex(row, space-between, stretch, 0);
-    }
+        width: 100%;
 
-    // Content
-    &__content {
-        @include flex(row, space-between, flex-end, 0);
-        flex-grow: 1;
-        padding: 1rem 0.8rem;
-    }
+        // Dish description
+        & p {
+            display: inline;
+            font-weight: 300;
+            font-size: $size-course-subname;
 
-    // Heading
-    &__heading {
-        @include flex(column, flex-start, flex-start, 0.3rem);
-        
-        // Course subname
-        font-weight: 300;
-        font-size: $size-course-subname;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
 
-        // Course name
-        & strong {
+        // Price
+        & span {
+            margin-left: 1.5rem;
+            margin-right: 0.8rem;
             font-weight: bold;
-            font-size: $size-course-name;
+            font-size: $size-course-price;
         }
     }
-
-    // Price
-    &__price {
-        margin-right: 0.8rem;
-        font-weight: bold;
-        font-size: $size-course-price;
-    }
-
-    // Check icon
-    &__check {
-        display: none;
-        border-radius: 0 $radius-menu-card $radius-menu-card 0;
-        width: 4.5rem;
-        font-size: $size-icon-check;
-        color: white;
-        background-color: $color-tertiary;
-    }
-
-    // Check hover effect
-    &:hover &__check {
-        @include flex(row, center, center, 0);
-    }
 }
 
-// Button
+// Check icon
+.check {
+    display: none;
+    border-radius: 0 $radius-menu-card $radius-menu-card 0;
+    width: 70px;
+    font-size: $size-icon-check;
+    color: white;
+    background-color: $color-tertiary;
+}
+
+// Check hover effect
+.menu-card:hover .check {
+    @include flex(row, center, center, 0);
+    flex-shrink: 0;
+}
+
+
+// Order button
 .btn-order {
     padding-bottom: 5rem;
     text-align: center;
 
-    &>button {
+    & > button {
         padding: 20px 60px;
     }
 }

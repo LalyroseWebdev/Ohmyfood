@@ -494,31 +494,28 @@ header a {
   justify-content: space-between;
   align-items: flex-end;
   gap: 0;
-  flex-grow: 1;
   padding: 1rem 0.8rem;
+  overflow: hidden;
+  width: 100%;
 }
 .menu-card__heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 0.3rem;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-weight: 300;
   font-size: 13pt;
 }
 .menu-card__heading strong {
+  display: block;
+  padding-bottom: 0.3rem;
   font-weight: bold;
   font-size: 15pt;
-}
-.menu-card__price {
-  margin-right: 0.8rem;
-  font-weight: bold;
-  font-size: 13pt;
 }
 .menu-card__check {
   display: none;
   border-radius: 0 20px 20px 0;
-  width: 4.5rem;
+  width: 70px;
   font-size: 18pt;
   color: white;
   background-color: #99E2D0;
@@ -529,6 +526,12 @@ header a {
   justify-content: center;
   align-items: center;
   gap: 0;
+  flex-shrink: 0;
+}
+.menu-card__price {
+  margin: 0 0.8rem 0 1.5rem;
+  font-weight: bold;
+  font-size: 13pt;
 }
 
 .btn-order {

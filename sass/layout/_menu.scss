@@ -12,12 +12,14 @@
     }
 }
 
-// Card
+// Menu card
 .menu-card {
     @include radius(menu-card);
     @include shadow(card);
     margin: 1rem 0;
     background-color: white;
+
+    // width: 300px;
 
     // Card display
     & > a {
@@ -27,13 +29,22 @@
     // Content
     &__content {
         @include flex(row, space-between, flex-end, 0);
-        flex-grow: 1;
         padding: 1rem 0.8rem;
+
+        overflow: hidden;
+        width: 100%;
     }
 
     // Heading
     &__heading {
-        @include flex(column, flex-start, flex-start, 0.3rem);
+        display: inline-block;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        // width: 280px;
+        // height: 3rem;
         
         // Course subname
         font-weight: 300;
@@ -41,31 +52,40 @@
 
         // Course name
         & strong {
+            display: block;
+            padding-bottom: 0.3rem;
             font-weight: bold;
             font-size: $size-course-name;
-        }
-    }
 
-    // Price
-    &__price {
-        margin-right: 0.8rem;
-        font-weight: bold;
-        font-size: $size-course-price;
+        }
     }
 
     // Check icon
     &__check {
+        // @include flex(row, center, center, 0);
         display: none;
+
         border-radius: 0 $radius-menu-card $radius-menu-card 0;
-        width: 4.5rem;
+        width: 70px;
         font-size: $size-icon-check;
         color: white;
         background-color: $color-tertiary;
+
+        // flex-shrink: 0;
     }
 
     // Check hover effect
     &:hover &__check {
         @include flex(row, center, center, 0);
+        flex-shrink: 0;
+    }
+
+    // Price
+    &__price {
+        margin: 0 0.8rem 0 1.5rem;
+        font-weight: bold;
+        font-size: $size-course-price;
+
     }
 }
 
@@ -74,7 +94,7 @@
     padding-bottom: 5rem;
     text-align: center;
 
-    &>button {
+    & > button {
         padding: 20px 60px;
     }
 }

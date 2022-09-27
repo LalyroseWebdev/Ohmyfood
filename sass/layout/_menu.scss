@@ -1,0 +1,91 @@
+// Menu section
+.menu-section {
+    padding-top: 0;
+    padding-bottom: 2rem;
+    
+    // Section heading
+    &__heading {
+        margin-bottom: 0.3rem;
+        font-size: $size-menu-h2;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    
+    // Menu card
+    & .menu-card {
+        @include flex(row, space-between, stretch, 0);
+        @include radius(menu-card);
+        @include shadow(card);
+        margin: 1rem 0;
+        background-color: white;
+    }
+}
+
+// Menu card body
+.menu-card__body {
+    @include flex(column, flex-start, flex-start, 0);
+    padding: 1rem 0.8rem;
+    width: 100%;
+
+    // Dish name
+    &__name {
+        font-size: $size-course-name;
+        margin-bottom: 0.3rem;
+        width: 100%;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    // Byline
+    &__byline {
+        @include flex(row, space-between, stretch, 0);
+        width: 100%;
+
+        // Dish description
+        & p {
+            display: inline;
+            font-weight: 300;
+            font-size: $size-course-subname;
+
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        // Price
+        & span {
+            margin-left: 1.5rem;
+            margin-right: 0.8rem;
+            font-weight: bold;
+            font-size: $size-course-price;
+        }
+    }
+}
+
+// Check icon
+.check {
+    display: none;
+    border-radius: 0 $radius-menu-card $radius-menu-card 0;
+    width: 70px;
+    font-size: $size-icon-check;
+    color: white;
+    background-color: $color-tertiary;
+}
+
+// Check hover effect
+.menu-card:hover .check {
+    @include flex(row, center, center, 0);
+    flex-shrink: 0;
+}
+
+// Order button
+.btn-order {
+    padding-bottom: 5rem;
+    text-align: center;
+
+    & > button {
+        padding: 20px 60px;
+    }
+}

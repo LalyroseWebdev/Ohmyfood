@@ -45,6 +45,10 @@ body {
   max-width: 1200px;
 }
 
+main {
+  background-color: #F6F6F6;
+}
+
 h1, h2, h3 {
   margin: 0;
 }
@@ -85,7 +89,6 @@ ul {
 
 section {
   padding: 3rem 1.5rem;
-  background-color: #F6F6F6;
 }
 
 .btn-text {
@@ -143,6 +146,12 @@ section {
   border-radius: 0 0 5px 5px;
 }
 
+.underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #99E2D0;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -197,7 +206,6 @@ header a {
 
 .call-to-action {
   padding: 0;
-  background-color: #F6F6F6;
 }
 
 .call-to-action__content {
@@ -421,6 +429,7 @@ header a {
 .menu-heading {
   position: relative;
   padding: 0;
+  margin-bottom: 2rem;
 }
 .menu-heading__figure {
   height: 350px;
@@ -442,6 +451,104 @@ header a {
 }
 .menu-heading__title button {
   background-color: #F6F6F6;
+}
+
+.menu-section {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+.menu-section__heading {
+  margin-bottom: 0.3rem;
+  font-size: 15pt;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.menu-section .menu-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px #dddddd;
+  margin: 1rem 0;
+  background-color: white;
+}
+.menu-section .menu-card__image {
+  border-radius: 20px 20px 0 0;
+}
+.menu-section .menu-card__body {
+  border-radius: 0 0 20px 20px;
+}
+.menu-section .menu-card:hover {
+  box-shadow: 0 5px 10px #c3c3c3;
+}
+
+.menu-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0;
+  padding: 1rem 0.8rem;
+  width: 100%;
+  overflow: hidden;
+}
+.menu-card__body__name {
+  font-size: 15pt;
+  margin-bottom: 0.3rem;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu-card__body__byline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+}
+.menu-card__body__byline p {
+  display: inline;
+  font-weight: 300;
+  font-size: 13pt;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu-card__body__byline span {
+  margin-left: 1.5rem;
+  margin-right: 0.8rem;
+  font-weight: bold;
+  font-size: 13pt;
+}
+
+.check {
+  display: none;
+  border-radius: 0 20px 20px 0;
+  width: 70px;
+  font-size: 18pt;
+  color: white;
+  background-color: #99E2D0;
+}
+
+.menu-card:hover .check {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+.btn-order {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.btn-order > button {
+  padding: 20px 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */

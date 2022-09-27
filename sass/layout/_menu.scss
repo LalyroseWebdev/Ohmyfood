@@ -10,7 +10,7 @@
         font-weight: 300;
         text-transform: uppercase;
     }
-
+    
     // Menu card
     & .menu-card {
         @include flex(row, space-between, stretch, 0);
@@ -79,7 +79,6 @@
     @include flex(row, center, center, 0);
     flex-shrink: 0;
 }
-
 
 // Order button
 .btn-order {

@@ -494,6 +494,10 @@ header a {
   gap: 0;
   padding: 1rem 0.8rem;
   width: 100%;
+<<<<<<< HEAD
+=======
+  overflow: hidden;
+>>>>>>> TEST-check
 }
 .menu-card__body__name {
   font-size: 15pt;

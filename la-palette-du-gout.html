@@ -15,13 +15,100 @@
 </head>
 
 <body>
+
+    <!-- Header -->
+    <header id="header">
+        <span>ohmyfood</span>
+        <!-- Back to home page link -->
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+    </header>
+
     <!-- Main content -->
     <main>
+
+        <!-- Image & title section -->
+        <section class="menu-heading">
+            <!-- Image -->
+            <figure class="menu-heading__figure">
+                <img src="img/la-palette-du-gout.jpg" alt="Table du restaurant">
+            </figure>
+            <!-- Heading -->
+            <div class="menu-heading__title">
+                <h1>La palette du goût</h1>
+                <!-- Button -->
+                <button class="btn-like">
+                    <svg viewBox="0 0 512 512">
+                        <defs>
+                            <linearGradient class="btn-like__gradient" id="btn-like-gradient" x1="0.65" y1="0" x2="0" y2="1">
+                            <stop class="color-1" offset="0%"/>
+                            <stop class="color-2" offset="100%"/>
+                            </linearGradient>
+                        </defs>
+                        <path class="btn-like__background" d="M58.41,260.72,256,469.33,453.59,260.72A128,128,0,1,0,256,100,128,128,0,1,0,58.41,260.72Z"/>
+                        <path class="btn-like__outline" d="M256,490.67A21.32,21.32,0,0,1,240.51,484L43.08,275.56A148.45,148.45,0,0,1,0,170.67C0,88.32,67,21.33,149.33,21.33A149,149,0,0,1,256,66.19,149,149,0,0,1,362.67,21.33C445,21.33,512,88.32,512,170.67a148.45,148.45,0,0,1-43.25,105.07L271.49,484A21.32,21.32,0,0,1,256,490.67ZM149.33,64A106.64,106.64,0,0,0,73.57,245.72l.33.34L256,438.31,438.1,246.06A106.65,106.65,0,1,0,273.77,111.77a21.33,21.33,0,0,1-35.54,0A106.51,106.51,0,0,0,149.33,64Z"/>
+                    </svg>
+                </button>
+            </div> <!-- END Heading -->
+        </section> <!-- END Image & title section -->
+
+        <!-- Starters section -->
+        <section class="menu-section">
+            <!-- Heading -->
+            <div>
+                <h2 class="menu-section__heading">Entrées</h2>
+                <div class="underline"></div>
+            </div>
+            <!-- Cards -->
+            <div>
+                <!-- Starter 1 -->
+                <article>
+                    <a class="menu-card" href="#">
+                        <div class="menu-card__body">
+                            <h3 class="menu-card__body__name">Fricassée d'escargot</h3>
+                            <div class="menu-card__body__byline">
+                                <p>Au piment d'Espelette</p>
+                                <span>25€</span>
+                            </div>
+                        </div>
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                    </a>
+                </article>
+                <!-- Starter 2 -->
+                <article>
+                    <a class="menu-card" href="#">
+                        <div class="menu-card__body">
+                            <h3 class="menu-card__body__name">Foie gras de canard mi-cuit</h3>
+                            <div class="menu-card__body__byline">
+                                <p>Et ses copeaux de truffe noire</p>
+                                <span>35€</span>
+                            </div>
+                        </div>
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                    </a>
+                </article>
+                <!-- Starter 3 -->
+                <article>
+                    <a class="menu-card" href="#">
+                        <div class="menu-card__body">
+                            <h3 class="menu-card__body__name">Œuf au plat</h3>
+                            <div class="menu-card__body__byline">
+                                <p>Assaisonné à la truffe sur son lit de caviar</p>
+                                <span>20€</span>
+                            </div>
+                        </div>
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                    </a>
+                </article>
+            </div> <!-- END Cards -->
+        </section> <!-- END Starters -->
+
         <!-- Dishes section -->
         <section class="menu-section">
-            <br><br>
-            
-
+            <!-- Heading -->
+            <div>
+                <h2 class="menu-section__heading">Plats</h2>
+                <div class="underline"></div>
+            </div>
             <!-- Cards -->
             <div>
                 <!-- Dish 1 -->
@@ -32,6 +119,57 @@
                             <div class="menu-card__body__byline">
                                 <p>Accompagné de sa ribambelle de légumes</p>
                                 <span>40€</span>
+                            </div>
+                        </div>
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                    </a>
+                </article>
+                <!-- Dish 2 -->
+                <article>
+                    <a class="menu-card" href="#">
+                        <div class="menu-card__body">
+                            <h3 class="menu-card__body__name">Parmentier de queue de bœuf</h3>
+                            <div class="menu-card__body__byline">
+                                <p>À la truffe noire sur sa purée de panais</p>
+                                <span>35€</span>
+                            </div>
+                        </div>
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                    </a>
+                </article>
+                <!-- Dish 3 -->
+                <article>
+                    <a class="menu-card" href="#">
+                        <div class="menu-card__body">
+                            <h3 class="menu-card__body__name">Filet de turbot</h3>
+                            <div class="menu-card__body__byline">
+                                <p>Aux agrumes</p>
+                                <span>44€</span>
+                            </div>
+                        </div>
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                    </a>
+                </article>
+            </div> <!-- END Cards -->
+        </section> <!-- END Dishes -->
+
+        <!-- Desserts section -->
+        <section class="menu-section">
+            <!-- Heading -->
+            <div>
+                <h2 class="menu-section__heading">Desserts</h2>
+                <div class="underline"></div>
+            </div>
+            <!-- Cards -->
+            <div>
+                <!-- Dessert 1 -->
+                <article>
+                    <a class="menu-card" href="#">
+                        <div class="menu-card__body">
+                            <h3 class="menu-card__body__name">Paris-Brest</h3>
+                            <div class="menu-card__body__byline">
+                                <p>Revisité</p>
+                                <span>18€</span>
                             </div>
                         </div>
                         <div class="check"><i class="fa-solid fa-circle-check"></i></div>
@@ -50,9 +188,50 @@
                         <div class="check"><i class="fa-solid fa-circle-check"></i></div>
                     </a>
                 </article>
+                <!-- Dessert 3 -->
+                <article>
+                    <a class="menu-card" href="#">
+                        <div class="menu-card__body">
+                            <h3 class="menu-card__body__name">Mousse au chocolat</h3>
+                            <div class="menu-card__body__byline">
+                                <p>Au piment d'Espelette et à la truffe noire</p>
+                                <span>23€</span>
+                            </div>
+                        </div>
+                        <div class="check"><i class="fa-solid fa-circle-check"></i></div>
+                    </a>
+                </article>
             </div> <!-- END Cards -->
+        </section> <!-- END Desserts -->
 
-        </section> <!-- END Dishes -->
+        <!-- Submit button -->
+        <div class="btn-order">
+            <button class="btn-text" type="submit">Commander</button>
+        </div>
+
     </main> <!-- END Main content -->
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <!-- Logo -->
+        <a class="footer__logo" href="#header">ohmyfood</a>
+
+        <!-- Links -->
+        <div>
+            <a href="#" class="footer__link">
+                <div class="footer__icon"><i class="fa-solid fa-utensils"></i></div>
+                <p>Proposer un restaurant</p>
+            </a>
+            <a href="#" class="footer__link">
+                <div class="footer__icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                <p>Devenir partenaire</p>
+            </a>
+            <a href="#" class="footer__link">Mentions légales</a>
+            <a href="#" class="footer__link">Contact</a>
+        </div>
+
+    </footer>
+
 </body>
 </html>

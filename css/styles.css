@@ -495,6 +495,8 @@ header a {
   padding: 1rem 0.8rem;
   width: 100%;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-card__body__name {
   font-size: 15pt;

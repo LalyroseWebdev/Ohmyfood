@@ -463,7 +463,8 @@ header a {
   font-weight: 300;
   text-transform: uppercase;
 }
-.menu-section .menu-card {
+
+.menu-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -474,59 +475,41 @@ header a {
   margin: 1rem 0;
   background-color: white;
 }
-.menu-section .menu-card__image {
+.menu-card__image {
   border-radius: 20px 20px 0 0;
 }
-.menu-section .menu-card__body {
+.menu-card__body {
   border-radius: 0 0 20px 20px;
 }
-.menu-section .menu-card:hover {
+.menu-card:hover {
   box-shadow: 0 5px 10px #c3c3c3;
 }
-
 .menu-card__body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 0;
-  padding: 1rem 0.8rem;
-  width: 100%;
-<<<<<<< HEAD
-=======
-  overflow: hidden;
-<<<<<<< HEAD
-=======
-  white-space: nowrap;
-  text-overflow: ellipsis;
->>>>>>> master
->>>>>>> TEST-check
-}
-.menu-card__body__name {
-  font-size: 15pt;
-  margin-bottom: 0.3rem;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.menu-card__body__byline {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-end;
   gap: 0;
+  padding: 0.8rem;
   width: 100%;
-}
-.menu-card__body__byline p {
-  display: inline;
-  font-weight: 300;
-  font-size: 13pt;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu-card__body__byline span {
+.menu-card__name {
+  font-size: 13pt;
+  font-weight: 300;
+  line-height: 1.4;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu-card__name strong {
+  display: block;
+  font-size: 15pt;
+  font-weight: bold;
+}
+.menu-card__price {
   margin-left: 1.5rem;
   margin-right: 0.8rem;
   font-weight: bold;

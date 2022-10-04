@@ -8,59 +8,48 @@
         font-weight: 300;
         text-transform: uppercase;
     }
-    
-    & .menu-card {
-        @include flex(row, space-between, stretch, 0);
-        @include radius(menu-card);
-        @include shadow(card);
-        margin: 1rem 0;
-        background-color: white;
-    }
 }
-
-.menu-card__body {
-    @include flex(column, flex-start, flex-start, 0);
-    padding: 1rem 0.8rem;
-    width: 100%;
     
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+.menu-card {
+    @include flex(row, space-between, stretch, 0);
+    @include radius(menu-card);
+    @include shadow(card);
+    margin: 1rem 0;
+    background-color: white;
 
-    // Dish name
-    &__name {
-        font-size: $size-course-name;
-        margin-bottom: 0.3rem;
+    &__body {
+        @include flex(row, space-between, flex-end, 0);
+        padding: 0.8rem;
         width: 100%;
-
+        
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
 
-    // Byline
-    &__byline {
-        @include flex(row, space-between, stretch, 0);
-        width: 100%;
+    // Dish subname
+    &__name {
+        font-size: $size-course-subname;
+        font-weight: 300;
+        line-height: 1.4;
 
-        // Dish description
-        & p {
-            display: inline;
-            font-weight: 300;
-            font-size: $size-course-subname;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
 
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-
-        // Price
-        & span {
-            margin-left: 1.5rem;
-            margin-right: 0.8rem;
+        // Dish name
+        & strong {
+            display: block;
+            font-size: $size-course-name;
             font-weight: bold;
-            font-size: $size-course-price;
         }
+    }
+
+    &__price {
+        margin-left: 1.5rem;
+        margin-right: 0.8rem;
+        font-weight: bold;
+        font-size: $size-course-price;
     }
 }
 

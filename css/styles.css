@@ -80,6 +80,7 @@ a {
 
 img {
   max-width: 100%;
+  object-fit: cover;
 }
 
 ul {
@@ -435,9 +436,6 @@ header a {
   overflow: hidden;
   margin: 0;
 }
-.menu-heading__figure > img {
-  object-fit: cover;
-}
 .menu-heading__title {
   display: flex;
   flex-direction: row;
@@ -497,6 +495,11 @@ header a {
 <<<<<<< HEAD
 =======
   overflow: hidden;
+<<<<<<< HEAD
+=======
+  white-space: nowrap;
+  text-overflow: ellipsis;
+>>>>>>> master
 >>>>>>> TEST-check
 }
 .menu-card__body__name {

@@ -1,3 +1,18 @@
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(240deg);
+    }
+    66% {
+        transform: rotate(480deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
 .spinner-container {
     position: absolute;
     top: 0;
@@ -23,4 +38,6 @@
     border-radius: 50%;
     width: 100px;
     height: 100px;
+
+    animation: spinner 3s 500ms cubic-bezier(.14,.83,.56,1) infinite;
 }

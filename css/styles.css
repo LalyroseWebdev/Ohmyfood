@@ -173,7 +173,11 @@ section {
   align-items: center;
   background-color: rgba(246, 246, 246, 0.85);
   z-index: 1;
+<<<<<<< HEAD
   animation: pop-up 0s 2s forwards reverse;
+=======
+  animation: pop-up 0s 3s forwards reverse;
+>>>>>>> 35799a892288ec73a08c771fb727ed9ce47e9107
 }
 
 .spinner {

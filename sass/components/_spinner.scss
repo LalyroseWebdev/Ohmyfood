@@ -1,5 +1,15 @@
+// Instantaneous pop-up
+@keyframes pop-up {
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 // 360° clockwise rotation
-@keyframes spinner {
+@keyframes spinner-rotation {
     0% {
         transform: rotate(45deg);
     }
@@ -21,6 +31,8 @@
 
     background-color: $color-background--spinner;
     z-index: 1;
+
+    animation: pop-up 0s 2s forwards reverse;
 }
 
 .spinner {
@@ -39,7 +51,7 @@
     height: 84px;
     transform: rotate(45deg);
 
-    animation: spinner 2s linear both infinite;
+    animation: spinner-rotation 2s linear both 3;
 }
 
 .middle-circle {
@@ -51,7 +63,7 @@
     height: 56px;
     transform: rotate(45deg);
 
-    animation: spinner 1.5s linear both reverse infinite;
+    animation: spinner-rotation 1.5s linear both reverse 3;
 }
 
 .inner-circle {

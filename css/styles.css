@@ -146,7 +146,15 @@ section {
   border-radius: 0 0 5px 5px;
 }
 
-@keyframes spinner {
+@keyframes pop-up {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes spinner-rotation {
   0% {
     transform: rotate(45deg);
   }
@@ -165,6 +173,7 @@ section {
   align-items: center;
   background-color: rgba(246, 246, 246, 0.85);
   z-index: 1;
+  animation: pop-up 0s 3s forwards reverse;
 }
 
 .spinner {
@@ -182,7 +191,7 @@ section {
   width: 84px;
   height: 84px;
   transform: rotate(45deg);
-  animation: spinner 2s linear both infinite;
+  animation: spinner-rotation 2s linear both 3;
 }
 
 .middle-circle {
@@ -193,7 +202,7 @@ section {
   width: 56px;
   height: 56px;
   transform: rotate(45deg);
-  animation: spinner 1.5s linear both reverse infinite;
+  animation: spinner-rotation 1.5s linear both reverse 3;
 }
 
 .inner-circle {

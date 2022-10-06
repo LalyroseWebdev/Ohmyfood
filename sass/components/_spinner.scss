@@ -24,22 +24,41 @@
     justify-content: center;
     align-items: center;
 
-    width: 100vw;
-    height: 100vh;
-
     background-color: $color-background--spinner;
     z-index: 1;
 }
 
 .spinner {
-    position: absolute;
-    border: 9px solid $color-primary;
-    border-top-color: $color-tertiary;
-    // border-image: linear-gradient(170deg, $color-secondary, $color-primary) 10;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    // animation: spinner 3s 500ms cubic-bezier(.14,.83,.56,1) infinite;
-    animation: spinner 3s 500ms ease-out 3;
+.outer-circle {
+    position: absolute;
+    border: 7px solid $color-primary;
+    border-top-color: transparent;
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    transform: rotate(45deg);
+}
+
+.middle-circle {
+    position: absolute;
+    border: 7px solid $color-secondary;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    transform: rotate(45deg);
+}
+
+.inner-circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    background-color: $color-tertiary;
 }

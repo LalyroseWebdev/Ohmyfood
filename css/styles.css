@@ -146,6 +146,30 @@ section {
   border-radius: 0 0 5px 5px;
 }
 
+.spinner-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(246, 246, 246, 0.85);
+  z-index: 1;
+}
+
+.spinner {
+  position: absolute;
+  border: 8px solid black;
+  border-top-color: #ff79da;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
 .underline {
   width: 3rem;
   height: 0.2rem;

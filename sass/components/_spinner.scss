@@ -1,15 +1,10 @@
+// 360° clockwise rotation
 @keyframes spinner {
     0% {
-        transform: rotate(0deg);
-    }
-    33% {
-        transform: rotate(240deg);
-    }
-    66% {
-        transform: rotate(480deg);
+        transform: rotate(45deg);
     }
     100% {
-        transform: rotate(720deg);
+        transform: rotate(405deg);
     }
 }
 
@@ -43,6 +38,8 @@
     width: 84px;
     height: 84px;
     transform: rotate(45deg);
+
+    animation: spinner 2s linear both infinite;
 }
 
 .middle-circle {
@@ -53,6 +50,8 @@
     width: 56px;
     height: 56px;
     transform: rotate(45deg);
+
+    animation: spinner 1.5s linear both reverse infinite;
 }
 
 .inner-circle {

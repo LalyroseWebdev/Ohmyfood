@@ -33,11 +33,13 @@
 
 .spinner {
     position: absolute;
-    border: 8px solid black;
-    border-top-color: $color-secondary;
+    border: 9px solid $color-primary;
+    border-top-color: $color-tertiary;
+    // border-image: linear-gradient(170deg, $color-secondary, $color-primary) 10;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 
-    animation: spinner 3s 500ms cubic-bezier(.14,.83,.56,1) infinite;
+    // animation: spinner 3s 500ms cubic-bezier(.14,.83,.56,1) infinite;
+    animation: spinner 3s 500ms ease-out 3;
 }

@@ -1,27 +1,25 @@
-// Call-to-action section
 .call-to-action {
     padding: 0;
-}
 
-// Call-to-action content
-.call-to-action__content {
-    @include flex(column, center, center, 1.5rem);
-    padding: 3rem;
+    &__content {
+        @include flex(column, center, center, 1.5rem);
+        padding: 3rem;
+        
+        // Headline
+        & h2 {
+            margin: 0;
+            width: 70%;
+            text-align: center;
+            font-size: $size-index-h2;
+        }
     
-    // Headline
-    & h2 {
-        margin: 0;
-        width: 70%;
-        text-align: center;
-        font-size: $size-index-h2;
-    }
-
-    // Byline
-    & p {
-        margin-bottom: 0.5rem;
-        width: 90%;
-        text-align: center;
-        font-size: $size-index-h2 - 6pt;
-        font-weight: 300;
+        // Byline
+        & p {
+            margin-bottom: 0.5rem;
+            width: 90%;
+            text-align: center;
+            font-size: $size-index-h2 - 6pt;
+            font-weight: 300;
+        }
     }
 }

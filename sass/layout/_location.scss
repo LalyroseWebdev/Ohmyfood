@@ -1,4 +1,4 @@
-// Location line
+// Location line below home page header
 .location {
     @include flex("", center, center);
     @include shadow(location);
@@ -6,15 +6,12 @@
     background-color: darken($color-background, 5);
 }
 
-// Content
 .location__content {
     @include flex("", center, center);
     position: relative;
     color: $color-text--lighter;
 
-    // Icon
     & .location__icon {
-        display: flex;
         position: absolute;
         left: -30px;
     }

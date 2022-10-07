@@ -59,7 +59,7 @@ ul {
 }
 
 section {
-  padding: 3rem 1.5rem;
+  padding: 3rem 1.2rem;
 }
 
 @font-face {
@@ -181,7 +181,6 @@ header span {
   font-weight: bold;
 }
 header a {
-  display: flex;
   position: absolute;
   left: 25px;
   font-size: 16pt;
@@ -213,16 +212,13 @@ header a {
 }
 
 @media only screen and (min-width: 700px) {
-  .footer__links {
+  .footer-links {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .footer .group {
-    display: flex;
+  .footer-links__group {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     width: 50%;
   }
 }
@@ -242,7 +238,6 @@ header a {
   color: #333333;
 }
 .location__content .location__icon {
-  display: flex;
   position: absolute;
   left: -30px;
 }
@@ -250,7 +245,6 @@ header a {
 .call-to-action {
   padding: 0;
 }
-
 .call-to-action__content {
   display: flex;
   flex-direction: column;
@@ -344,7 +338,7 @@ header a {
   background-color: #9356dc;
 }
 
-.restaurants-cards {
+.restaurants-list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -352,7 +346,7 @@ header a {
   gap: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.restaurants-cards__group {
+.restaurants-list__group {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -360,7 +354,7 @@ header a {
   gap: 1.5rem;
 }
 @media only screen and (min-width: 700px) {
-  .restaurants-cards__group {
+  .restaurants-list__group {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -414,7 +408,7 @@ header a {
   padding: 0;
   margin-bottom: 2rem;
 }
-.menu-heading__figure {
+.menu-heading__image {
   height: 350px;
   overflow: hidden;
   margin: 0;
@@ -423,11 +417,11 @@ header a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  border-radius: 40px 40px 0 0;
   position: absolute;
   bottom: 0;
   padding: 2rem 2rem 0.5rem 2rem;
   width: 100%;
-  border-radius: 40px 40px 0 0;
   background-color: #F6F6F6;
 }
 .menu-heading__title button {

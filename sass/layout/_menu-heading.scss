@@ -4,21 +4,19 @@
     padding: 0;
     margin-bottom: 2rem;
 
-    // Image
-    &__figure {
+    &__image {
         height: 350px;
         overflow: hidden;
         margin: 0;
     }
 
-    // Title
     &__title {
         @include flex("", space-between, flex-start);
+        @include radius(menu-title);
         position: absolute;
         bottom: 0;
         padding: 2rem 2rem 0.5rem 2rem; 
         width: 100%;
-        border-radius: 40px 40px 0 0;
         background-color: $color-background;
 
         // Like button

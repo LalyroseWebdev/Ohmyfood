@@ -1,31 +1,29 @@
-// Restaurants list
-.restaurants-cards {
+.restaurants-list {
     @include flex(column, flex-start, stretch, 1.5rem);
     padding-bottom: 1.5rem;
 
     // 2-cards group
     &__group {
         @include flex(column, flex-start, stretch, 1.5rem);
-        // Small screens
+
+        // Medium screens and above
         @media only screen and (min-width: $screen-md) {
             @include flex(row, center, stretch);
         }
     }
 }
 
-// Restaurant card
 .restaurant-card {
     @include radius(restaurant-card);
     @include shadow(card);
 
-    // Card image
     &__image {
         position: relative;
         margin: 0;
         height: 200px;
         overflow: hidden;
 
-        // "New" label
+        // "Nouveau" label
         & .label-new {
             position: absolute;
             top: 20px;
@@ -33,7 +31,6 @@
         }
     }
 
-    // Card body
     &__body {
         @include flex("", space-between, center);
         padding: 1.2rem 1.8rem 1.2rem 1rem;
@@ -46,7 +43,7 @@
         }
     }
 
-    // Card - Small screens
+    // Card for medium screens and above
     @media only screen and (min-width: $screen-md) {
         width: 50%;
     }

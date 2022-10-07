@@ -15,19 +15,22 @@ $shadow-map: (
 
 // Radius
 $radius-map: (
+    tutorial: (
+        radius: $radius-tutorial-step,
+    ),
     restaurant-card: (
         radius: $radius-restaurant-card,
         image: $radius-restaurant-card $radius-restaurant-card 0 0,
         body: 0 0 $radius-restaurant-card $radius-restaurant-card,
     ),
-    course-card: (
-        radius: $radius-course-card,
-    ),
-    tutorial: (
-        radius: $radius-tutorial-step,
-    ),
     label-new: (
         radius: $radius-label-new,
+    ),
+    menu-title: (
+        radius: $radius-menu-title $radius-menu-title 0 0,
+    ),
+    course-card: (
+        radius: $radius-course-card,
     ),
 );
 

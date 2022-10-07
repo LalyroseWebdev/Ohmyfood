@@ -1,4 +1,3 @@
-// Text button
 .btn-text {
     @include shadow(btn);
     @include gradient(btn-text);
@@ -10,7 +9,6 @@
     color: white;
 }
 
-// Order button
 .btn-text--order {
     padding-bottom: 5rem;
     text-align: center;
@@ -20,7 +18,6 @@
     }
 }
 
-// Like button
 .btn-like {
     border: none;
     height: $size-btn-like;

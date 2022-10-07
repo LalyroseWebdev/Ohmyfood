@@ -4,19 +4,18 @@ header {
     padding-top: 0.7rem;
     height: 70px;
 
-    // Title in menu pages
+    // Ohmyfood title in menu pages
     & span {
         font-family: $font-title;
         font-size: $size-title;
         font-weight: bold;
     }
 
-    // Back to home page link
+    // Back to home page arrow
     & a {
-        display: flex;
         position: absolute;
         left: 25px;
-        font-size: 16pt;
+        font-size: $size-header-arrow;
         color: $color-text--lighter;
     }
 }

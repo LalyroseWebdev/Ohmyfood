@@ -33,17 +33,9 @@
     }
 }
 
-// Square element with centered content
-@mixin square-center($length) {
-    width: $length;
-    height: $length;
-    line-height: $length;
-    text-align: center;
-}
-
 // Round element with centered content
 @mixin circle-center($length) {
-    border-radius: calc($length / 2);
+    border-radius: 50%;
     width: $length;
     height: $length;
     line-height: $length;

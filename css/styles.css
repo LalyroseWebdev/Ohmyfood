@@ -332,7 +332,7 @@ header a {
   color: #9356dc;
 }
 .step__number {
-  border-radius: 0.8rem;
+  border-radius: 50%;
   width: 1.6rem;
   height: 1.6rem;
   line-height: 1.6rem;

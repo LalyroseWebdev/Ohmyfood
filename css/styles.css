@@ -142,13 +142,6 @@ section {
   color: #217460;
   background-color: #99E2D0;
 }
-.label-new__image {
-  border-radius: 5px 5px 0 0;
-}
-.label-new__body {
-  border-radius: 0 0 5px 5px;
-}
-
 .check {
   font-size: 18pt;
   color: white;
@@ -325,12 +318,6 @@ header a {
   height: 80px;
   background-color: #F6F6F6;
 }
-.step__content__image {
-  border-radius: 20px 20px 0 0;
-}
-.step__content__body {
-  border-radius: 0 0 20px 20px;
-}
 .step__content:hover {
   box-shadow: 0 5px 10px #c3c3c3;
 }
@@ -466,12 +453,6 @@ header a {
   box-shadow: 0 5px 10px #dddddd;
   margin: 1rem 0;
   background-color: white;
-}
-.course-card__image {
-  border-radius: 20px 20px 0 0;
-}
-.course-card__body {
-  border-radius: 0 0 20px 20px;
 }
 .course-card:hover {
   box-shadow: 0 5px 10px #c3c3c3;

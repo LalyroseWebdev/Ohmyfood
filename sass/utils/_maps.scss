@@ -1,8 +1,7 @@
 // Shadow
 $shadow-map: (
     location: (
-        shadow: 0px 3px 3px darken($color-background, 20) inset, 
-        hover: "", 
+        shadow: 0px 3px 3px darken($color-background, 20) inset,
     ),
     btn: (
         shadow: 0 5px 10px darken($color-background, 20),
@@ -18,6 +17,8 @@ $shadow-map: (
 $radius-map: (
     restaurant-card: (
         radius: $radius-restaurant-card,
+        image: $radius-restaurant-card $radius-restaurant-card 0 0,
+        body: 0 0 $radius-restaurant-card $radius-restaurant-card,
     ),
     course-card: (
         radius: $radius-course-card,

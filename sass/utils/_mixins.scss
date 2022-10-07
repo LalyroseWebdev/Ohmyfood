@@ -13,9 +13,9 @@
 @mixin shadow($type) {
     $palette: map-get($shadow-map, $type);
     box-shadow: map-get($palette, shadow);
-    
+
     &:hover {
-        box-shadow: #{map-get($palette, hover)};
+        box-shadow: map-get($palette, hover);
     }
 }
 
@@ -25,11 +25,11 @@
     border-radius: map-get($palette, radius);
 
     &__image {
-        border-radius: map-get($palette, radius) map-get($palette, radius) 0 0;
+        border-radius: map-get($palette, image);
     }
     
     &__body {
-        border-radius: 0 0 map-get($palette, radius) map-get($palette, radius);
+        border-radius: map-get($palette, body);
     }
 }
 

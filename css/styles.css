@@ -59,7 +59,7 @@ ul {
 }
 
 section {
-  padding: 3rem 1.2rem;
+  padding: 3rem 1.3rem;
 }
 
 @font-face {
@@ -256,7 +256,7 @@ header a {
 
 .footer {
   margin: 0;
-  padding: 2rem;
+  padding: 1.3rem;
   background-color: #373737;
 }
 .footer__logo {
@@ -279,6 +279,9 @@ header a {
 }
 
 @media only screen and (min-width: 700px) {
+  .footer {
+    padding: 1.8rem;
+  }
   .footer-links {
     display: flex;
     justify-content: flex-start;
@@ -287,6 +290,11 @@ header a {
   .footer-links__group {
     flex-direction: column;
     width: 50%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .footer {
+    padding-left: 2.8rem;
   }
 }
 .location {
@@ -442,6 +450,16 @@ header a {
 .restaurant-card:hover {
   box-shadow: 0 5px 10px #c3c3c3;
 }
+@media only screen and (min-width: 700px) {
+  .restaurant-card {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .restaurant-card {
+    margin: 10px;
+  }
+}
 .restaurant-card__image {
   position: relative;
   margin: 0;
@@ -464,11 +482,6 @@ header a {
   margin-top: 0.4rem;
   font-weight: 300;
 }
-@media only screen and (min-width: 700px) {
-  .restaurant-card {
-    width: 50%;
-  }
-}
 
 .menu-heading {
   position: relative;
@@ -487,12 +500,25 @@ header a {
   border-radius: 40px 40px 0 0;
   position: absolute;
   bottom: 0;
-  padding: 2rem 2rem 0.5rem 2rem;
+  padding: 2rem 2.3rem 0.5rem 1.3rem;
   width: 100%;
   background-color: #F6F6F6;
 }
 .menu-heading__title button {
   background-color: #F6F6F6;
+}
+@media only screen and (min-width: 700px) {
+  .menu-heading__title {
+    justify-content: flex-start;
+    gap: 35px;
+    padding-left: 1.8rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu-heading__title {
+    padding-left: 2.8rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 .menu-section {
@@ -504,6 +530,17 @@ header a {
   font-size: 15pt;
   font-weight: 300;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 700px) {
+  .menu-section {
+    padding: 0 1.8rem 3rem 1.8rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .menu-section {
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+  }
 }
 
 .course-card {

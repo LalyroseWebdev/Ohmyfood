@@ -15,13 +15,26 @@
         @include radius(menu-title);
         position: absolute;
         bottom: 0;
-        padding: 2rem 2rem 0.5rem 2rem; 
+        padding: 2rem ($padding-x + 1rem) 0.5rem $padding-x; 
         width: 100%;
         background-color: $color-background;
 
         // Like button
         & button {
             background-color: $color-background;
+        }
+
+        // Medium screens
+        @media only screen and (min-width: $screen-md) {
+            justify-content: flex-start;
+            gap: 35px;
+            padding-left: $padding-x--md;
+        }
+
+        // Large screens and above
+        @media only screen and (min-width: $screen-lg) {
+            padding-left: $padding-x--lg;
+            padding-bottom: 1.5rem;
         }
     }
 }

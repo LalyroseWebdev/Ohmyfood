@@ -1,6 +1,6 @@
 .footer {
     margin: 0;
-    padding: 2rem;
+    padding: $padding-x;
     background-color: $color-background--footer;
 
     // Logo ohmyfood
@@ -24,8 +24,12 @@
     }
 }
 
-// Medium screens and above
+// Medium screens
 @media only screen and (min-width: $screen-md) {
+
+    .footer {
+        padding: $padding-x--md;
+    }
 
     .footer-links {
         @include flex("", flex-start, flex-start);
@@ -35,5 +39,13 @@
             flex-direction: column;
             width: 50%;
         }
+    }
+}
+
+// Large screens and above
+@media only screen and (min-width: $screen-lg) {
+    
+    .footer {
+        padding-left: $padding-x--lg;
     }
 }

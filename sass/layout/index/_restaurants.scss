@@ -17,6 +17,16 @@
     @include radius(restaurant-card);
     @include shadow(card);
 
+    // Medium screens
+    @media only screen and (min-width: $screen-md) {
+        width: 50%;
+    }
+
+    // Large screens and above
+    @media only screen and (min-width: $screen-lg) {
+        margin: 10px;
+    }
+
     &__image {
         position: relative;
         margin: 0;
@@ -41,10 +51,5 @@
             margin-top: 0.4rem;
             font-weight: 300;
         }
-    }
-
-    // Card for medium screens and above
-    @media only screen and (min-width: $screen-md) {
-        width: 50%;
     }
 }

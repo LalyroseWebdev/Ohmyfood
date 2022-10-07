@@ -8,6 +8,15 @@
         font-weight: 300;
         text-transform: uppercase;
     }
+
+    @media only screen and (min-width: $screen-md) {
+        padding: 0 $padding-x--md 3rem $padding-x--md;
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+        padding-left: $padding-x--lg;
+        padding-right: $padding-x--lg;
+    }
 }
     
 .course-card {

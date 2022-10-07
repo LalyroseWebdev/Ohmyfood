@@ -9,6 +9,7 @@ $color-tertiary: #99E2D0;
 
 // Text & background colors
 $color-background: #F6F6F6;
+$color-background--spinner: transparentize($color-background, 0.15);
 $color-background--footer: darken($color-background, 75);
 $color-text: #000;
 $color-text--lighter: lighten($color-text, 20);

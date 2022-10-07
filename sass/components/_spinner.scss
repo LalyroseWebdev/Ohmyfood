@@ -1,0 +1,75 @@
+// Instantaneous pop-up
+@keyframes pop-up {
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+// 360° clockwise rotation
+@keyframes spinner-rotation {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(405deg);
+    }
+}
+
+.spinner-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $color-background--spinner;
+    z-index: 1;
+
+    animation: pop-up 0s 2s forwards reverse;
+}
+
+.spinner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-circle {
+    position: absolute;
+    border: 7px solid $color-primary;
+    border-top-color: transparent;
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    transform: rotate(45deg);
+
+    animation: spinner-rotation 2s linear both 3;
+}
+
+.middle-circle {
+    position: absolute;
+    border: 7px solid $color-secondary;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    transform: rotate(45deg);
+
+    animation: spinner-rotation 1.5s linear both reverse 3;
+}
+
+.inner-circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    background-color: $color-tertiary;
+}

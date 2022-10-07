@@ -2,7 +2,7 @@
 $shadow-map: (
     location: (
         shadow: 0px 3px 3px darken($color-background, 20) inset, 
-        hover: 0px 3px 3px darken($color-background, 20) inset, 
+        hover: "", 
     ),
     btn: (
         shadow: 0 5px 10px darken($color-background, 20),

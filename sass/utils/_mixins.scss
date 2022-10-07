@@ -13,7 +13,10 @@
 @mixin shadow($type) {
     $palette: map-get($shadow-map, $type);
     box-shadow: map-get($palette, shadow);
-    &:hover { box-shadow: map-get($palette, hover); }
+    
+    &:hover {
+        box-shadow: #{map-get($palette, hover)};
+    }
 }
 
 // Radius

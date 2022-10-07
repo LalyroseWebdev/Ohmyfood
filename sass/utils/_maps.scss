@@ -1,22 +1,3 @@
-// Typography
-$typography-map: (
-    title: (
-        font: $font-title,
-        size: $size-title,
-        weight: normal,
-    ),
-    text: (
-        font: $font-text,
-        size: $size-text,
-        weight: normal,
-    ),
-    index-h2: (
-        font: $font-text,
-        size: $size-index-h2,
-        weight: bold,
-    ),
-);
-
 // Shadow
 $shadow-map: (
     location: (
@@ -38,8 +19,8 @@ $radius-map: (
     restaurant-card: (
         radius: $radius-restaurant-card,
     ),
-    menu-card: (
-        radius: $radius-menu-card,
+    course-card: (
+        radius: $radius-course-card,
     ),
     tutorial: (
         radius: $radius-tutorial-step,

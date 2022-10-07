@@ -27,20 +27,21 @@ h1, h2, h3 {
 }
 
 h1 {
-    @include typography(title);
+    font-family: $font-title;
+    font-size: $size-title;
 }
 
 h2 {
-    margin-bottom: $margin-b-h2;
+    margin-bottom: 1.5rem;
 }
 
 span, p {
-    @include typography(text);
     margin: 0;
+    font-size: $size-text;
 }
 
 a {
-    @include typography(text);
+    font-size: $size-text;
     text-decoration: none;
     color: $color-text;
 }

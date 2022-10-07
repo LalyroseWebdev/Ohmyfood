@@ -2,12 +2,14 @@
 $screen-md: 700px;
 $screen-lg: 800px;
 
-// Colors
+// Theme colors
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99E2D0;
+
+// Text & background colors
 $color-background: #F6F6F6;
-$color-background-footer: darken($color-background, 75);
+$color-background--footer: darken($color-background, 75);
 $color-text: #000;
 $color-text--lighter: lighten($color-text, 20);
 
@@ -15,28 +17,25 @@ $color-text--lighter: lighten($color-text, 20);
 $font-title: "Shrikhand", sans-serif;
 $font-text: "Roboto", sans-serif;
 
-// Font sizes
+// Font sizes - headings & text
 $size-title: 24pt;
 $size-text: 14pt;
-
 $size-index-h2: 22pt;
 $size-menu-h2: 15pt;
 
+// Font sizes - course card
 $size-course-name: 15pt;
 $size-course-subname: 13pt;
 $size-course-price: 13pt;
 
+// Sizes - components
+$size-btn-like: 40px;
 $size-label-new: 12pt;
-$size-icon-check: 18pt;
-
-// Margins
-$margin-b-h2: 1.5rem;
+$size-check: 18pt;
 
 // Border radius
 $radius-tutorial-step: 20px;
 $radius-restaurant-card: 15px;
-$radius-menu-card: 20px;
+$radius-course-card: 20px;
+$radius-check--course: 0 $radius-course-card $radius-course-card 0;
 $radius-label-new: 5px;
-
-// Buttons
-$btn-like-size: 40px;

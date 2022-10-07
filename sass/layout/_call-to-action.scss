@@ -13,16 +13,15 @@
         margin: 0;
         width: 70%;
         text-align: center;
-        @include typography(index-h2);
+        font-size: $size-index-h2;
     }
 
     // Byline
     & p {
-        @include typography(text);
         margin-bottom: 0.5rem;
         width: 90%;
         text-align: center;
-        font-size: 16pt;
+        font-size: $size-index-h2 - 6pt;
         font-weight: 300;
     }
 }

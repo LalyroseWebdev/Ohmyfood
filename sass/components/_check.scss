@@ -1,0 +1,19 @@
+// Check icon
+.check {
+    font-size: $size-check;
+    color: white;
+    background-color: $color-tertiary;
+}
+
+// Course card check
+.check--course {
+    display: none;
+    border-radius: $radius-check--course;
+    width: 70px;
+}
+
+// Hover effect
+.course-card:hover .check--course {
+    @include flex(row, center, center, 0);
+    flex-shrink: 0;
+}

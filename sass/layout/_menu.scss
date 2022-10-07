@@ -10,9 +10,9 @@
     }
 }
     
-.menu-card {
+.course-card {
     @include flex(row, space-between, stretch, 0);
-    @include radius(menu-card);
+    @include radius(course-card);
     @include shadow(card);
     margin: 1rem 0;
     background-color: white;
@@ -50,30 +50,5 @@
         margin-right: 0.8rem;
         font-weight: bold;
         font-size: $size-course-price;
-    }
-}
-
-// Check icon
-.check {
-    display: none;
-    border-radius: 0 $radius-menu-card $radius-menu-card 0;
-    width: 70px;
-    font-size: $size-icon-check;
-    color: white;
-    background-color: $color-tertiary;
-}
-
-// Check hover effect
-.menu-card:hover .check {
-    @include flex(row, center, center, 0);
-    flex-shrink: 0;
-}
-
-.btn-order {
-    padding-bottom: 5rem;
-    text-align: center;
-
-    & > button {
-        padding: 20px 60px;
     }
 }

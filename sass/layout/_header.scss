@@ -4,9 +4,11 @@ header {
     padding-top: 0.7rem;
     height: 70px;
 
-    // Title
+    // Title in menu pages
     & span {
-        @include typography(title);
+        font-family: $font-title;
+        font-size: $size-title;
+        font-weight: bold;
     }
 
     // Back to home page link

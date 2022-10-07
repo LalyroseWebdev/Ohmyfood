@@ -1,6 +1,6 @@
 /* Ohmyfood */
 /* Author Lalyrose Domergue */
-/* Date 2022.09 */
+/* Date 2022.10 */
 
 // Utils
 @import "utils/variables";
@@ -9,20 +9,25 @@
 @import "utils/mixins";
 
 // Base
-@import "base/font";
 @import "base/base";
+@import "base/font";
 
 // Components
 @import "components/buttons";
 @import "components/labels";
+@import "components/check";
 @import "components/miscellaneous";
 
-// Layout
+// Layout - everywhere
 @import "layout/header";
+@import "layout/footer";
+
+// Layout - index page only
 @import "layout/location";
 @import "layout/call-to-action";
 @import "layout/tutorial";
 @import "layout/restaurants";
-@import "layout/footer";
+
+// Layout - menu pages only
 @import "layout/menu-heading";
 @import "layout/menu";

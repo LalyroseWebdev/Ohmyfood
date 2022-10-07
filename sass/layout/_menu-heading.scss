@@ -13,7 +13,7 @@
 
     // Title
     &__title {
-        @include flex(row, space-between, flex-start, 0);
+        @include flex("", space-between, flex-start);
         position: absolute;
         bottom: 0;
         padding: 2rem 2rem 0.5rem 2rem; 

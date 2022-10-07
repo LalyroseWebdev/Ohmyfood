@@ -1,5 +1,5 @@
 header {
-    @include flex(row, center, center, 0);
+    @include flex("", center, center);
     position: relative;
     padding-top: 0.7rem;
     height: 70px;

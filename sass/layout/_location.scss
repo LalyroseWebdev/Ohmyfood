@@ -1,6 +1,6 @@
 // Location line
 .location {
-    @include flex(row, center, center, 0);
+    @include flex("", center, center);
     @include shadow(location);
     height: 60px;
     background-color: darken($color-background, 5);
@@ -8,7 +8,7 @@
 
 // Content
 .location__content {
-    @include flex(row, center, center, 0);
+    @include flex("", center, center);
     position: relative;
     color: $color-text--lighter;
 

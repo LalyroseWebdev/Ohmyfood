@@ -16,7 +16,7 @@
 
 // Tutorial step
 .step {
-    @include flex(row, stretch, center, 0);
+    @include flex("", stretch, center);
     position: relative;
     // Medium screens
     @media only screen and (min-width: $screen-lg) {
@@ -25,7 +25,7 @@
 
     // Step content
     &__content {
-        @include flex(row, flex-start, center, 1.5rem);
+        @include flex("", flex-start, center, 1.5rem);
         @include radius(tutorial);
         @include shadow(card);
         padding: 0 2rem;

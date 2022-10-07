@@ -11,14 +11,14 @@
 }
     
 .course-card {
-    @include flex(row, space-between, stretch, 0);
+    @include flex("", space-between, stretch);
     @include radius(course-card);
     @include shadow(card);
     margin: 1rem 0;
     background-color: white;
 
     &__body {
-        @include flex(row, space-between, flex-end, 0);
+        @include flex("", space-between, flex-end);
         padding: 0.8rem;
         width: 100%;
         

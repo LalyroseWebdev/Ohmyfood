@@ -14,6 +14,6 @@
 
 // Hover effect
 .course-card:hover .check--course {
-    @include flex(row, center, center, 0);
+    @include flex("", center, center);
     flex-shrink: 0;
 }

@@ -15,7 +15,7 @@
 
     // Link
     &__link {
-        @include flex(row, flex-start, center, 0);
+        @include flex("", flex-start, center);
         margin-bottom: 0.5rem;
         color: $color-background;
     }
@@ -35,11 +35,11 @@
     .footer {
         // Links
         &__links {
-            @include flex(row, flex-start, flex-start, 0);
+            @include flex("", flex-start, flex-start);
         }
         // Links group
         & .group {
-            @include flex(column, flex-start, flex-start, 0);
+            @include flex(column, flex-start, flex-start);
             width: 50%;
         }
     }  

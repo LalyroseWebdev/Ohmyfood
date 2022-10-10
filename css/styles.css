@@ -143,7 +143,7 @@ section {
   background-color: #99E2D0;
 }
 .check {
-  font-size: 18pt;
+  font-size: 25px;
   color: white;
   background-color: #99E2D0;
 }
@@ -158,23 +158,34 @@ section {
   width: 0;
 }
 .check--course > i {
-  padding-left: 18pt;
+  padding-left: 25px;
 }
 
 .course-card:hover .check--course {
   width: 70px;
-  animation: check--slide-in 250ms linear;
+  animation: check-slide-in 2500ms linear;
 }
 .course-card:hover .check--course > i {
-  padding-left: 0;
+  animation: check-padding 2500ms linear forwards;
 }
 
-@keyframes check--slide-in {
+@keyframes check-slide-in {
   from {
     width: 0;
   }
   to {
     width: 70px;
+  }
+}
+@keyframes check-padding {
+  0% {
+    padding-left: 25px;
+  }
+  20% {
+    padding-left: 39px;
+  }
+  100% {
+    padding-left: 0;
   }
 }
 @keyframes pop-up {

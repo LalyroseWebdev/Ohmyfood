@@ -1,6 +1,7 @@
 .check {
-    font-size: $size-check;
+    font-size: $size-check--icon;
     color: white;
+    // color: $color-primary;
     background-color: $color-tertiary;
 }
 
@@ -13,25 +14,38 @@
 
     // Icon
     & > i {
-        padding-left: $size-check;
+        padding-left: $size-check--icon;
     }
 }
 
 // Check effect on card hover
 .course-card:hover .check--course {
-    width: 70px;
-    animation: check--slide-in 250ms linear;
+    width: $size-check--course;
+    animation: check-slide-in $anim-check-duration linear;
 
     & > i {
-        padding-left: 0;
+        // padding-left: 0;
+        animation: check-padding $anim-check-duration linear forwards;
     }
 }
 
-@keyframes check--slide-in {
+@keyframes check-slide-in {
     from {
         width: 0;
     }
     to {
         width: 70px;
+    }
+}
+
+@keyframes check-padding {
+    0% {
+        padding-left: $size-check--icon;
+    }
+    20% {
+        padding-left: $size-check--icon + (0.2 * $size-check--course);
+    }
+    100% {
+        padding-left: 0;
     }
 }

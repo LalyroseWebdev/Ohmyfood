@@ -38,7 +38,8 @@ $size-course-price: 13pt;
 $size-btn-like: 40px;
 $size-header-arrow: 16pt;
 $size-label-new: 12pt;
-$size-check: 18pt;
+$size-check--icon: 25px;
+$size-check--course: 70px; // Check container in course cards
 
 // Border radius
 $radius-tutorial-step: 20px;
@@ -47,3 +48,6 @@ $radius-label-new: 5px;
 $radius-menu-title: 40px;
 $radius-course-card: 20px;
 $radius-check--course: 0 $radius-course-card $radius-course-card 0;
+
+// Animations
+$anim-check-duration: 2500ms;

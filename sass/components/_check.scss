@@ -1,31 +1,38 @@
 .check {
     font-size: $size-check--icon;
     color: white;
-    // color: $color-primary;
     background-color: $color-tertiary;
 }
 
 .check--course {
-    position: relative;
     @include flex("", center, center);
     flex-shrink: 0;
+    position: relative;
     border-radius: $radius-check--course;
     width: 0;
 
     // Icon
-    & > i {
-        padding-left: $size-check--icon;
+    & .check-icon {
+        position: absolute;
+        right: - $size-check--icon;
+
+        & > i {
+            rotate: 90deg;
+        }
     }
 }
 
 // Check effect on card hover
 .course-card:hover .check--course {
     width: $size-check--course;
-    animation: check-slide-in $anim-check-duration linear;
+    animation: check-slide-in $anim-check-duration $anim-check-timing;
 
-    & > i {
-        // padding-left: 0;
-        animation: check-padding $anim-check-duration linear forwards;
+    & .check-icon {
+        animation: check-position $anim-check-duration $anim-check-timing forwards;
+
+        & > i {
+            animation: check-rotate (0.5 * $anim-check-duration) (0.5 * $anim-check-duration) $anim-check-timing forwards;
+        }
     }
 }
 
@@ -34,18 +41,25 @@
         width: 0;
     }
     to {
-        width: 70px;
+        width: $size-check--course;
     }
 }
 
-@keyframes check-padding {
-    0% {
-        padding-left: $size-check--icon;
+@keyframes check-position {
+    from {
+        right: - $size-check--icon;
     }
-    20% {
-        padding-left: $size-check--icon + (0.2 * $size-check--course);
+    to {
+        right: 50%;
+        transform: translateX(50%);
     }
-    100% {
-        padding-left: 0;
+}
+
+@keyframes check-rotate {
+    from {
+        rotate: 90deg;
+    }
+    to {
+        rotate: 360deg;
     }
 }

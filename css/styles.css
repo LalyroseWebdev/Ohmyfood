@@ -143,30 +143,37 @@ section {
   background-color: #99E2D0;
 }
 .check {
-  font-size: 25px;
+  font-size: 28px;
   color: white;
   background-color: #99E2D0;
 }
 
 .check--course {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  position: relative;
   border-radius: 0 20px 20px 0;
   width: 0;
 }
-.check--course > i {
-  padding-left: 25px;
+.check--course .check-icon {
+  position: absolute;
+  right: -28px;
+}
+.check--course .check-icon > i {
+  rotate: 90deg;
 }
 
 .course-card:hover .check--course {
-  width: 70px;
-  animation: check-slide-in 2500ms linear;
+  width: 75px;
+  animation: check-slide-in 270ms cubic-bezier(0, 0.1, 0.58, 1);
 }
-.course-card:hover .check--course > i {
-  animation: check-padding 2500ms linear forwards;
+.course-card:hover .check--course .check-icon {
+  animation: check-position 270ms cubic-bezier(0, 0.1, 0.58, 1) forwards;
+}
+.course-card:hover .check--course .check-icon > i {
+  animation: check-rotate 135ms 135ms cubic-bezier(0, 0.1, 0.58, 1) forwards;
 }
 
 @keyframes check-slide-in {
@@ -174,18 +181,24 @@ section {
     width: 0;
   }
   to {
-    width: 70px;
+    width: 75px;
   }
 }
-@keyframes check-padding {
-  0% {
-    padding-left: 25px;
+@keyframes check-position {
+  from {
+    right: -28px;
   }
-  20% {
-    padding-left: 39px;
+  to {
+    right: 50%;
+    transform: translateX(50%);
   }
-  100% {
-    padding-left: 0;
+}
+@keyframes check-rotate {
+  from {
+    rotate: 90deg;
+  }
+  to {
+    rotate: 360deg;
   }
 }
 @keyframes pop-up {

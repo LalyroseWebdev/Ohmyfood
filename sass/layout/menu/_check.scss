@@ -1,65 +1,63 @@
 .check {
-    font-size: $size-check--icon;
-    color: white;
-    background-color: $color-tertiary;
-}
-
-.check--course {
     @include flex("", center, center);
     flex-shrink: 0;
     position: relative;
     border-radius: $radius-check--course;
     width: 0;
+    font-size: $size-check--icon;
+    color: white;
+    background-color: $color-tertiary;
 
-    // Icon
-    & .check-icon {
+    // Icon container
+    &__icon {
         position: absolute;
         right: - $size-check--icon;
 
+        // Icon
         & > i {
             rotate: 90deg;
         }
     }
 }
 
-// Check effect on card hover
-.course-card:hover .check--course {
+// =============================
+//  Hover effect with animation
+// =============================
+
+// Slide-in from the right
+.course-card:hover .check {
     width: $size-check--course;
     animation: check-slide-in $anim-check-duration $anim-check-timing;
 
-    & .check-icon {
+    // Icon center positioning
+    &__icon {
         animation: check-position $anim-check-duration $anim-check-timing forwards;
 
+        // Rotation
         & > i {
             animation: check-rotate (0.5 * $anim-check-duration) (0.5 * $anim-check-duration) $anim-check-timing forwards;
         }
     }
 }
 
+// ===========
+//  Keyframes
+// ===========
+
 @keyframes check-slide-in {
-    from {
-        width: 0;
-    }
-    to {
-        width: $size-check--course;
-    }
+    from { width: 0; }
+    to { width: $size-check--course; }
 }
 
 @keyframes check-position {
-    from {
-        right: - $size-check--icon;
-    }
-    to {
-        right: 50%;
-        transform: translateX(50%);
+    from {  right: - $size-check--icon; }
+    to { 
+        right: 50%; 
+        transform: translateX(50%); 
     }
 }
 
 @keyframes check-rotate {
-    from {
-        rotate: 90deg;
-    }
-    to {
-        rotate: 360deg;
-    }
+    from { rotate: 90deg; }
+    to { rotate: 360deg; }
 }

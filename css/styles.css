@@ -149,18 +149,34 @@ section {
 }
 
 .check--course {
-  display: none;
-  border-radius: 0 20px 20px 0;
-  width: 70px;
-}
-
-.course-card:hover .check--course {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  border-radius: 0 20px 20px 0;
+  width: 0;
+}
+.check--course > i {
+  padding-left: 18pt;
 }
 
+.course-card:hover .check--course {
+  width: 70px;
+  animation: check--slide-in 250ms linear;
+}
+.course-card:hover .check--course > i {
+  padding-left: 0;
+}
+
+@keyframes check--slide-in {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70px;
+  }
+}
 @keyframes pop-up {
   0% {
     transform: translateX(-9999px);
@@ -551,6 +567,7 @@ header a {
   box-shadow: 0 5px 10px #dddddd;
   margin: 1rem 0;
   background-color: white;
+  overflow: hidden;
 }
 .course-card:hover {
   box-shadow: 0 5px 10px #c3c3c3;

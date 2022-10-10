@@ -23,8 +23,10 @@
     @include flex("", space-between, stretch);
     @include radius(course-card);
     @include shadow(card);
+    // position: relative;
     margin: 1rem 0;
     background-color: white;
+    overflow: hidden;
 
     &__body {
         @include flex("", space-between, flex-end);

@@ -5,13 +5,33 @@
 }
 
 .check--course {
-    display: none;
+    position: relative;
+    @include flex("", center, center);
+    flex-shrink: 0;
     border-radius: $radius-check--course;
-    width: 70px;
+    width: 0;
+
+    // Icon
+    & > i {
+        padding-left: $size-check;
+    }
 }
 
 // Check effect on card hover
 .course-card:hover .check--course {
-    @include flex("", center, center);
-    flex-shrink: 0;
+    width: 70px;
+    animation: check--slide-in 250ms linear;
+
+    & > i {
+        padding-left: 0;
+    }
+}
+
+@keyframes check--slide-in {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70px;
+    }
 }

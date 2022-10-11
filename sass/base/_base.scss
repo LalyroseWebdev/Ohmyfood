@@ -22,6 +22,24 @@ main {
     background-color: $color-background;
 }
 
+a {
+    font-size: $size-text;
+    text-decoration: none;
+    color: $color-text;
+}
+
+// Keyboard focus effect
+a:focus,
+button:focus,
+.btn-text:focus {
+    outline: 5px solid $color-secondary;
+}
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+.btn-text:focus:not(:focus-visible) {
+    outline: 0;
+}
+
 h1, h2, h3 {
     margin: 0;
 }
@@ -38,12 +56,6 @@ h2 {
 span, p {
     margin: 0;
     font-size: $size-text;
-}
-
-a {
-    font-size: $size-text;
-    text-decoration: none;
-    color: $color-text;
 }
 
 img {

@@ -25,6 +25,24 @@ main {
   background-color: #F6F6F6;
 }
 
+a {
+  font-size: 14pt;
+  text-decoration: none;
+  color: #000;
+}
+
+a:focus,
+button:focus,
+.btn-text:focus {
+  outline: 5px solid #ff79da;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+.btn-text:focus:not(:focus-visible) {
+  outline: 0;
+}
+
 h1, h2, h3 {
   margin: 0;
 }
@@ -41,12 +59,6 @@ h2 {
 span, p {
   margin: 0;
   font-size: 14pt;
-}
-
-a {
-  font-size: 14pt;
-  text-decoration: none;
-  color: #000;
 }
 
 img {

@@ -16,6 +16,7 @@
 .restaurant-card {
     @include radius(restaurant-card);
     @include shadow(card);
+    position: relative;
 
     // Medium screens
     @media only screen and (min-width: $screen-md) {
@@ -51,5 +52,11 @@
             margin-top: 0.4rem;
             font-weight: 300;
         }
+    }
+
+    & .btn-like {
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
     }
 }

@@ -2,20 +2,21 @@
     @include flex("", center, center);
     flex-shrink: 0;
     position: relative;
-    border-radius: $radius-check--course;
-    width: 0;
+    width: 0;  
     font-size: $size-check--icon;
     color: white;
     background-color: $color-tertiary;
+    transition: width $anim-check-duration $anim-check-timing;
 
     // Icon container
     &__icon {
         position: absolute;
-        right: - $size-check--icon;
+        right: - $size-check--icon;      
+        animation: check-position-out $anim-check-duration $anim-check-timing;
 
         // Icon
         & > i {
-            rotate: 90deg;
+            transition: rotate $anim-check-duration $anim-check-timing;
         }
     }
 }
@@ -31,11 +32,13 @@
 
     // Icon center positioning
     &__icon {
-        animation: check-position $anim-check-duration $anim-check-timing forwards;
+        right: 50%; 
+        transform: translateX(50%); 
+        animation: check-position-in $anim-check-duration $anim-check-timing forwards;
 
         // Rotation
         & > i {
-            animation: check-rotate (0.5 * $anim-check-duration) (0.5 * $anim-check-duration) $anim-check-timing forwards;
+            animation: check-rotate (0.75 * $anim-check-duration) (0.25 * $anim-check-duration) $anim-check-timing forwards;
         }
     }
 }
@@ -49,15 +52,28 @@
     to { width: $size-check--course; }
 }
 
-@keyframes check-position {
-    from {  right: - $size-check--icon; }
+@keyframes check-rotate {
+    from { rotate: 1deg; }
+    to { rotate: 360deg; }
+}
+
+@keyframes check-position-in {
+    from {
+        right: - $size-check--icon;
+    }
     to { 
         right: 50%; 
         transform: translateX(50%); 
     }
 }
 
-@keyframes check-rotate {
-    from { rotate: 90deg; }
-    to { rotate: 360deg; }
+@keyframes check-position-out {
+    from { 
+        right: 50%; 
+        transform: translateX(50%); 
+    }
+    to {
+        right: - $size-check--icon;
+        transform: translateX(0);
+    }
 }

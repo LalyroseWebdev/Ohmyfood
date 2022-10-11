@@ -573,18 +573,19 @@ header a {
   align-items: center;
   flex-shrink: 0;
   position: relative;
-  border-radius: 0 20px 20px 0;
   width: 0;
   font-size: 28px;
   color: white;
   background-color: #99E2D0;
+  transition: width 270ms cubic-bezier(0, 0.1, 0.58, 1);
 }
 .check__icon {
   position: absolute;
   right: -28px;
+  animation: check-position-out 270ms cubic-bezier(0, 0.1, 0.58, 1);
 }
 .check__icon > i {
-  rotate: 90deg;
+  transition: rotate 270ms cubic-bezier(0, 0.1, 0.58, 1);
 }
 
 .course-card:hover .check {
@@ -592,10 +593,12 @@ header a {
   animation: check-slide-in 270ms cubic-bezier(0, 0.1, 0.58, 1);
 }
 .course-card:hover .check__icon {
-  animation: check-position 270ms cubic-bezier(0, 0.1, 0.58, 1) forwards;
+  right: 50%;
+  transform: translateX(50%);
+  animation: check-position-in 270ms cubic-bezier(0, 0.1, 0.58, 1) forwards;
 }
 .course-card:hover .check__icon > i {
-  animation: check-rotate 135ms 135ms cubic-bezier(0, 0.1, 0.58, 1) forwards;
+  animation: check-rotate 202.5ms 67.5ms cubic-bezier(0, 0.1, 0.58, 1) forwards;
 }
 
 @keyframes check-slide-in {
@@ -606,7 +609,15 @@ header a {
     width: 75px;
   }
 }
-@keyframes check-position {
+@keyframes check-rotate {
+  from {
+    rotate: 1deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes check-position-in {
   from {
     right: -28px;
   }
@@ -615,12 +626,14 @@ header a {
     transform: translateX(50%);
   }
 }
-@keyframes check-rotate {
+@keyframes check-position-out {
   from {
-    rotate: 90deg;
+    right: 50%;
+    transform: translateX(50%);
   }
   to {
-    rotate: 360deg;
+    right: -28px;
+    transform: translateX(0);
   }
 }
 

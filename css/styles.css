@@ -271,7 +271,7 @@ header a {
   font-size: 12pt;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 650px) {
   .footer {
     padding: 1.8rem;
   }
@@ -421,7 +421,7 @@ header a {
   align-items: stretch;
   gap: 1.5rem;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 650px) {
   .restaurants-list__group {
     display: flex;
     flex-direction: row;
@@ -444,7 +444,7 @@ header a {
 .restaurant-card:hover {
   box-shadow: 0 5px 10px #c3c3c3;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 650px) {
   .restaurant-card {
     width: 50%;
   }
@@ -482,6 +482,28 @@ header a {
   bottom: 20px;
 }
 
+.restaurant-card__image img {
+  position: absolute;
+  bottom: 0;
+}
+@media only screen and (min-width: 500px) {
+  .restaurant-card__image img {
+    bottom: -30px;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .restaurant-card__image img {
+    bottom: auto;
+    top: 0;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .restaurant-card__image img {
+    top: auto;
+    bottom: -20px;
+  }
+}
+
 .menu-heading {
   position: relative;
   padding: 0;
@@ -506,7 +528,7 @@ header a {
 .menu-heading__title button {
   background-color: #F6F6F6;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 650px) {
   .menu-heading__title {
     justify-content: flex-start;
     gap: 35px;
@@ -530,7 +552,7 @@ header a {
   font-weight: 300;
   text-transform: uppercase;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 650px) {
   .menu-section {
     padding: 0 1.8rem 3rem 1.8rem;
   }

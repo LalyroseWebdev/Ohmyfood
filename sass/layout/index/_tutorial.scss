@@ -7,7 +7,8 @@
         @include flex(column, center, stretch, 1.5rem);
         margin: 0;
         padding: 0 0 0 0.8rem;
-        // Large screens
+
+        // Large screens and above
         @media only screen and (min-width: $screen-lg) {
             @include flex(row, flex-start, center, 3rem);
         }
@@ -18,7 +19,8 @@
 .step {
     @include flex("", stretch, center);
     position: relative;
-    // Medium screens
+
+    // Large screens and above
     @media only screen and (min-width: $screen-lg) {
         width: 33%;
     }

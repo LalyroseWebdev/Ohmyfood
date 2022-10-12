@@ -60,3 +60,23 @@
         bottom: 20px;
     }
 }
+
+// Photo positioning to see the plate with all screen sizes
+.restaurant-card__image img {
+    position: absolute;
+    bottom: 0;
+
+    @media only screen and (min-width: $screen-sm) {
+        bottom: -30px;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+        bottom: auto;
+        top: 0;
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+        top: auto;
+        bottom: -20px;
+    }
+}

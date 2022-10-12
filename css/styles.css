@@ -542,7 +542,7 @@ header a {
   }
 }
 
-.course-card {
+.course {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -552,10 +552,10 @@ header a {
   background-color: white;
   overflow: hidden;
 }
-.course-card:hover {
+.course:hover {
   box-shadow: 0 5px 10px #c3c3c3;
 }
-.course-card__body {
+.course__body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -565,20 +565,27 @@ header a {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.course-card__name {
-  font-size: 13pt;
-  font-weight: 300;
+.course__name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.course__name h3 {
+  font-size: 15pt;
+  font-weight: bold;
   line-height: 1.4;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.course-card__name strong {
-  display: block;
-  font-size: 15pt;
-  font-weight: bold;
+.course__name p {
+  font-size: 13pt;
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.course-card__price {
+.course__price {
   margin-left: 1.5rem;
   margin-right: 0.8rem;
   font-weight: bold;
@@ -602,20 +609,17 @@ header a {
   right: -28px;
   animation: check-position-out 270ms cubic-bezier(0, 0.1, 0.58, 1);
 }
-.check__icon > i {
-  transition: rotate 270ms cubic-bezier(0, 0.1, 0.58, 1);
-}
 
-.course-card:hover .check {
+.course:hover .check {
   width: 75px;
   animation: check-slide-in 270ms cubic-bezier(0, 0.1, 0.58, 1);
 }
-.course-card:hover .check__icon {
+.course:hover .check__icon {
   right: 50%;
   transform: translateX(50%);
   animation: check-position-in 270ms cubic-bezier(0, 0.1, 0.58, 1) forwards;
 }
-.course-card:hover .check__icon > i {
+.course:hover .check__icon > i {
   animation: check-rotate 202.5ms 67.5ms cubic-bezier(0, 0.1, 0.58, 1) forwards;
 }
 

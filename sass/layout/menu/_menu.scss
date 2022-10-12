@@ -9,21 +9,23 @@
         text-transform: uppercase;
     }
 
+    // Medium screens
     @media only screen and (min-width: $screen-md) {
         padding: 0 $padding-x--md 3rem $padding-x--md;
     }
 
+    // Large screens
     @media only screen and (min-width: $screen-lg) {
         padding-left: $padding-x--lg;
         padding-right: $padding-x--lg;
     }
 }
     
-.course-card {
+// Course card
+.course {
     @include flex("", space-between, stretch);
     @include radius(course-card);
     @include shadow(card);
-    // position: relative;
     margin: 1rem 0;
     background-color: white;
     overflow: hidden;
@@ -38,21 +40,30 @@
         text-overflow: ellipsis;
     }
 
-    // Dish subname
     &__name {
-        font-size: $size-course-subname;
-        font-weight: 300;
-        line-height: 1.4;
-
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
 
-        // Dish name
-        & strong {
-            display: block;
+        // Course name
+        & h3 {
             font-size: $size-course-name;
             font-weight: bold;
+            line-height: 1.4;
+
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        // Course subname
+        & p {
+            font-size: $size-course-subname;
+            font-weight: 300;
+
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
     }
 

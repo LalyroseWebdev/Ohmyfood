@@ -6,31 +6,27 @@
     font-size: $size-check--icon;
     color: white;
     background-color: $color-tertiary;
+    // Slide out to the right
     transition: width $anim-check-duration $anim-check-timing;
 
-    // Icon container
     &__icon {
         position: absolute;
-        right: - $size-check--icon;      
+        right: - $size-check--icon;
+        // Icon positioning (out of frame)
         animation: check-position-out $anim-check-duration $anim-check-timing;
-
-        // Icon
-        & > i {
-            transition: rotate $anim-check-duration $anim-check-timing;
-        }
     }
 }
 
-// =============================
-//  Hover effect with animation
-// =============================
+// =================
+//  Hover animation
+// =================
 
 // Slide-in from the right
-.course-card:hover .check {
+.course:hover .check {
     width: $size-check--course;
     animation: check-slide-in $anim-check-duration $anim-check-timing;
 
-    // Icon center positioning
+    // Icon positioning (center)
     &__icon {
         right: 50%; 
         transform: translateX(50%); 

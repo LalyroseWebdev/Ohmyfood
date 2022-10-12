@@ -5,6 +5,7 @@
     margin-bottom: 2rem;
 
     &__image {
+        position: relative;
         height: 350px;
         overflow: hidden;
         margin: 0;
@@ -36,5 +37,22 @@
             padding-left: $padding-x--lg;
             padding-bottom: 1.5rem;
         }
+    }
+}
+
+// Photo positioning to see the plate with all screen sizes
+.menu-heading__image img {
+    position: absolute; 
+
+    @media only screen and (min-width: $screen-md) {
+        bottom: 0;
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+        bottom: -50px;
+    }
+
+    @media only screen and (min-width: $screen-xxl) {
+        bottom: -100px;
     }
 }

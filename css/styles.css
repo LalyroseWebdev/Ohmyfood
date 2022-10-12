@@ -510,6 +510,7 @@ header a {
   margin-bottom: 2rem;
 }
 .menu-heading__image {
+  position: relative;
   height: 350px;
   overflow: hidden;
   margin: 0;
@@ -539,6 +540,25 @@ header a {
   .menu-heading__title {
     padding-left: 2.8rem;
     padding-bottom: 1.5rem;
+  }
+}
+
+.menu-heading__image img {
+  position: absolute;
+}
+@media only screen and (min-width: 650px) {
+  .menu-heading__image img {
+    bottom: 0;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .menu-heading__image img {
+    bottom: -50px;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .menu-heading__image img {
+    bottom: -100px;
   }
 }
 

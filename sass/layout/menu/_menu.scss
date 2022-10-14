@@ -80,6 +80,7 @@
     }
 }
 
+// Menu sections appearance
 @keyframes appear {
     0% {
         opacity: 0;
@@ -91,8 +92,9 @@
     }
 }
 
-@for $i from 1 through 3 {
-    .menu--#{$i} {
-        animation-delay: $i * 200ms;
+// Incremental delay
+@for $i from 1 through 4 {
+    .menu-section:nth-child(#{$i}) {
+        animation-delay: $i * 200ms - 200ms;
     }
 }

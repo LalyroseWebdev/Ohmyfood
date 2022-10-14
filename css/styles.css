@@ -647,15 +647,19 @@ header a {
     top: 0;
   }
 }
-.menu--1 {
+.menu-section:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.menu-section:nth-child(2) {
   animation-delay: 200ms;
 }
 
-.menu--2 {
+.menu-section:nth-child(3) {
   animation-delay: 400ms;
 }
 
-.menu--3 {
+.menu-section:nth-child(4) {
   animation-delay: 600ms;
 }
 

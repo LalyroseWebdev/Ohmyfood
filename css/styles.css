@@ -567,7 +567,7 @@ header a {
   padding-top: 0;
   padding-bottom: 2rem;
   opacity: 0;
-  animation: appear 1000ms ease-out forwards;
+  animation: appear 750ms ease-out forwards;
 }
 .menu-section__heading {
   margin-bottom: 0.3rem;

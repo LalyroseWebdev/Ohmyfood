@@ -4,7 +4,7 @@
     padding-bottom: 2rem;
     opacity: 0;
 
-    animation: appear 1000ms ease-out forwards;
+    animation: appear $anim-menu-duration ease-out forwards;
     
     &__heading {
         margin-bottom: 0.3rem;
@@ -95,6 +95,6 @@
 // Incremental delay
 @for $i from 1 through 4 {
     .menu-section:nth-child(#{$i}) {
-        animation-delay: $i * 200ms - 200ms;
+        animation-delay: $i * $anim-menu-delay - $anim-menu-delay;
     }
 }

@@ -563,8 +563,11 @@ header a {
 }
 
 .menu-section {
+  position: relative;
   padding-top: 0;
   padding-bottom: 2rem;
+  opacity: 0;
+  animation: appear 1000ms ease-out forwards;
 }
 .menu-section__heading {
   margin-bottom: 0.3rem;
@@ -632,6 +635,28 @@ header a {
   margin-right: 0.8rem;
   font-weight: bold;
   font-size: 13pt;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    top: 15px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+.menu--1 {
+  animation-delay: 200ms;
+}
+
+.menu--2 {
+  animation-delay: 400ms;
+}
+
+.menu--3 {
+  animation-delay: 600ms;
 }
 
 .check {

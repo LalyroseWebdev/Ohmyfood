@@ -1,6 +1,3 @@
-/* Ohmyfood */
-/* Author Lalyrose Domergue */
-/* Date 2022.10 */
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -107,6 +104,7 @@ section {
   width: fit-content;
   font-size: 14pt;
   color: white;
+  cursor: pointer;
 }
 .btn-text:hover {
   box-shadow: 0 5px 10px #aaaaaa;
@@ -128,6 +126,7 @@ section {
   height: 40px;
   width: 40px;
   background-color: white;
+  cursor: pointer;
 }
 .btn-like__outline {
   fill: black;

@@ -7,6 +7,7 @@
     width: fit-content;
     font-size: $size-text;
     color: white;
+    cursor: pointer;
 }
 
 .btn-text--order {
@@ -23,6 +24,7 @@
     height: $size-btn-like;
     width: $size-btn-like;
     background-color: white;
+    cursor: pointer;
 
     // Colors
     &__outline { fill: black; }

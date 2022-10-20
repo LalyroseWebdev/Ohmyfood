@@ -39,33 +39,13 @@
 
     // Empty heart
     &::before {
-        display: inline-block;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font: var(--fa-font-regular);
-        content: "\f004";
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        font-size: $size-btn-like;
+        @include heart;
     }
 
     // Gradient-colored heart
     &::after {
-        display: inline-block;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
+        @include heart;
         font: var(--fa-font-solid);
-        content: "\f004";
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
         font-size: $size-btn-like;
         color: transparent;
         background-image: $gradient-btn--like;

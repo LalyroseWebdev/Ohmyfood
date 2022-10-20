@@ -33,6 +33,23 @@
     }
 }
 
+// Heart icon
+@mixin heart {
+    // Fontawesome properties
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-regular);
+    content: "\f004";
+    // Custom properties
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: $size-btn-like;
+}
+
 // Round element with centered content
 @mixin circle-center($length) {
     border-radius: 50%;

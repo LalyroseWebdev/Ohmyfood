@@ -39,14 +39,12 @@
 
     // Empty heart
     &::before {
-        @include heart;
+        @include heart(regular);
     }
 
     // Gradient-colored heart
     &::after {
-        @include heart;
-        font: var(--fa-font-solid);
-        font-size: $size-btn-like;
+        @include heart(solid);
         color: transparent;
         background-image: $gradient-btn--like;
         background-clip: text;

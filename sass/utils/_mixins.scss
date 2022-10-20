@@ -34,13 +34,16 @@
 }
 
 // Heart icon
-@mixin heart {
+@mixin heart($type) {
+    $palette: map-get($heart-map, $type);
+
     // Fontawesome properties
     display: inline-block;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    font: var(--fa-font-regular);
+    font: $palette;
     content: "\f004";
+
     // Custom properties
     position: absolute;
     top: 0;

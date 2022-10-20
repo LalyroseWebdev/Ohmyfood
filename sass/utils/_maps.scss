@@ -33,3 +33,9 @@ $radius-map: (
         radius: $radius-course-card,
     ),
 );
+
+// Heart icon
+$heart-map: (
+    regular: var(--fa-font-regular),
+    solid: var(--fa-font-solid),
+);

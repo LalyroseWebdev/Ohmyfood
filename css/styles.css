@@ -126,25 +126,22 @@ section {
 
 .btn-like {
   border: none;
-  height: 40px;
-  width: 40px;
-  background-color: white;
+  background-color: transparent;
   cursor: pointer;
 }
-.btn-like__outline {
-  fill: black;
+.btn-like .fa-heart {
+  font-size: 2rem;
 }
-.btn-like__background {
-  fill: white;
+.btn-like--gradient {
+  color: transparent;
+  background-image: linear-gradient(10deg, #ff79da, #9356dc);
+  background-clip: text;
+  opacity: 0;
+  transition: opacity 200ms, transform 100ms 100ms ease-in;
 }
-.btn-like__gradient .color-1 {
-  stop-color: #9356dc;
-}
-.btn-like__gradient .color-2 {
-  stop-color: #ff79da;
-}
-.btn-like:hover .btn-like__background, .btn-like:hover .btn-like__outline {
-  fill: url(#btn-like-gradient);
+.btn-like--gradient:hover {
+  opacity: 1;
+  transform: scale(1.15);
 }
 
 .label-new {
@@ -480,8 +477,15 @@ header a {
 }
 .restaurant-card .btn-like {
   position: absolute;
-  right: 30px;
-  bottom: 20px;
+  right: 2rem;
+  bottom: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+.restaurant-card .btn-like .fa-heart {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .restaurant-card__image img {

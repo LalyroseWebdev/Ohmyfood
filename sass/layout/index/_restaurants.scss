@@ -56,8 +56,17 @@
 
     & .btn-like {
         position: absolute;
-        right: 30px;
-        bottom: 20px;
+        right: 2rem;
+        bottom: 2rem;
+        width: $size-btn-like;
+        height: $size-btn-like;
+
+        // Heart icon
+        & .fa-heart {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
     }
 }
 

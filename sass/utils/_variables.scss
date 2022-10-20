@@ -24,6 +24,7 @@ $color-text--lighter: lighten($color-text, 20);
 
 // Gradient colors
 $gradient-btn--text: linear-gradient(170deg, $color-secondary, $color-primary);
+$gradient-btn--like: linear-gradient(10deg, $color-secondary, $color-primary);
 
 // Fonts
 $font-title: "Shrikhand", sans-serif;
@@ -41,7 +42,7 @@ $size-course-subname: 13pt;
 $size-course-price: 13pt;
 
 // Sizes - small components
-$size-btn-like: 40px;
+$size-btn-like: 2rem;
 $size-header-arrow: 16pt;
 $size-label-new: 12pt;
 $size-check--icon: 28px;

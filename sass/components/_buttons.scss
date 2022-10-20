@@ -29,24 +29,43 @@
 
 .btn-like {
     border: none;
-    height: $size-btn-like;
-    width: $size-btn-like;
-    background-color: white;
+    background-color: transparent;
     cursor: pointer;
 
     // Colors
-    &__outline { fill: black; }
-    &__background { fill: white; }
+    // &__outline { fill: black; }
+    // &__background { fill: white; }
 
     // Gradient
-    &__gradient {
-        .color-1 { stop-color: $color-primary };
-        .color-2 { stop-color: $color-secondary };
-    }
+    // &__gradient {
+    //     .color-1 { stop-color: $color-primary };
+    //     .color-2 { stop-color: $color-secondary };
+    // }
 
     // Hover effect
-    &:hover &__background, 
-    &:hover &__outline {
-        fill: url(#btn-like-gradient);
+    // &:hover &__background, 
+    // &:hover &__outline {
+    //     fill: url(#btn-like-gradient);
+    // }
+
+    // Heart icon
+    .fa-heart {
+        font-size: $size-btn-like;
+    }
+
+    // Gradient heart
+    &--gradient {
+        color: transparent;
+        background-image: $gradient-btn--like;
+        background-clip: text;
+        opacity: 0;
+    
+        // Opacity & scale animation
+        transition: opacity 200ms, transform 100ms 100ms ease-in;
+    
+        &:hover {
+            opacity: 1;
+            transform: scale(1.15);
+        }
     }
 }

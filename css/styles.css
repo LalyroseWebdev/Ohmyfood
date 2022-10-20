@@ -125,11 +125,19 @@ section {
 }
 
 .btn-like {
+  position: relative;
   border: none;
+  width: 2rem;
+  height: 2rem;
   background-color: transparent;
   cursor: pointer;
 }
 .btn-like__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   font-size: 2rem;
 }
 .btn-like--gradient {
@@ -475,21 +483,10 @@ header a {
   margin-top: 0.4rem;
   font-weight: 300;
 }
-
-.btn-like-container {
+.restaurant-card .btn-like-container {
   position: absolute;
   right: 2rem;
   bottom: 2rem;
-}
-.btn-like-container .btn-like {
-  position: relative;
-  width: 2rem;
-  height: 2rem;
-}
-.btn-like-container .btn-like__icon {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .restaurant-card__image img {
@@ -535,17 +532,6 @@ header a {
   padding: 2rem 2.3rem 0.5rem 1.3rem;
   width: 100%;
   background-color: #F6F6F6;
-}
-.menu-heading__title .btn-like {
-  background-color: #F6F6F6;
-  position: relative;
-  width: 2rem;
-  height: 2rem;
-}
-.menu-heading__title .btn-like__icon {
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 @media only screen and (min-width: 650px) {
   .menu-heading__title {

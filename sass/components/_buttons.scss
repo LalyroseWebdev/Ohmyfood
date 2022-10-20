@@ -10,7 +10,7 @@
     background-image: $gradient-btn--text;
     cursor: pointer;
 
-    transition: all 200ms;
+    transition: all $anim-btn--text-duration;
 
     &:hover {
         background-image: $gradient-btn--text;
@@ -72,7 +72,7 @@
         background-clip: text;
         opacity: 0;
 
-        transition: opacity 200ms, transform 200ms ease-in;
+        transition: opacity $anim-btn--like-duration, transform $anim-btn--like-duration ease-in;
     }
 
     // Hover opacity & scale animation

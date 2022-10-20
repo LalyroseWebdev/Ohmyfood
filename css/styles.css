@@ -97,20 +97,23 @@ section {
 }
 .btn-text {
   box-shadow: 0 5px 10px #c3c3c3;
-  background-image: linear-gradient(170deg, #ff79da, #9356dc);
   border: none;
   border-radius: 50px;
   padding: 20px;
   width: fit-content;
   font-size: 14pt;
   color: white;
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
   cursor: pointer;
+  transition: all 200ms;
 }
 .btn-text:hover {
   box-shadow: 0 5px 10px #aaaaaa;
 }
 .btn-text:hover {
-  background-image: linear-gradient(170deg, #ff8de0, #9e67e0);
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  opacity: 0.9;
+  transform: scale(1.02);
 }
 
 .btn-text--order {

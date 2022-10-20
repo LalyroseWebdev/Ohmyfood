@@ -22,6 +22,9 @@ $color-background--footer: darken($color-background, 75);
 $color-text: #000;
 $color-text--lighter: lighten($color-text, 20);
 
+// Gradient colors
+$gradient-btn--text: linear-gradient(170deg, $color-secondary, $color-primary);
+
 // Fonts
 $font-title: "Shrikhand", sans-serif;
 $font-text: "Roboto", sans-serif;

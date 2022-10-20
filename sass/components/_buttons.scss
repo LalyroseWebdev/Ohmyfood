@@ -1,13 +1,21 @@
 .btn-text {
     @include shadow(btn);
-    @include gradient(btn-text);
     border: none;
     border-radius: 50px;
     padding: 20px;
     width: fit-content;
     font-size: $size-text;
     color: white;
+    background-image: $gradient-btn--text;
     cursor: pointer;
+
+    transition: all 200ms;
+
+    &:hover {
+        background-image: $gradient-btn--text;
+        opacity: 0.9;
+        transform: scale(1.02);
+    }
 }
 
 .btn-text--order {
@@ -31,7 +39,10 @@
     &__background { fill: white; }
 
     // Gradient
-    &__gradient { @include gradient(btn-like) }
+    &__gradient {
+        .color-1 { stop-color: $color-primary };
+        .color-2 { stop-color: $color-secondary };
+    }
 
     // Hover effect
     &:hover &__background, 

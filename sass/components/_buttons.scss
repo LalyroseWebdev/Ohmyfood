@@ -31,12 +31,19 @@
 
 // Heart-shaped like button
 .btn-like {
+    position: relative;
     border: none;
+    width: $size-btn-like;
+    height: $size-btn-like;
     background-color: transparent;
     cursor: pointer;
 
-    // Heart icon
     &__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         font-size: $size-btn-like;
     }
 
@@ -48,7 +55,7 @@
         opacity: 0;
     
         // Opacity & scale animation
-        transition: opacity 200ms, transform 100ms 100ms ease-in;
+        transition: opacity 250ms, transform 100ms 150ms ease-in;
     
         &:hover {
             opacity: 1;

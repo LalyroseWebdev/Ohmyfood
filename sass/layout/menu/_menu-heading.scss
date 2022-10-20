@@ -20,21 +20,6 @@
         width: 100%;
         background-color: $color-background;
 
-        // Like button
-        & .btn-like {
-            background-color: $color-background;
-            position: relative;
-            width: $size-btn-like;
-            height: $size-btn-like;
-    
-            // Heart icon
-            &__icon {
-                position: absolute;
-                right: 0;
-                bottom: 0;
-            }
-        }
-
         // Medium screens
         @media only screen and (min-width: $screen-md) {
             justify-content: flex-start;

@@ -53,23 +53,11 @@
             font-weight: 300;
         }
     }
-}
 
-.btn-like-container {
-    position: absolute;
-    right: 2rem;
-    bottom: 2rem;
-
-    & .btn-like {
-        position: relative;
-        width: $size-btn-like;
-        height: $size-btn-like;
-
-        &__icon {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+    .btn-like-container {
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
     }
 }
 

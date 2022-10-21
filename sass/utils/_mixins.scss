@@ -9,7 +9,13 @@
     gap: #{$gap};
 }
 
-// Shadow
+@mixin gradient($type) {
+    $palette: map-get($gradient-map, $type);
+    background-image: map-get($palette, gradient);
+    color: map-get($palette, color);
+    background-clip: map-get($palette, clip);
+}
+
 @mixin shadow($type) {
     $palette: map-get($shadow-map, $type);
     box-shadow: map-get($palette, shadow);
@@ -19,7 +25,6 @@
     }
 }
 
-// Radius
 @mixin radius($type) {
     $palette: map-get($radius-map, $type);
     border-radius: map-get($palette, radius);

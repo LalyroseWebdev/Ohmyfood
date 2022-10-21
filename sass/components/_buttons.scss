@@ -1,5 +1,6 @@
 // Text buttons
 .btn-text {
+    @include gradient(btn-text);
     @include shadow(btn);
     border: none;
     border-radius: 50px;
@@ -7,13 +8,11 @@
     width: fit-content;
     font-size: $size-text;
     color: white;
-    background-image: $gradient-btn--text;
     cursor: pointer;
 
     transition: all $anim-btn--text-duration;
 
     &:hover {
-        background-image: $gradient-btn--text;
         opacity: 0.9;
         transform: scale(1.02);
     }
@@ -45,11 +44,9 @@
     // Gradient-colored heart
     &::after {
         @include heart(solid);
-        color: transparent;
-        background-image: $gradient-btn--like;
-        background-clip: text;
+        @include gradient(btn-like);
         opacity: 0;
-
+        
         transition: opacity $anim-btn--like-duration, transform $anim-btn--like-duration ease-in;
     }
 

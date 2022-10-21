@@ -1,4 +1,14 @@
-// Shadow
+$gradient-map: (
+    btn-text: (
+        gradient: $gradient-btn--text,
+    ),
+    btn-like: (
+        gradient: $gradient-btn--like,
+        color: transparent,
+        clip: text,
+    ),
+);
+
 $shadow-map: (
     location: (
         shadow: 0px 3px 3px darken($color-background, 20) inset,
@@ -13,7 +23,6 @@ $shadow-map: (
     ),
 );
 
-// Radius
 $radius-map: (
     tutorial: (
         radius: $radius-tutorial-step,

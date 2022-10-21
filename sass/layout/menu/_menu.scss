@@ -7,10 +7,23 @@
     animation: appear $anim-menu-duration ease-out forwards;
     
     &__heading {
-        margin-bottom: 0.3rem;
+        position: relative;
+        margin-bottom: calc($size-menu-h2 * 1.5);
+        width: fit-content;
         font-size: $size-menu-h2;
         font-weight: 300;
         text-transform: uppercase;
+
+        // Decorative underline
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: calc($size-menu-h2 / -2.5);
+            left: 0;
+            width: $size-menu-underline;
+            height: calc($size-menu-h2 * 0.15);
+            background-color: $color-tertiary;
+        }
     }
 
     // Medium screens

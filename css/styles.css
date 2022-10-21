@@ -242,12 +242,6 @@ section {
   background-color: #99E2D0;
 }
 
-.underline {
-  width: 3rem;
-  height: 0.2rem;
-  background-color: #99E2D0;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -588,10 +582,21 @@ header a {
   animation: appear 750ms ease-out forwards;
 }
 .menu-section__heading {
-  margin-bottom: 0.3rem;
+  position: relative;
+  margin-bottom: 22.5pt;
+  width: fit-content;
   font-size: 15pt;
   font-weight: 300;
   text-transform: uppercase;
+}
+.menu-section__heading::after {
+  content: "";
+  position: absolute;
+  bottom: -6pt;
+  left: 0;
+  width: 3rem;
+  height: 2.25pt;
+  background-color: #99E2D0;
 }
 @media only screen and (min-width: 650px) {
   .menu-section {

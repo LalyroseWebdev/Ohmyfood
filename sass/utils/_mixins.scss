@@ -86,11 +86,11 @@
     background-color: $color-tertiary;
 }
 
-@mixin tutorial-step {
-    @include circle-center(1.6rem);
+@mixin tutorial-number {
+    @include circle-center(calc($size-text * 1.3)); // Circle height adapts to font-size
     position: absolute;
     left: -0.8rem;
-    font-size: 12pt;
+    font-size: calc($size-text - 2pt); // Number font-size slightly smaller than text
     color: white;
     background-color: $color-primary;
 }

@@ -5,7 +5,7 @@
 .tutorial {
     background-color: white;
 
-    // Tutorial list
+    // Steps list
     &__list {
         @include mix.flex(column, center, stretch, 1.5rem);
         margin: 0;
@@ -18,7 +18,6 @@
     }
 }
 
-// Tutorial step
 .step {
     @include mix.flex('', stretch, center);
     position: relative;
@@ -35,60 +34,35 @@
 
     // Step number styles - separate from loop to optimize compiled CSS
     &::after {
-        @include mix.tutorial-step;
+        @include mix.tutorial-number;
     }
 
-    // Step content
     &__content {
         @include mix.flex('', flex-start, center, 1.5rem);
         @include mix.radius(tutorial);
         @include mix.shadow(card);
         position: relative;
-        padding: 0 2rem;
+        padding: 1rem 2rem;
         width: 100%;
-        height: 80px;
+        height: calc($size-text * 4); // Card height adapts to font size
         background-color: $color-background;
     
-        // Step icon
         &__icon {
-            font-size: 16pt;
+            font-size: $size-tuto-icon;
             color: lighten($color-text, 40);
         } 
 
-        // Hover effect
         &:hover {
             background-color: lighten($color-primary, 35);
         }
 
-        // Icon hover effect
         &:hover &__icon {
             color: $color-primary;
         }
     }
 
-    // Step number
-    // &__number {
-    //     @include mix.circle-center(1.6rem);
-    //     position: absolute;
-    //     left: -0.8rem;
-    //     font-size: 12pt;
-    //     color: white;
-    //     background-color: $color-primary;
-    // }
-
-    // Step - large screens and above
+    // Tutorial step - large screens and above
     @media only screen and (min-width: $screen-lg) {
         width: 33%;
     }
 }
-
-// Step number
-// $list: 1, 2, 3;
-
-// @each $number in $list {
-//     .step-#{$number} {
-//         & .step__content::before {
-//             content: '#{$number}';
-//         }
-//     }
-// }

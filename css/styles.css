@@ -378,9 +378,9 @@ header a {
 }
 .step::after {
   border-radius: 50%;
-  width: 1.6rem;
-  height: 1.6rem;
-  line-height: 1.6rem;
+  width: 18.2pt;
+  height: 18.2pt;
+  line-height: 18.2pt;
   text-align: center;
   position: absolute;
   left: -0.8rem;
@@ -396,9 +396,9 @@ header a {
   border-radius: 20px;
   box-shadow: 0 5px 10px #dbdbdb;
   position: relative;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   width: 100%;
-  height: 80px;
+  height: 56pt;
   background-color: hsl(0deg, 0%, 96%);
 }
 .step__content:hover {

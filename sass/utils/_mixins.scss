@@ -1,7 +1,7 @@
 // Flexbox
-// 'direction: row' MUST BE marked by ""
+// 'direction: row' MUST BE marked by ''
 // 'gap' optional
-@mixin flex($direction:"", $justify, $align, $gap:"") {
+@mixin flex($direction:'', $justify, $align, $gap:'') {
     display: flex;
     flex-direction: #{$direction};
     justify-content: $justify;
@@ -47,7 +47,7 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     font: $palette;
-    content: "\f004";
+    content: '\f004';
 
     // Custom properties
     position: absolute;
@@ -60,7 +60,7 @@
 
 // Menu section title's decorative underline
 @mixin menu-underline {
-    content: "";
+    content: '';
     position: absolute;
     bottom: calc($size-menu-h2 / -2.5);
     left: 0;
@@ -71,7 +71,7 @@
 
 @mixin label-new {
     @include radius(label-new);
-    content: "Nouveau";
+    content: 'Nouveau';
     position: absolute;
     right: 1rem;
     top: 1rem;

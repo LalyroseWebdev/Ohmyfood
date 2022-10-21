@@ -12,7 +12,7 @@
     }
 
     &__title {
-        @include flex("", space-between, flex-start);
+        @include flex('', space-between, flex-start);
         @include radius(menu-title);
         position: absolute;
         bottom: 0;

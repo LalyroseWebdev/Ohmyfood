@@ -24,14 +24,14 @@
         height: 200px;
         overflow: hidden;
 
-        // "Nouveau" label
+        // 'Nouveau' label
         &.new::after {
             @include label-new;
         }
     }
 
     &__body {
-        @include flex("", space-between, center);
+        @include flex('', space-between, center);
         padding: 1.2rem 1.8rem 1.2rem 1rem;
         background-color: white;
 

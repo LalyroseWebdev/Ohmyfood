@@ -1,30 +1,29 @@
 @charset "utf-8";
 
 // Utils
-@import "utils/variables";
-@import "utils/maps";
-@import "utils/functions";
-@import "utils/mixins";
+@import 'utils/variables';
+@import 'utils/maps';
+@import 'utils/mixins';
 
 // Base
-@import "base/base";
-@import "base/font";
+@import 'base/base';
+@import 'base/font';
 
 // Components
-@import "components/buttons";
-@import "components/spinner";
+@import 'components/buttons';
+@import 'components/spinner';
 
 // Layout - all pages
-@import "layout/all/header";
-@import "layout/all/footer";
+@import 'layout/all/header';
+@import 'layout/all/footer';
 
 // Layout - index page only
-@import "layout/index/location";
-@import "layout/index/call-to-action";
-@import "layout/index/tutorial";
-@import "layout/index/restaurants";
+@import 'layout/index/location';
+@import 'layout/index/call-to-action';
+@import 'layout/index/tutorial';
+@import 'layout/index/restaurants';
 
 // Layout - menu pages only
-@import "layout/menu/menu-heading";
-@import "layout/menu/menu";
-@import "layout/menu/check";
+@import 'layout/menu/menu-heading';
+@import 'layout/menu/menu';
+@import 'layout/menu/check';

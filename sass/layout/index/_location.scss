@@ -1,13 +1,13 @@
 // Location line below home page header
 .location {
-    @include flex("", center, center);
+    @include flex('', center, center);
     @include shadow(location);
     height: 60px;
     background-color: darken($color-background, 5);
 }
 
 .location__content {
-    @include flex("", center, center);
+    @include flex('', center, center);
     position: relative;
     color: $color-text--lighter;
 

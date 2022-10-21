@@ -17,7 +17,7 @@
 
 // Tutorial step
 .step {
-    @include flex("", stretch, center);
+    @include flex('', stretch, center);
     position: relative;
 
     // Large screens and above
@@ -27,7 +27,7 @@
 
     // Step content
     &__content {
-        @include flex("", flex-start, center, 1.5rem);
+        @include flex('', flex-start, center, 1.5rem);
         @include radius(tutorial);
         @include shadow(card);
         padding: 0 2rem;

@@ -69,6 +69,20 @@
     background-color: $color-tertiary;
 }
 
+@mixin label-new {
+    @include radius(label-new);
+    content: "Nouveau";
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: 0.5rem;
+    width: fit-content;
+    font-size: $size-label-new;
+    font-weight: bold;
+    color: darken($color-tertiary, 45);
+    background-color: $color-tertiary;
+}
+
 // Round element with centered content
 @mixin circle-center($length) {
     border-radius: 50%;

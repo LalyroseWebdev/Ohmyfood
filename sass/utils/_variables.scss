@@ -11,20 +11,21 @@ $padding-x--md: 1.8rem;
 $padding-x--lg: 2.8rem; 
 
 // Theme colors
-$color-primary: #9356dc;
-$color-secondary: #ff79da;
-$color-tertiary: #99E2D0;
+$color-primary: hsl(267, 66, 60);
+$color-secondary: hsl(317, 100, 74);
+$color-tertiary: hsl(165, 56, 74);
+
+// Text & background colors
+$color-background: hsl(0, 0, 96);
+$color-background--spinner: transparentize($color-background, 0.15);
+$color-background--location: darken($color-background, 5);
+$color-background--footer: darken($color-background, 75);
+$color-text: hsl(0, 0, 0);
+$color-text--lighter: lighten($color-text, 20);
 
 // Gradient colors
 $gradient-btn--text: linear-gradient(170deg, $color-secondary, $color-primary);
 $gradient-btn--like: linear-gradient(10deg, $color-secondary, $color-primary);
-
-// Text & background colors
-$color-background: #F6F6F6;
-$color-background--spinner: transparentize($color-background, 0.15);
-$color-background--footer: darken($color-background, 75);
-$color-text: #000;
-$color-text--lighter: lighten($color-text, 20);
 
 // Fonts
 $font-title: 'Shrikhand', sans-serif;

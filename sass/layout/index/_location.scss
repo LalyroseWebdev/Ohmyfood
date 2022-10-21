@@ -3,7 +3,7 @@
     @include flex('', center, center);
     @include shadow(location);
     height: 60px;
-    background-color: darken($color-background, 5);
+    background-color: $color-background--location;
 }
 
 .location__content {

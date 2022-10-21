@@ -19,19 +19,19 @@ body {
 }
 
 main {
-  background-color: #F6F6F6;
+  background-color: hsl(0deg, 0%, 96%);
 }
 
 a {
   font-size: 14pt;
   text-decoration: none;
-  color: #000;
+  color: hsl(0deg, 0%, 0%);
 }
 
 a:focus,
 button:focus,
 .btn-text:focus {
-  outline: 5px solid #ff79da;
+  outline: 5px solid hsl(317deg, 100%, 74%);
 }
 
 a:focus:not(:focus-visible),
@@ -96,8 +96,8 @@ section {
   font-style: normal;
 }
 .btn-text {
-  background-image: linear-gradient(170deg, #ff79da, #9356dc);
-  box-shadow: 0 5px 10px #c3c3c3;
+  background-image: linear-gradient(170deg, hsl(317deg, 100%, 74%), hsl(267deg, 66%, 60%));
+  box-shadow: 0 5px 10px #c2c2c2;
   border: none;
   border-radius: 50px;
   padding: 20px;
@@ -108,7 +108,7 @@ section {
   transition: all 200ms;
 }
 .btn-text:hover {
-  box-shadow: 0 5px 10px #aaaaaa;
+  box-shadow: 0 5px 10px #a8a8a8;
 }
 .btn-text:hover {
   opacity: 0.9;
@@ -155,7 +155,7 @@ section {
   right: 0;
   bottom: 0;
   font-size: 2rem;
-  background-image: linear-gradient(10deg, #ff79da, #9356dc);
+  background-image: linear-gradient(10deg, hsl(317deg, 100%, 74%), hsl(267deg, 66%, 60%));
   color: transparent;
   background-clip: text;
   opacity: 0;
@@ -191,7 +191,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(246, 246, 246, 0.85);
+  background-color: rgba(245, 245, 245, 0.85);
   z-index: 1;
   animation: pop-up 0s 2s forwards reverse;
 }
@@ -205,7 +205,7 @@ section {
 
 .outer-circle {
   position: absolute;
-  border: 7px solid #9356dc;
+  border: 7px solid hsl(267deg, 66%, 60%);
   border-top-color: transparent;
   border-radius: 50%;
   width: 84px;
@@ -216,7 +216,7 @@ section {
 
 .middle-circle {
   position: absolute;
-  border: 7px solid #ff79da;
+  border: 7px solid hsl(317deg, 100%, 74%);
   border-bottom-color: transparent;
   border-radius: 50%;
   width: 56px;
@@ -230,7 +230,7 @@ section {
   border-radius: 50%;
   width: 28px;
   height: 28px;
-  background-color: #99E2D0;
+  background-color: hsl(165deg, 56%, 74%);
 }
 
 header {
@@ -256,21 +256,21 @@ header a {
 .footer {
   margin: 0;
   padding: 1.3rem;
-  background-color: #373737;
+  background-color: #363636;
 }
 .footer__logo {
   display: block;
   margin-bottom: 1.5rem;
   font-family: "Shrikhand", sans-serif;
   font-size: 16pt;
-  color: #F6F6F6;
+  color: hsl(0deg, 0%, 96%);
 }
 .footer__link {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 0.5rem;
-  color: #F6F6F6;
+  color: hsl(0deg, 0%, 96%);
 }
 .footer__icon {
   width: 1.8rem;
@@ -300,9 +300,9 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 3px 3px #c3c3c3 inset;
+  box-shadow: 0px 3px 3px #c2c2c2 inset;
   height: 60px;
-  background-color: #e9e9e9;
+  background-color: #e8e8e8;
 }
 .location__content {
   display: flex;
@@ -380,24 +380,24 @@ header a {
   align-items: center;
   gap: 1.5rem;
   border-radius: 20px;
-  box-shadow: 0 5px 10px #dddddd;
+  box-shadow: 0 5px 10px #dbdbdb;
   padding: 0 2rem;
   width: 100%;
   height: 80px;
-  background-color: #F6F6F6;
+  background-color: hsl(0deg, 0%, 96%);
 }
 .step__content:hover {
-  box-shadow: 0 5px 10px #c3c3c3;
+  box-shadow: 0 5px 10px #c2c2c2;
 }
 .step__content__icon {
   font-size: 16pt;
   color: #666666;
 }
 .step__content:hover {
-  background-color: #f2eafb;
+  background-color: #f1eafb;
 }
 .step__content:hover .step__content__icon {
-  color: #9356dc;
+  color: hsl(267deg, 66%, 60%);
 }
 .step__number {
   border-radius: 50%;
@@ -409,7 +409,7 @@ header a {
   left: -0.8rem;
   font-size: 12pt;
   color: white;
-  background-color: #9356dc;
+  background-color: hsl(267deg, 66%, 60%);
 }
 
 .restaurants-list {
@@ -438,7 +438,7 @@ header a {
 
 .restaurant-card {
   border-radius: 15px;
-  box-shadow: 0 5px 10px #dddddd;
+  box-shadow: 0 5px 10px #dbdbdb;
   position: relative;
 }
 .restaurant-card__image {
@@ -448,7 +448,7 @@ header a {
   border-radius: 0 0 15px 15px;
 }
 .restaurant-card:hover {
-  box-shadow: 0 5px 10px #c3c3c3;
+  box-shadow: 0 5px 10px #c2c2c2;
 }
 .restaurant-card__image {
   position: relative;
@@ -466,8 +466,8 @@ header a {
   width: fit-content;
   font-size: 12pt;
   font-weight: bold;
-  color: #217460;
-  background-color: #99E2D0;
+  color: #21735f;
+  background-color: hsl(165deg, 56%, 74%);
 }
 .restaurant-card__body {
   display: flex;
@@ -538,7 +538,7 @@ header a {
   bottom: 0;
   padding: 2rem 2.3rem 0.5rem 1.3rem;
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: hsl(0deg, 0%, 96%);
 }
 @media only screen and (min-width: 650px) {
   .menu-heading__title {
@@ -595,7 +595,7 @@ header a {
   left: 0;
   width: 3rem;
   height: 2.25pt;
-  background-color: #99E2D0;
+  background-color: hsl(165deg, 56%, 74%);
 }
 @media only screen and (min-width: 650px) {
   .menu-section {
@@ -614,13 +614,13 @@ header a {
   justify-content: space-between;
   align-items: stretch;
   border-radius: 20px;
-  box-shadow: 0 5px 10px #dddddd;
+  box-shadow: 0 5px 10px #dbdbdb;
   margin: 1rem 0;
   background-color: white;
   overflow: hidden;
 }
 .course:hover {
-  box-shadow: 0 5px 10px #c3c3c3;
+  box-shadow: 0 5px 10px #c2c2c2;
 }
 .course__body {
   display: flex;
@@ -694,7 +694,7 @@ header a {
   width: 0;
   font-size: 28px;
   color: white;
-  background-color: #99E2D0;
+  background-color: hsl(165deg, 56%, 74%);
   transition: width 270ms cubic-bezier(0, 0.1, 0.58, 1);
 }
 .check__icon {

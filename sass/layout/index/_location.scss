@@ -1,13 +1,16 @@
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as mix;
+
 // Location line below home page header
 .location {
-    @include flex('', center, center);
-    @include shadow(location);
+    @include mix.flex('', center, center);
+    @include mix.shadow(location);
     height: 60px;
     background-color: $color-background--location;
 }
 
 .location__content {
-    @include flex('', center, center);
+    @include mix.flex('', center, center);
     position: relative;
     color: $color-text--lighter;
 

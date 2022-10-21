@@ -1,3 +1,6 @@
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as mix;
+
 // Menu pages heading section
 .menu-heading {
     position: relative;
@@ -12,8 +15,8 @@
     }
 
     &__title {
-        @include flex('', space-between, flex-start);
-        @include radius(menu-title);
+        @include mix.flex('', space-between, flex-start);
+        @include mix.radius(menu-title);
         position: absolute;
         bottom: 0;
         padding: 2rem ($padding-x + 1rem) 0.5rem $padding-x; 

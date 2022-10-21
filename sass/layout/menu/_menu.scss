@@ -1,3 +1,6 @@
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as mix;
+
 .menu-section {
     position: relative;
     padding-top: 0;
@@ -16,7 +19,7 @@
 
         // Decorative underline
         &::after {
-            @include menu-underline;
+            @include mix.menu-underline;
         }
     }
 
@@ -34,16 +37,16 @@
     
 // Course card
 .course {
-    @include flex('', space-between, stretch);
-    @include radius(course-card);
-    @include shadow(card);
+    @include mix.flex('', space-between, stretch);
+    @include mix.radius(course-card);
+    @include mix.shadow(card);
     margin: 1rem 0;
     background-color: white;
 
     overflow: hidden;
 
     &__body {
-        @include flex('', space-between, flex-end);
+        @include mix.flex('', space-between, flex-end);
         padding: 0.8rem;
         width: 100%;
         

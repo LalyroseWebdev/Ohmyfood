@@ -1,23 +1,26 @@
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as mix;
+
 //Tutorial section
 .tutorial {
     background-color: white;
 
     // Tutorial list
     &__list {
-        @include flex(column, center, stretch, 1.5rem);
+        @include mix.flex(column, center, stretch, 1.5rem);
         margin: 0;
         padding: 0 0 0 0.8rem;
 
         // Large screens and above
         @media only screen and (min-width: $screen-lg) {
-            @include flex(row, flex-start, center, 3rem);
+            @include mix.flex(row, flex-start, center, 3rem);
         }
     }
 }
 
 // Tutorial step
 .step {
-    @include flex('', stretch, center);
+    @include mix.flex('', stretch, center);
     position: relative;
 
     // Large screens and above
@@ -27,9 +30,9 @@
 
     // Step content
     &__content {
-        @include flex('', flex-start, center, 1.5rem);
-        @include radius(tutorial);
-        @include shadow(card);
+        @include mix.flex('', flex-start, center, 1.5rem);
+        @include mix.radius(tutorial);
+        @include mix.shadow(card);
         padding: 0 2rem;
         width: 100%;
         height: 80px;
@@ -54,7 +57,7 @@
 
     // Step number
     &__number {
-        @include circle-center(1.6rem);
+        @include mix.circle-center(1.6rem);
         position: absolute;
         left: -0.8rem;
         font-size: 12pt;

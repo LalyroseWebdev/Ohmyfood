@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 $gradient-map: (
     btn-text: (
         gradient: $gradient-btn--text,

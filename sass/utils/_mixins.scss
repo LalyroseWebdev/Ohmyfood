@@ -1,3 +1,6 @@
+@use '../utils/variables' as *;
+@use '../utils/maps' as map;
+
 // Flexbox
 // 'direction: row' MUST BE marked by ''
 // 'gap' optional
@@ -10,14 +13,14 @@
 }
 
 @mixin gradient($type) {
-    $palette: map-get($gradient-map, $type);
+    $palette: map-get(map.$gradient-map, $type);
     background-image: map-get($palette, gradient);
     color: map-get($palette, color);
     background-clip: map-get($palette, clip);
 }
 
 @mixin shadow($type) {
-    $palette: map-get($shadow-map, $type);
+    $palette: map-get(map.$shadow-map, $type);
     box-shadow: map-get($palette, shadow);
 
     &:hover {
@@ -26,7 +29,7 @@
 }
 
 @mixin radius($type) {
-    $palette: map-get($radius-map, $type);
+    $palette: map-get(map.$radius-map, $type);
     border-radius: map-get($palette, radius);
 
     &__image {
@@ -40,7 +43,7 @@
 
 // Heart icon
 @mixin heart($type) {
-    $palette: map-get($heart-map, $type);
+    $palette: map-get(map.$heart-map, $type);
 
     // Fontawesome properties
     display: inline-block;

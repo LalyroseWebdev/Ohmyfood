@@ -1,7 +1,10 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as mix;
+
 // Text buttons
 .btn-text {
-    @include gradient(btn-text);
-    @include shadow(btn);
+    @include mix.gradient(btn-text);
+    @include mix.shadow(btn);
     border: none;
     border-radius: 50px;
     padding: 20px;
@@ -38,13 +41,13 @@
 
     // Empty heart
     &::before {
-        @include heart(regular);
+        @include mix.heart(regular);
     }
 
     // Gradient-colored heart
     &::after {
-        @include heart(solid);
-        @include gradient(btn-like);
+        @include mix.heart(solid);
+        @include mix.gradient(btn-like);
         opacity: 0;
         
         transition: opacity $anim-btn--like-duration, transform $anim-btn--like-duration ease-in;

@@ -1,21 +1,24 @@
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as mix;
+
 .restaurants-list {
-    @include flex(column, flex-start, stretch, 1.5rem);
+    @include mix.flex(column, flex-start, stretch, 1.5rem);
     padding-bottom: 1.5rem;
 
     // 2-cards group
     &__group {
-        @include flex(column, flex-start, stretch, 1.5rem);
+        @include mix.flex(column, flex-start, stretch, 1.5rem);
 
         // Medium screens and above
         @media only screen and (min-width: $screen-md) {
-            @include flex(row, center, stretch);
+            @include mix.flex(row, center, stretch);
         }
     }
 }
 
 .restaurant-card {
-    @include radius(restaurant-card);
-    @include shadow(card);
+    @include mix.radius(restaurant-card);
+    @include mix.shadow(card);
     position: relative;
 
     &__image {
@@ -26,12 +29,12 @@
 
         // 'Nouveau' label
         &.new::after {
-            @include label-new;
+            @include mix.label-new;
         }
     }
 
     &__body {
-        @include flex('', space-between, center);
+        @include mix.flex('', space-between, center);
         padding: 1.2rem 1.8rem 1.2rem 1rem;
         background-color: white;
 

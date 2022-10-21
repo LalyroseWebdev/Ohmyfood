@@ -1,3 +1,6 @@
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as mix;
+
 .footer {
     margin: 0;
     padding: $padding-x;
@@ -13,7 +16,7 @@
     }
 
     &__link {
-        @include flex('', flex-start, center);
+        @include mix.flex('', flex-start, center);
         margin-bottom: 0.5rem;
         color: $color-background;
     }
@@ -32,7 +35,7 @@
     }
 
     .footer-links {
-        @include flex('', flex-start, flex-start);
+        @include mix.flex('', flex-start, flex-start);
 
         // 2-links group
         &__group {

@@ -1,8 +1,11 @@
+@use '../../utils/variables' as *;
+@use '../../utils/mixins' as mix;
+
 .call-to-action {
     padding: 0;
 
     &__content {
-        @include flex(column, center, center, 1.5rem);
+        @include mix.flex(column, center, center, 1.5rem);
         padding: 3rem;
         
         // Headline

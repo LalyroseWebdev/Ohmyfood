@@ -11,16 +11,16 @@ $padding-x--md: 1.8rem;
 $padding-x--lg: 2.8rem; 
 
 // Theme colors
-$color-primary: hsl(267, 66, 60);
-$color-secondary: hsl(317, 100, 74);
-$color-tertiary: hsl(165, 56, 74);
+$color-primary: hsl(267, 66%, 60%);
+$color-secondary: hsl(317, 100%, 74%);
+$color-tertiary: hsl(165, 56%, 74%);
 
 // Text & background colors
-$color-background: hsl(0, 0, 96);
+$color-background: hsl(0, 0%, 96%);
 $color-background--spinner: transparentize($color-background, 0.15);
 $color-background--location: darken($color-background, 5);
 $color-background--footer: darken($color-background, 75);
-$color-text: hsl(0, 0, 0);
+$color-text: hsl(0, 0%, 0%);
 $color-text--lighter: lighten($color-text, 20);
 
 // Gradient colors

@@ -50,7 +50,7 @@
         @include mix.gradient(btn-like);
         opacity: 0;
         
-        transition: opacity $anim-btn--like-duration, transform $anim-btn--like-duration ease-in;
+        transition: (opacity $anim-btn--like-duration, transform $anim-btn--like-duration ease-in);
     }
 
     // Hover opacity & scale animation

@@ -21,7 +21,7 @@
             margin-bottom: 0.5rem;
             width: 90%;
             text-align: center;
-            font-size: $size-index-h2 - 6pt;
+            font-size: calc($size-index-h2 - 6pt);
             font-weight: 300;
         }
     }

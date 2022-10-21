@@ -14,7 +14,7 @@
 
     &__icon {
         position: absolute;
-        right: - $size-check--icon;
+        right: calc($size-check--icon * -1);
         // Icon positioning (out of frame)
         animation: check-position-out $anim-check-duration $anim-check-timing;
     }
@@ -58,7 +58,7 @@
 
 @keyframes check-position-in {
     from {
-        right: - $size-check--icon;
+        right: calc($size-check--icon * -1);
     }
     to { 
         right: 50%; 
@@ -72,7 +72,7 @@
         transform: translateX(50%); 
     }
     to {
-        right: - $size-check--icon;
+        right: calc($size-check--icon * -1);
         transform: translateX(0);
     }
 }

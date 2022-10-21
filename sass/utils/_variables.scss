@@ -28,8 +28,8 @@ $gradient-btn--text: linear-gradient(170deg, $color-secondary, $color-primary);
 $gradient-btn--like: linear-gradient(10deg, $color-secondary, $color-primary);
 
 // Fonts
-$font-title: 'Shrikhand', sans-serif;
-$font-text: 'Roboto', sans-serif;
+$font-title: ('Shrikhand', sans-serif);
+$font-text: ('Roboto', sans-serif);
 
 // Font sizes - headings & text
 $size-title: 24pt;

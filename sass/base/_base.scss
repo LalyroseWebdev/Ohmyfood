@@ -32,13 +32,11 @@ a {
 
 // Keyboard focus effect
 a:focus,
-button:focus,
-.btn-text:focus {
+button:focus, .btn-text:focus {
     outline: 5px solid $color-secondary;
 }
 a:focus:not(:focus-visible),
-button:focus:not(:focus-visible),
-.btn-text:focus:not(:focus-visible) {
+button:focus:not(:focus-visible), .btn-text:focus:not(:focus-visible) {
     outline: 0;
 }
 

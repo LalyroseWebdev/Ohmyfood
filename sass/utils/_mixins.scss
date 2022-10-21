@@ -58,6 +58,17 @@
     font-size: $size-btn-like;
 }
 
+// Menu section title's decorative underline
+@mixin menu-underline {
+    content: "";
+    position: absolute;
+    bottom: calc($size-menu-h2 / -2.5);
+    left: 0;
+    width: $size-menu-underline;
+    height: calc($size-menu-h2 * 0.15);
+    background-color: $color-tertiary;
+}
+
 // Round element with centered content
 @mixin circle-center($length) {
     border-radius: 50%;

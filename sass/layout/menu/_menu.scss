@@ -102,6 +102,6 @@
 // Incremental delay
 @for $i from 1 through 4 {
     .menu-section:nth-child(#{$i}) {
-        animation-delay: $i * $anim-menu-delay - $anim-menu-delay;
+        animation-delay: ($i * $anim-menu-delay) - $anim-menu-delay;
     }
 }

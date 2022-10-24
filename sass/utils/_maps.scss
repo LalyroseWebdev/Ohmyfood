@@ -47,6 +47,24 @@ $radius-map: (
     ),
 );
 
+$spinner-map: (
+    outer: (
+        color: vg.$color-primary,
+        size: vi.$size-spinner,
+        rotate: 45deg,
+    ),
+    middle: (
+        color: vg.$color-secondary,
+        size: calc(vi.$size-spinner * 2/3),
+        rotate: 225deg,
+    ),
+    inner: (
+        color: vg.$color-tertiary,
+        size: calc(vi.$size-spinner * 1/3),
+        bg: vg.$color-tertiary,
+    ),
+);
+
 // Heart icon
 $heart-map: (
     regular: var(--fa-font-regular),

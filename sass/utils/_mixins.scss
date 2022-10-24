@@ -43,6 +43,29 @@
     }
 }
 
+@mixin spinner($type) {
+    $palette: map-get(map.$spinner-map, $type);
+    position: absolute;
+    border: vi.$thickness-spinner solid map-get($palette, color);
+    border-top-color: transparent;
+    border-radius: 50%;
+    width: map-get($palette, size);
+    height: map-get($palette, size);
+    background-color: map-get($palette, bg);
+    
+    transform: rotate(map-get($palette, rotate));
+
+    // 360° clockwise rotation
+    @keyframes spinner-rotation-#{$type} {
+        0% {
+            transform: rotate(map-get($palette, rotate));
+        }
+        100% {
+            transform: rotate(map-get($palette, rotate) + 1turn);
+        }
+    }
+}
+
 // Heart icon
 @mixin heart($type) {
     $palette: map-get(map.$heart-map, $type);

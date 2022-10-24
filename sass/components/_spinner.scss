@@ -1,77 +1,46 @@
 @use '../utils/variables/var-general' as vg;
-
-// Instantaneous pop-up
-@keyframes pop-up {
-    0% {
-        transform: translateX(-9999px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-// 360° clockwise rotation
-@keyframes spinner-rotation {
-    0% {
-        transform: rotate(45deg);
-    }
-    100% {
-        transform: rotate(405deg);
-    }
-}
+@use '../utils/variables/var-index' as vi;
+@use '../utils/mixins' as mix;
 
 .spinner-container {
+    @include mix.flex('', center, center);
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     background-color: vg.$color-background--spinner;
     z-index: 1;
 
-    animation: pop-up 0s 2s forwards reverse;
+    // Pop-out animation for test purposes
+    animation: pop-out 0s 2s forwards;
+
+    @keyframes pop-out {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-9999px);
+        }
+    }
 }
 
 .spinner {
+    @include mix.flex('', center, center);
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.outer-circle {
-    position: absolute;
-    border: 7px solid vg.$color-primary;
-    border-top-color: transparent;
-    border-radius: 50%;
-    width: 84px;
-    height: 84px;
-    transform: rotate(45deg);
+    &__outer {
+        @include mix.spinner(outer);
+        animation: spinner-rotation-outer 2s linear both 3; // Keyframes in the mixin
+    }
 
-    animation: spinner-rotation 2s linear both 3;
-}
+    &__middle {
+        @include mix.spinner(middle);
+        animation: spinner-rotation-middle 1.5s linear both reverse 3; // Keyframes in the mixin
+    }
 
-.middle-circle {
-    position: absolute;
-    border: 7px solid vg.$color-secondary;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    width: 56px;
-    height: 56px;
-    transform: rotate(45deg);
-
-    animation: spinner-rotation 1.5s linear both reverse 3;
-}
-
-.inner-circle {
-    position: absolute;
-    border-radius: 50%;
-    width: 28px;
-    height: 28px;
-    background-color: vg.$color-tertiary;
+    &__inner {
+        @include mix.spinner(inner);
+    }
 }

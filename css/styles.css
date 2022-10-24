@@ -143,15 +143,45 @@ section {
   transform: scale(1.15);
 }
 
-@keyframes pop-up {
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(245, 245, 245, 0.85);
+  z-index: 1;
+  animation: pop-out 0s 2s forwards;
+}
+@keyframes pop-out {
   0% {
-    transform: translateX(-9999px);
-  }
-  100% {
     transform: translateX(0);
   }
+  100% {
+    transform: translateX(-9999px);
+  }
 }
-@keyframes spinner-rotation {
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.spinner__outer {
+  position: absolute;
+  border: 7px solid hsl(267deg, 66%, 60%);
+  border-top-color: transparent;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  transform: rotate(45deg);
+  animation: spinner-rotation-outer 2s linear both 3;
+}
+@keyframes spinner-rotation-outer {
   0% {
     transform: rotate(45deg);
   }
@@ -159,55 +189,41 @@ section {
     transform: rotate(405deg);
   }
 }
-.spinner-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(245, 245, 245, 0.85);
-  z-index: 1;
-  animation: pop-up 0s 2s forwards reverse;
-}
-
-.spinner {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.outer-circle {
-  position: absolute;
-  border: 7px solid hsl(267deg, 66%, 60%);
-  border-top-color: transparent;
-  border-radius: 50%;
-  width: 84px;
-  height: 84px;
-  transform: rotate(45deg);
-  animation: spinner-rotation 2s linear both 3;
-}
-
-.middle-circle {
+.spinner__middle {
   position: absolute;
   border: 7px solid hsl(317deg, 100%, 74%);
-  border-bottom-color: transparent;
+  border-top-color: transparent;
   border-radius: 50%;
-  width: 56px;
-  height: 56px;
-  transform: rotate(45deg);
-  animation: spinner-rotation 1.5s linear both reverse 3;
+  width: 60px;
+  height: 60px;
+  transform: rotate(225deg);
+  animation: spinner-rotation-middle 1.5s linear both reverse 3;
 }
-
-.inner-circle {
+@keyframes spinner-rotation-middle {
+  0% {
+    transform: rotate(225deg);
+  }
+  100% {
+    transform: rotate(585deg);
+  }
+}
+.spinner__inner {
   position: absolute;
+  border: 7px solid hsl(165deg, 56%, 74%);
+  border-top-color: transparent;
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   background-color: hsl(165deg, 56%, 74%);
+  transform: rotate();
+}
+@keyframes spinner-rotation-inner {
+  0% {
+    transform: rotate();
+  }
+  100% {
+    transform: rotate(1turn);
+  }
 }
 
 header {

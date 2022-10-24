@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -69,30 +71,6 @@ section {
   padding: 3rem 1.3rem;
 }
 
-@font-face {
-  font-family: "Shrikhand";
-  src: url("./font/Shrikhand-Regular.woff") format("woff"), url("./font/Shrikhand-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("./font/Roboto-Light.woff") format("woff"), url("./font/Roboto-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("./font/Roboto-Regular.woff") format("woff"), url("./font/Roboto-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("./font/Roboto-Bold.woff") format("woff"), url("./font/Roboto-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}
 .btn-text {
   background-image: linear-gradient(170deg, hsl(317deg, 100%, 74%), hsl(267deg, 66%, 60%));
   box-shadow: 0 5px 10px #c2c2c2;

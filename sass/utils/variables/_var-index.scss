@@ -4,6 +4,7 @@
 $size-index-h2: 22pt;
 
 // Tutorial
+$size-tuto-number: calc(vg.$size-text * 1.4); // Number size adapts to text
 $size-tuto-icon: calc(vg.$size-text + 2pt); // Icon size adapts to text
 $radius-tutorial-step: 20px;
 

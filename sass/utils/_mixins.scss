@@ -63,7 +63,7 @@
     font-size: vg.$size-btn-like;
 }
 
-// Menu section title's decorative underline
+// Menu headings decorative underline
 @mixin menu-underline {
     content: '';
     position: absolute;
@@ -89,9 +89,9 @@
 }
 
 @mixin tutorial-number {
-    @include circle-center(calc(vg.$size-text * 1.3)); // Circle height adapts to font-size
+    @include circle-center(vi.$size-tuto-number); // Circle height adapts to font-size
     position: absolute;
-    left: -0.8rem;
+    left: calc(vi.$size-tuto-number / -2);
     font-size: calc(vg.$size-text - 2pt); // Number font-size slightly smaller than text
     color: white;
     background-color: vg.$color-primary;

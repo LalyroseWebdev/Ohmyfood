@@ -9,8 +9,7 @@
     // Steps list
     &__list {
         @include mix.flex(column, center, stretch, 1.5rem);
-        margin: 0;
-        padding: 0 0 0 0.8rem;
+        padding-left: calc(vi.$size-tuto-number / 2); // Circle centered on left border
 
         // Large screens and above
         @media only screen and (min-width: vg.$screen-lg) {

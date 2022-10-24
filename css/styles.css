@@ -326,8 +326,7 @@ header a {
   justify-content: center;
   align-items: stretch;
   gap: 1.5rem;
-  margin: 0;
-  padding: 0 0 0 0.8rem;
+  padding-left: 9.8pt;
 }
 @media only screen and (min-width: 800px) {
   .tutorial__list {
@@ -356,12 +355,12 @@ header a {
 }
 .step::after {
   border-radius: 50%;
-  width: 18.2pt;
-  height: 18.2pt;
-  line-height: 18.2pt;
+  width: 19.6pt;
+  height: 19.6pt;
+  line-height: 19.6pt;
   text-align: center;
   position: absolute;
-  left: -0.8rem;
+  left: -9.8pt;
   font-size: 12pt;
   color: white;
   background-color: hsl(267deg, 66%, 60%);

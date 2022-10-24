@@ -46,12 +46,12 @@
 
     // Empty heart
     &::before {
-        @include mix.heart(regular);
+        @include mix.heart(empty);
     }
 
     // Gradient-colored heart
     &::after {
-        @include mix.heart(solid);
+        @include mix.heart(full);
         @include mix.gradient(btn-like);
         opacity: 0;
         

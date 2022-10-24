@@ -1,4 +1,4 @@
-@use '../utils/variables' as *;
+@use '../utils/variables/var-general' as vg;
 
 // Instantaneous pop-up
 @keyframes pop-up {
@@ -31,7 +31,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color: $color-background--spinner;
+    background-color: vg.$color-background--spinner;
     z-index: 1;
 
     animation: pop-up 0s 2s forwards reverse;
@@ -46,7 +46,7 @@
 
 .outer-circle {
     position: absolute;
-    border: 7px solid $color-primary;
+    border: 7px solid vg.$color-primary;
     border-top-color: transparent;
     border-radius: 50%;
     width: 84px;
@@ -58,7 +58,7 @@
 
 .middle-circle {
     position: absolute;
-    border: 7px solid $color-secondary;
+    border: 7px solid vg.$color-secondary;
     border-bottom-color: transparent;
     border-radius: 50%;
     width: 56px;
@@ -73,5 +73,5 @@
     border-radius: 50%;
     width: 28px;
     height: 28px;
-    background-color: $color-tertiary;
+    background-color: vg.$color-tertiary;
 }

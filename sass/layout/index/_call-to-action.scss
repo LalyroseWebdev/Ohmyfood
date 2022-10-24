@@ -1,4 +1,5 @@
-@use '../../utils/variables' as *;
+@use '../../utils/variables/var-general' as vg;
+@use '../../utils/variables/var-index' as vi;
 @use '../../utils/mixins' as mix;
 
 .call-to-action {
@@ -6,14 +7,14 @@
 
     &__content {
         @include mix.flex(column, center, center, 1.5rem);
-        padding: $padding-y $padding-x;
+        padding: vg.$padding-y vg.$padding-x;
         
         // Headline
         & h2 {
             margin: 0;
             width: 70%;
             text-align: center;
-            font-size: $size-index-h2;
+            font-size: vi.$size-index-h2;
         }
     
         // Byline
@@ -21,7 +22,7 @@
             margin-bottom: 0.5rem;
             width: 90%;
             text-align: center;
-            font-size: calc($size-index-h2 - 6pt);
+            font-size: calc(vi.$size-index-h2 - 6pt);
             font-weight: 300;
         }
     }

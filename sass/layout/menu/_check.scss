@@ -1,4 +1,5 @@
-@use '../../utils/variables' as *;
+@use '../../utils/variables/var-general' as vg;
+@use '../../utils/variables/var-menu' as vm;
 @use '../../utils/mixins' as mix;
 
 .check {
@@ -6,17 +7,17 @@
     flex-shrink: 0;
     position: relative;
     width: 0;  
-    font-size: $size-check--icon;
+    font-size: vm.$size-check--icon;
     color: white;
-    background-color: $color-tertiary;
+    background-color: vg.$color-tertiary;
     // Slide out to the right
-    transition: width $anim-check-duration $anim-check-timing;
+    transition: width vm.$anim-check-duration vm.$anim-check-timing;
 
     &__icon {
         position: absolute;
-        right: calc($size-check--icon * -1);
+        right: calc(vm.$size-check--icon * -1);
         // Icon positioning (out of frame)
-        animation: check-position-out $anim-check-duration $anim-check-timing;
+        animation: check-position-out vm.$anim-check-duration vm.$anim-check-timing;
     }
 }
 
@@ -26,18 +27,18 @@
 
 // Slide-in from the right
 .course:hover .check {
-    width: $size-check--course;
-    animation: check-slide-in $anim-check-duration $anim-check-timing;
+    width: vm.$size-check--course;
+    animation: check-slide-in vm.$anim-check-duration vm.$anim-check-timing;
 
     // Icon positioning (center)
     &__icon {
         right: 50%; 
         transform: translateX(50%); 
-        animation: check-position-in $anim-check-duration $anim-check-timing forwards;
+        animation: check-position-in vm.$anim-check-duration vm.$anim-check-timing forwards;
 
         // Rotation
         & > i {
-            animation: check-rotate (0.75 * $anim-check-duration) (0.25 * $anim-check-duration) $anim-check-timing forwards;
+            animation: check-rotate (0.75 * vm.$anim-check-duration) (0.25 * vm.$anim-check-duration) vm.$anim-check-timing forwards;
         }
     }
 }
@@ -48,7 +49,7 @@
 
 @keyframes check-slide-in {
     from { width: 0; }
-    to { width: $size-check--course; }
+    to { width: vm.$size-check--course; }
 }
 
 @keyframes check-rotate {
@@ -58,7 +59,7 @@
 
 @keyframes check-position-in {
     from {
-        right: calc($size-check--icon * -1);
+        right: calc(vm.$size-check--icon * -1);
     }
     to { 
         right: 50%; 
@@ -72,7 +73,7 @@
         transform: translateX(50%); 
     }
     to {
-        right: calc($size-check--icon * -1);
+        right: calc(vm.$size-check--icon * -1);
         transform: translateX(0);
     }
 }

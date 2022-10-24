@@ -1,16 +1,16 @@
-@use '../../utils/variables' as *;
+@use '../../utils/variables/var-general' as vg;
 @use '../../utils/mixins' as mix;
 
 .restaurants-list {
     @include mix.flex(column, flex-start, stretch, 1.5rem);
-    padding-bottom: $padding-y;
+    padding-bottom: vg.$padding-y;
 
     // 2-cards group
     &__group {
         @include mix.flex(column, flex-start, stretch, 1.5rem);
 
         // Medium screens and above
-        @media only screen and (min-width: $screen-md) {
+        @media only screen and (min-width: vg.$screen-md) {
             @include mix.flex(row, center, stretch);
         }
     }
@@ -52,12 +52,12 @@
     }
 
     // Medium screens card
-    @media only screen and (min-width: $screen-md) {
+    @media only screen and (min-width: vg.$screen-md) {
         width: 50%;
     }
 
     // Large screens and above card
-    @media only screen and (min-width: $screen-lg) {
+    @media only screen and (min-width: vg.$screen-lg) {
         margin: 10px;
     }
 }
@@ -67,16 +67,16 @@
     position: absolute;
     bottom: 0;
 
-    @media only screen and (min-width: $screen-sm) {
+    @media only screen and (min-width: vg.$screen-sm) {
         bottom: -30px;
     }
 
-    @media only screen and (min-width: $screen-md) {
+    @media only screen and (min-width: vg.$screen-md) {
         bottom: auto;
         top: 0;
     }
 
-    @media only screen and (min-width: $screen-xl) {
+    @media only screen and (min-width: vg.$screen-xl) {
         top: auto;
         bottom: -20px;
     }

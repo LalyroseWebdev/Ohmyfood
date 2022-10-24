@@ -1,4 +1,5 @@
-@use '../../utils/variables' as *;
+@use '../../utils/variables/var-general' as vg;
+@use '../../utils/variables/var-index' as vi;
 @use '../../utils/mixins' as mix;
 
 //Tutorial section
@@ -12,7 +13,7 @@
         padding: 0 0 0 0.8rem;
 
         // Large screens and above
-        @media only screen and (min-width: $screen-lg) {
+        @media only screen and (min-width: vg.$screen-lg) {
             @include mix.flex(row, flex-start, center, 3rem);
         }
     }
@@ -44,25 +45,25 @@
         position: relative;
         padding: 1rem 2rem;
         width: 100%;
-        height: calc($size-text * 4); // Card height adapts to font size
-        background-color: $color-background;
+        height: calc(vg.$size-text * 4); // Card height adapts to font size
+        background-color: vg.$color-background;
     
         &__icon {
-            font-size: $size-tuto-icon;
-            color: lighten($color-text, 40);
+            font-size: vi.$size-tuto-icon;
+            color: lighten(vg.$color-text, 40);
         } 
 
         &:hover {
-            background-color: lighten($color-primary, 35);
+            background-color: lighten(vg.$color-primary, 35);
         }
 
         &:hover &__icon {
-            color: $color-primary;
+            color: vg.$color-primary;
         }
     }
 
     // Tutorial step - large screens and above
-    @media only screen and (min-width: $screen-lg) {
+    @media only screen and (min-width: vg.$screen-lg) {
         width: 33%;
     }
 }

@@ -1,4 +1,5 @@
-@use '../../utils/variables' as *;
+@use '../../utils/variables/var-general' as vg;
+@use '../../utils/variables/var-menu' as vm;
 @use '../../utils/mixins' as mix;
 
 .menu-section {
@@ -7,14 +8,14 @@
     padding-bottom: 2rem;
     opacity: 0;
 
-    animation: appear $anim-menu-duration ease-out forwards;
+    animation: appear vm.$anim-menu-duration ease-out forwards;
     
     // Section title (starters/dishes/desserts)
     &__heading {
         position: relative;
-        margin-bottom: calc($size-menu-h2 * 1.5);
+        margin-bottom: calc(vm.$size-menu-h2 * 1.5);
         width: fit-content;
-        font-size: $size-menu-h2;
+        font-size: vm.$size-menu-h2;
         font-weight: 300;
         text-transform: uppercase;
 
@@ -25,14 +26,14 @@
     }
 
     // Medium screens
-    @media only screen and (min-width: $screen-md) {
-        padding: 0 $padding-x--md 3rem $padding-x--md;
+    @media only screen and (min-width: vg.$screen-md) {
+        padding: 0 vg.$padding-x--md 3rem vg.$padding-x--md;
     }
 
     // Large screens and above
-    @media only screen and (min-width: $screen-lg) {
-        padding-left: $padding-x--lg;
-        padding-right: $padding-x--lg;
+    @media only screen and (min-width: vg.$screen-lg) {
+        padding-left: vg.$padding-x--lg;
+        padding-right: vg.$padding-x--lg;
     }
 }
     
@@ -63,7 +64,7 @@
 
         // Course name
         & h3 {
-            font-size: $size-course-name;
+            font-size: vm.$size-course-name;
             font-weight: bold;
             line-height: 1.4;
 
@@ -74,7 +75,7 @@
 
         // Course subname
         & p {
-            font-size: $size-course-subname;
+            font-size: vm.$size-course-subname;
             font-weight: 300;
 
             overflow: hidden;
@@ -87,7 +88,7 @@
         margin-left: 1.5rem;
         margin-right: 0.8rem;
         font-weight: bold;
-        font-size: $size-course-price;
+        font-size: vm.$size-course-price;
     }
 }
 
@@ -106,6 +107,6 @@
 // Incremental delay
 @for $i from 1 through 4 {
     .menu-section:nth-child(#{$i}) {
-        animation-delay: calc(($i * $anim-menu-delay) - $anim-menu-delay);
+        animation-delay: calc(($i * vm.$anim-menu-delay) - vm.$anim-menu-delay);
     }
 }

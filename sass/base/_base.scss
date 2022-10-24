@@ -1,8 +1,8 @@
-@use '../utils/variables' as *;
+@use '../utils/variables/var-general' as vg;
 
 * {
     box-sizing: border-box;
-    font-family: $font-text;
+    font-family: vg.$font-text;
 }
 
 // Smooth scrolling
@@ -21,19 +21,19 @@ body {
 }
 
 main {
-    background-color: $color-background;
+    background-color: vg.$color-background;
 }
 
 a {
-    font-size: $size-text;
+    font-size: vg.$size-text;
     text-decoration: none;
-    color: $color-text;
+    color: vg.$color-text;
 }
 
 // Keyboard focus effect
 a:focus,
 button:focus, .btn-text:focus {
-    outline: 5px solid $color-secondary;
+    outline: 5px solid vg.$color-secondary;
 }
 a:focus:not(:focus-visible),
 button:focus:not(:focus-visible), .btn-text:focus:not(:focus-visible) {
@@ -45,8 +45,8 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-family: $font-title;
-    font-size: $size-title;
+    font-family: vg.$font-title;
+    font-size: vg.$size-title;
 }
 
 // Home page sections title
@@ -56,7 +56,7 @@ h1 {
 
 span, p {
     margin: 0;
-    font-size: $size-text;
+    font-size: vg.$size-text;
 }
 
 img {
@@ -69,5 +69,5 @@ ul {
 }
 
 section {
-    padding: $padding-y $padding-x;
+    padding: vg.$padding-y vg.$padding-x;
 }

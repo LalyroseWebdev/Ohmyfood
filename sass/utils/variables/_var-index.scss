@@ -1,0 +1,18 @@
+@use 'var-general' as vg;
+
+// Sections headings
+$size-index-h2: 22pt;
+
+// Tutorial
+$size-tuto-icon: calc(vg.$size-text + 2pt); // Icon size adapts to text
+$radius-tutorial-step: 20px;
+
+
+// ===================
+//  Restaurant card
+// ===================
+
+$radius-restaurant-card: 15px;
+
+$size-label-new: 12pt;
+$radius-label-new: 5px;

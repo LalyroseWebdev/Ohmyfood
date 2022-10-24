@@ -1,37 +1,37 @@
-@use '../../utils/variables' as *;
+@use '../../utils/variables/var-general' as vg;
 @use '../../utils/mixins' as mix;
 
 .footer {
     margin: 0;
-    padding: $padding-x;
-    background-color: $color-background--footer;
+    padding: vg.$padding-x;
+    background-color: vg.$color-background--footer;
 
     // Logo ohmyfood
     &__logo {
         display: block;
         margin-bottom: 1.5rem;
-        font-family: $font-title;
-        font-size: calc($size-text + 2pt);
-        color: $color-background;
+        font-family: vg.$font-title;
+        font-size: calc(vg.$size-text + 2pt);
+        color: vg.$color-background;
     }
 
     &__link {
         @include mix.flex('', flex-start, center);
         margin-bottom: 0.5rem;
-        color: $color-background;
+        color: vg.$color-background;
     }
 
     &__icon {
         width: 1.8rem;
-        font-size: calc($size-text - 2pt);
+        font-size: calc(vg.$size-text - 2pt);
     }
 }
 
 // Medium screens
-@media only screen and (min-width: $screen-md) {
+@media only screen and (min-width: vg.$screen-md) {
 
     .footer {
-        padding: $padding-x--md;
+        padding: vg.$padding-x--md;
     }
 
     .footer-links {
@@ -46,9 +46,9 @@
 }
 
 // Large screens and above
-@media only screen and (min-width: $screen-lg) {
+@media only screen and (min-width: vg.$screen-lg) {
     
     .footer {
-        padding-left: $padding-x--lg;
+        padding-left: vg.$padding-x--lg;
     }
 }

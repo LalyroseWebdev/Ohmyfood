@@ -1,4 +1,5 @@
-@use '../../utils/variables' as *;
+@use '../../utils/variables/var-general' as vg;
+@use '../../utils/variables/var-menu' as vm;
 @use '../../utils/mixins' as mix;
 
 header {
@@ -9,8 +10,8 @@ header {
 
     // Ohmyfood title in menu pages
     & span {
-        font-family: $font-title;
-        font-size: $size-title;
+        font-family: vg.$font-title;
+        font-size: vg.$size-title;
         font-weight: bold;
     }
 
@@ -18,7 +19,7 @@ header {
     & a {
         position: absolute;
         left: 25px;
-        font-size: $size-header-arrow;
-        color: $color-text--lighter;
+        font-size: vm.$size-header-arrow;
+        color: vg.$color-text--lighter;
     }
 }

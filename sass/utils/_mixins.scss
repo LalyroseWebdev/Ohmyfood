@@ -1,5 +1,7 @@
-@use '../utils/variables' as *;
-@use '../utils/maps' as map;
+@use 'variables/var-general' as vg;
+@use 'variables/var-index' as vi;
+@use 'variables/var-menu' as vm;
+@use 'maps' as map;
 
 // Flexbox
 // 'direction: row' MUST BE marked by ''
@@ -58,18 +60,18 @@
     left: 0;
     right: 0;
     bottom: 0;
-    font-size: $size-btn-like;
+    font-size: vg.$size-btn-like;
 }
 
 // Menu section title's decorative underline
 @mixin menu-underline {
     content: '';
     position: absolute;
-    bottom: calc($size-menu-h2 / -2.5);
+    bottom: calc(vm.$size-menu-h2 / -2.5);
     left: 0;
-    width: $size-menu-underline;
-    height: calc($size-menu-h2 * 0.15);
-    background-color: $color-tertiary;
+    width: vm.$size-menu-underline;
+    height: calc(vm.$size-menu-h2 * 0.15);
+    background-color: vg.$color-tertiary;
 }
 
 @mixin label-new {
@@ -80,19 +82,19 @@
     top: 1rem;
     padding: 0.5rem;
     width: fit-content;
-    font-size: $size-label-new;
+    font-size: vi.$size-label-new;
     font-weight: bold;
-    color: darken($color-tertiary, 45);
-    background-color: $color-tertiary;
+    color: darken(vg.$color-tertiary, 45);
+    background-color: vg.$color-tertiary;
 }
 
 @mixin tutorial-number {
-    @include circle-center(calc($size-text * 1.3)); // Circle height adapts to font-size
+    @include circle-center(calc(vg.$size-text * 1.3)); // Circle height adapts to font-size
     position: absolute;
     left: -0.8rem;
-    font-size: calc($size-text - 2pt); // Number font-size slightly smaller than text
+    font-size: calc(vg.$size-text - 2pt); // Number font-size slightly smaller than text
     color: white;
-    background-color: $color-primary;
+    background-color: vg.$color-primary;
 }
 
 // Round element with centered content

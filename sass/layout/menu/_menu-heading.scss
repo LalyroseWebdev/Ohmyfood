@@ -1,4 +1,4 @@
-@use '../../utils/variables' as *;
+@use '../../utils/variables/var-general' as vg;
 @use '../../utils/mixins' as mix;
 
 // Menu pages heading section
@@ -19,20 +19,20 @@
         @include mix.radius(menu-title);
         position: absolute;
         bottom: 0;
-        padding: 2rem calc($padding-x + 1rem) 0.5rem $padding-x; 
+        padding: 2rem calc(vg.$padding-x + 1rem) 0.5rem vg.$padding-x; 
         width: 100%;
-        background-color: $color-background;
+        background-color: vg.$color-background;
 
         // Medium screens
-        @media only screen and (min-width: $screen-md) {
+        @media only screen and (min-width: vg.$screen-md) {
             justify-content: flex-start;
             gap: 35px;
-            padding-left: $padding-x--md;
+            padding-left: vg.$padding-x--md;
         }
 
         // Large screens and above
-        @media only screen and (min-width: $screen-lg) {
-            padding-left: $padding-x--lg;
+        @media only screen and (min-width: vg.$screen-lg) {
+            padding-left: vg.$padding-x--lg;
             padding-bottom: 1.5rem;
         }
     }
@@ -42,15 +42,15 @@
 .menu-heading__image img {
     position: absolute; 
 
-    @media only screen and (min-width: $screen-md) {
+    @media only screen and (min-width: vg.$screen-md) {
         bottom: 0;
     }
 
-    @media only screen and (min-width: $screen-xl) {
+    @media only screen and (min-width: vg.$screen-xl) {
         bottom: -50px;
     }
 
-    @media only screen and (min-width: $screen-xxl) {
+    @media only screen and (min-width: vg.$screen-xxl) {
         bottom: -100px;
     }
 }

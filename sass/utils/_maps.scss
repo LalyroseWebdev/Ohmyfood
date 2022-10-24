@@ -1,11 +1,13 @@
-@use '../utils/variables' as *;
+@use 'variables/var-general' as vg;
+@use 'variables/var-index' as vi;
+@use 'variables/var-menu' as vm;
 
 $gradient-map: (
     btn-text: (
-        gradient: $gradient-btn--text,
+        gradient: vg.$gradient-btn--text,
     ),
     btn-like: (
-        gradient: $gradient-btn--like,
+        gradient: vg.$gradient-btn--like,
         color: transparent,
         clip: text,
     ),
@@ -13,35 +15,35 @@ $gradient-map: (
 
 $shadow-map: (
     location: (
-        shadow: 0px 3px 3px darken($color-background, 20) inset,
+        shadow: 0px 3px 3px darken(vg.$color-background, 20) inset,
     ),
     btn: (
-        shadow: 0 5px 10px darken($color-background, 20),
-        hover: 0 5px 10px darken($color-background, 30),
+        shadow: 0 5px 10px darken(vg.$color-background, 20),
+        hover: 0 5px 10px darken(vg.$color-background, 30),
     ),
     card: (
-        shadow: 0 5px 10px darken($color-background, 10),
-        hover: 0 5px 10px darken($color-background, 20),
+        shadow: 0 5px 10px darken(vg.$color-background, 10),
+        hover: 0 5px 10px darken(vg.$color-background, 20),
     ),
 );
 
 $radius-map: (
     tutorial: (
-        radius: $radius-tutorial-step,
+        radius: vi.$radius-tutorial-step,
     ),
     restaurant-card: (
-        radius: $radius-restaurant-card,
-        image: $radius-restaurant-card $radius-restaurant-card 0 0,
-        body: 0 0 $radius-restaurant-card $radius-restaurant-card,
+        radius: vi.$radius-restaurant-card,
+        image: vi.$radius-restaurant-card vi.$radius-restaurant-card 0 0,
+        body: 0 0 vi.$radius-restaurant-card vi.$radius-restaurant-card,
     ),
     label-new: (
-        radius: $radius-label-new,
+        radius: vi.$radius-label-new,
     ),
     menu-title: (
-        radius: $radius-menu-title $radius-menu-title 0 0,
+        radius: vm.$radius-menu-title vm.$radius-menu-title 0 0,
     ),
     course-card: (
-        radius: $radius-course-card,
+        radius: vm.$radius-course-card,
     ),
 );
 

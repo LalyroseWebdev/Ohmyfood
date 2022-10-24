@@ -1,4 +1,4 @@
-@use '../../utils/variables' as *;
+@use '../../utils/variables/var-general' as vg;
 @use '../../utils/mixins' as mix;
 
 // Location line below home page header
@@ -6,13 +6,13 @@
     @include mix.flex('', center, center);
     @include mix.shadow(location);
     height: 60px;
-    background-color: $color-background--location;
+    background-color: vg.$color-background--darker;
 }
 
 .location__content {
     @include mix.flex('', center, center);
     position: relative;
-    color: $color-text--lighter;
+    color: vg.$color-text--lighter;
 
     & .location__icon {
         position: absolute;

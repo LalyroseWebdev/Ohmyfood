@@ -1,0 +1,28 @@
+$size-header-arrow: 16pt; // Back to home page
+$radius-menu-title: 40px; // Restaurant name
+$size-menu-h2: 15pt; // Starters, dishes, desserts
+$size-menu-underline: 3rem; // Decorative underline
+
+// ===============
+//  Course card
+// ===============
+
+// Font sizes
+$size-course-name: 15pt;
+$size-course-subname: 13pt;
+$size-course-price: 13pt;
+
+// Radius
+$radius-course-card: 20px;
+
+// Check
+$size-check--course: 75px; // Check container
+$size-check--icon: 28px;
+
+// Check slide-in animation
+$anim-check-duration: 270ms;
+$anim-check-timing: cubic-bezier(0,.1,.58,1);
+
+// Menu fade-in animation
+$anim-menu-duration: 750ms;
+$anim-menu-delay: 200ms;

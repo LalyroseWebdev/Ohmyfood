@@ -1,0 +1,42 @@
+// Breakpoints
+$screen-sm: 500px;
+$screen-md: 650px;
+$screen-lg: 800px;
+$screen-xl: 950px;
+$screen-xxl: 1050px;
+
+// Sections padding
+$padding-x: 1.3rem; // left-right
+$padding-x--md: 1.8rem; // left-right
+$padding-x--lg: 2.8rem; // left-right
+$padding-y: 3rem; // top-bottom
+
+// Main colors
+$color-primary: hsl(267, 66%, 60%);
+$color-secondary: hsl(317, 100%, 74%);
+$color-tertiary: hsl(165, 56%, 74%);
+$color-text: hsl(0, 0%, 0%);
+$color-background: hsl(0, 0%, 96%);
+
+// Gradient colors
+$gradient-btn--text: linear-gradient(170deg, $color-secondary, $color-primary);
+$gradient-btn--like: linear-gradient(10deg, $color-secondary, $color-primary);
+
+// Other colors
+$color-background--spinner: transparentize($color-background, 0.15);
+$color-background--footer: darken($color-background, 75);
+$color-background--darker: darken($color-background, 5);
+$color-text--lighter: lighten($color-text, 20);
+
+// Fonts
+$font-title: ('Shrikhand', sans-serif);
+$font-text: ('Roboto', sans-serif);
+
+// Font sizes
+$size-title: 24pt;
+$size-text: 14pt;
+
+// Buttons
+$size-btn-like: 2rem;
+$anim-btn--like-duration: 200ms;
+$anim-btn--text-duration: 200ms;

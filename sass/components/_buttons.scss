@@ -1,4 +1,4 @@
-@use '../utils/variables' as *;
+@use '../utils/variables/var-general' as vg;
 @use '../utils/mixins' as mix;
 
 // Text buttons
@@ -9,11 +9,11 @@
     border-radius: 50px;
     padding: 20px;
     width: fit-content;
-    font-size: $size-text;
+    font-size: vg.$size-text;
     color: white;
     cursor: pointer;
 
-    transition: all $anim-btn--text-duration;
+    transition: all vg.$anim-btn--text-duration;
 
     &:hover {
         opacity: 0.9;
@@ -35,8 +35,8 @@
 .btn-like {
     position: relative;
     border: none;
-    width: $size-btn-like;
-    height: $size-btn-like;
+    width: vg.$size-btn-like;
+    height: vg.$size-btn-like;
     background-color: transparent;
 
     // Empty heart
@@ -50,7 +50,7 @@
         @include mix.gradient(btn-like);
         opacity: 0;
         
-        transition: (opacity $anim-btn--like-duration, transform $anim-btn--like-duration ease-in);
+        transition: (opacity vg.$anim-btn--like-duration, transform vg.$anim-btn--like-duration ease-in);
     }
 
     // Hover opacity & scale animation

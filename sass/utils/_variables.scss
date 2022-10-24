@@ -5,10 +5,11 @@ $screen-lg: 800px;
 $screen-xl: 950px;
 $screen-xxl: 1050px;
 
-// Padding on the sides
-$padding-x: 1.3rem;
-$padding-x--md: 1.8rem;
-$padding-x--lg: 2.8rem; 
+// Sections padding
+$padding-x: 1.3rem; // left-right
+$padding-x--md: 1.8rem; // left-right
+$padding-x--lg: 2.8rem; // left-right
+$padding-y: 3rem; // top-bottom
 
 // Theme colors
 $color-primary: hsl(267, 66%, 60%);

@@ -323,7 +323,7 @@ header a {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  padding: 3rem;
+  padding: 3rem 1.3rem;
 }
 .call-to-action__content h2 {
   margin: 0;
@@ -426,7 +426,7 @@ header a {
   justify-content: flex-start;
   align-items: stretch;
   gap: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 3rem;
 }
 .restaurants-list__group {
   display: flex;

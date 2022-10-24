@@ -3,7 +3,7 @@
 
 .restaurants-list {
     @include mix.flex(column, flex-start, stretch, 1.5rem);
-    padding-bottom: 1.5rem;
+    padding-bottom: $padding-y;
 
     // 2-cards group
     &__group {

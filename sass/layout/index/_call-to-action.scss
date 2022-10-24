@@ -6,7 +6,7 @@
 
     &__content {
         @include mix.flex(column, center, center, 1.5rem);
-        padding: 3rem;
+        padding: $padding-y $padding-x;
         
         // Headline
         & h2 {

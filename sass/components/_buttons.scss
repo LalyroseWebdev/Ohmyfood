@@ -6,29 +6,34 @@
     @include mix.gradient(btn-text);
     @include mix.shadow(btn);
     border: none;
-    border-radius: 50px;
-    padding: 20px;
+    border-radius: 100px;
     width: fit-content;
     font-size: vg.$size-text;
     color: white;
     cursor: pointer;
 
-    transition: all vg.$anim-btn--text-duration;
+    // Opacity and scale animation
+    transition: all vg.$anim-btn-text-duration;
 
     &:hover {
         opacity: 0.9;
         transform: scale(1.02);
     }
-}
 
-// Order button at the bottom of menu pages
-.btn-text--order {
-    padding-bottom: 5rem;
-    text-align: center;
-
-    & > button {
-        padding: 20px 60px;
+    // Explore button (home page)
+    &--explore {
+        padding: vg.$padding-btn-text--explore;
     }
+
+    // Order button (menu pages)
+    &--order {
+        padding-bottom: 5rem;
+        text-align: center;
+
+        & > button {
+            padding: vg.$padding-btn-text--order;
+        }
+    }   
 }
 
 // Heart-shaped button
@@ -50,10 +55,10 @@
         @include mix.gradient(btn-like);
         opacity: 0;
         
-        transition: (opacity vg.$anim-btn--like-duration, transform vg.$anim-btn--like-duration ease-in);
+        // Opacity and scale animation
+        transition: (opacity vg.$anim-btn-like-duration, transform vg.$anim-btn-like-duration ease-in);
     }
 
-    // Hover opacity & scale animation
     &:hover::after {
         opacity: 1;
         transform: scale(1.15);

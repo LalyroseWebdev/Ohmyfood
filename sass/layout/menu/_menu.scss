@@ -9,6 +9,7 @@
 
     animation: appear $anim-menu-duration ease-out forwards;
     
+    // Section title (starters/dishes/desserts)
     &__heading {
         position: relative;
         margin-bottom: calc($size-menu-h2 * 1.5);

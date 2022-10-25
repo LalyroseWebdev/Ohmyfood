@@ -18,6 +18,7 @@
     $palette: map-get(map.$gradient-map, $type);
     background-image: map-get($palette, gradient);
     color: map-get($palette, color);
+    -webkit-background-clip: map-get($palette, clip);
     background-clip: map-get($palette, clip);
 }
 

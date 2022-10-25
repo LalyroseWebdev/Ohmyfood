@@ -61,6 +61,7 @@ $spinner-map: (
     inner: (
         color: vg.$color-tertiary,
         size: calc(vi.$size-spinner * 1/3),
+        rotate: 0,
         bg: vg.$color-tertiary,
     ),
 );

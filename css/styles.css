@@ -215,11 +215,11 @@ section {
   width: 30px;
   height: 30px;
   background-color: hsl(165deg, 56%, 74%);
-  transform: rotate();
+  transform: rotate(0);
 }
 @keyframes spinner-rotation-inner {
   0% {
-    transform: rotate();
+    transform: rotate(0);
   }
   100% {
     transform: rotate(1turn);
@@ -274,6 +274,7 @@ header a {
   .footer {
     padding: 1.8rem;
   }
+
   .footer-links {
     display: flex;
     justify-content: flex-start;
@@ -728,10 +729,10 @@ header a {
 }
 @keyframes check-rotate {
   from {
-    rotate: 1deg;
+    transform: rotate(1deg);
   }
   to {
-    rotate: 360deg;
+    transform: rotate(360deg);
   }
 }
 @keyframes check-position-in {

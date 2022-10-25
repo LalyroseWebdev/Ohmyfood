@@ -4,7 +4,8 @@
   "description": "P3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/styles.css"
+    "sass": "sass --watch ./sass/main.scss:./css/styles.css",
+    "prefix": "postcss ./css/styles.css --use autoprefixer -o ./css/styles-prefixed.css"
   },
   "repository": {
     "type": "git",
